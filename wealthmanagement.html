@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description" content="Create Finance &amp; Stocks Learning Websites with Canvas Template. Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=DM+Serif+Text&display=swap" rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="css/swiper.css">
+
+	
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		.asterisk:after {
+			content: "*";
+			color: red;
+			margin-left: 2px;
+		}
+
+		.wc-container {			
+     		display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px 20px;
+            background: #264653;
+            border-radius: 12px;
+        }
+
+		.wc-container > div {
+          display: flex;
+          flex-direction: column;          
+          background-color: #fff7d6;
+          width: 300px;
+          min-height: 220px;         
+          border: 1px solid #264653;         
+          text-align: center;
+          flex: 0 0 25%;
+          box-sizing: border-box;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
+          background: linear-gradient(to bottom right, #e9c46a, #fdfdfd);	  
+          border-radius: 20px;
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+          padding: 25px 20px;
+          transition: all 0.3s ease;		       
+       }
+
+       .wc-container h4 {
+         color: #264653;
+         font-weight: 600;
+         font-size: 1.2rem;
+         margin-bottom: 10px;
+       }
+
+       .wc-container p {
+         color: #555;
+         font-size: 0.95rem;
+         line-height: 1.5;
+         margin: 0;
+       }
+
+	   @media (max-width: 768px) {
+            .wc-container > div {
+            flex: 1 1 100%;
+            width: 100%;
+            max-width: 90%;
+         }
+       }
+
+
+.wc-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px 20px;
+  background: #264653;
+  border-radius: 12px;
+}
+
+.wc-container > div {
+  background: linear-gradient(to bottom right, #fff7d6, #fcffec);
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 30px 25px;
+  width: 280px;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wc-container > div:hover {
+  transform: translateY(-8px);
+   box-shadow: 0 12px 30px rgba(200, 200, 220, 0.55);
+}
+
+.wc-container i {
+  font-size: 40px;
+  color: #2a9d8f; /* FinAxis teal accent */
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.wc-container > div:hover i {
+  color: #1f776f;
+}
+
+.wc-container h4 {
+  color: #264653;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.wc-container p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .wc-container {
+    gap: 20px;
+  }
+  .wc-container > div {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+		#wc-pill {
+			padding-left: 50px;
+			padding-right: 50px;
+			background-color: #264653;
+			color: #e9c46a;
+			border: 1px solid goldenrod;
+			transition: background-color 0.3s, color 0.3s;
+		}
+
+		#wc-pill:hover {
+			background-color: #ffffff;
+			color: #264653;
+			border: 2px solid #264653;
+		}
+	</style>
+	<!-- Document Title
+	============================================= -->
+	<title>Finance | Canvas</title>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" style="background-color: cream;" >
+
+		
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="sticky-on-scrollup" >
+			<div id="header-wrap" class="fx-slashed-header">
+				<div class="container ">
+					<div class="header-row justify-content-between">
+                        
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="mx-0 me-lg-5 order-2 order-lg-1" style="height: 120px;">
+							<a href="index.html">
+								<img class="logo-default" src="images/FinAxisImages/FinAxis Logo (1).png" alt="Canvas Logo">
+								<!-- <img class="logo-dark" srcset="images/logo-dark.png, images/logo-dark@2x.png 2x" src="images/logo-dark@2x.png" alt="Canvas Logo"> -->
+							</a>
+						</div><!-- #logo end -->
+
+						<div class="primary-menu-trigger order-1">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<div class="header-misc order-3">
+							<a href="https://api.whatsapp.com/send?phone=919987777795&text=Hello,+I+am+interested+in+your+services.+Please+call+me+back.&type=phone_number&app_absent=0" class="btn text-larger btn-dark bg-color px-4 py-2 rounded-pill"><i class="fa-brands fa-whatsapp color-2"></i><span class="d-none d-md-inline ms-2">Contact Us</span></a>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu me-lg-auto with-arrows order-12 order-lg-3">
+
+							<ul class="menu-container">
+								<li class="menu-item current"><a class="menu-link" href="Index.html"><div style="padding-bottom: 30px; padding-top: 30px;">Home</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div style="padding-bottom: 30px; padding-top: 30px;">Services</div></a>
+									<ul class="sub-menu-container">
+										<li class="menu-item"><a class="menu-link" href="#"><div><i class="bi-currency-dollar"></i>Working Capital</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="#"><div><i class="bi-file-earmark-richtext"></i>Retail Loan</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="#"><div><i class="bi-people"></i>Wealth Management</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="#"><div><i class="bi-flag"></i>Insurance</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="#"><div><i class="bi-globe"></i>FLDG (First Loss Default Guarantee)</div></a></li>								
+									</ul>
+								</li>
+								<li class="menu-item"><a class="menu-link" href="#"><div style="padding-bottom: 30px; padding-top: 30px;">About</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div style="padding-bottom: 30px; padding-top: 30px;">FAQs</div></a></li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+						<form class="top-search-form" action="search.html" method="get">
+							<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+						</form>
+
+					</div>
+				</div>
+			</div>
+			
+		   </header><!-- #header end -->
+
+        <!-- Content
+        ============================================= -->       
+        <section id="content" style="background-color: #eef2f4;">
+			<div class="content-wrap">
+				<div class="container clearfix">
+
+					<div class="heading-block center border-bottom-0 mb-4">
+						<h2 class="fw-bold color">Wealth Management</h2>
+						<span class="fst-italic">Your Financial Future, Our Expert Guidance</span>
+					</div>
+					<p class="color">At FinAxis, we understand that managing your wealth is a crucial aspect of securing your financial future. Our comprehensive Wealth Management services are designed to help you achieve your financial goals through personalized strategies and expert guidance.</p>
+					<h4 class="fw-bold mt-5 mb-3 color">Our Wealth Management Services Include:</h4>
+					<ul class="iconlist iconlist-color">
+						<li><i class="bi bi-check-circle color-2"></i>Investment Advisory</li>
+						<li><i class="bi bi-check-circle color-2"></i>Retirement Planning</li>
+						<li><i class="bi bi-check-circle color-2"></i>Tax Optimization</li>
+						<li><i class="bi bi-check-circle color-2"></i>Estate Planning</li>
+						<li><i class="bi bi-check-circle color-2"></i>Risk Management</li>
+					</ul>
+					<p class="color">Our team of experienced financial advisors works closely with you to understand your unique financial situation and develop a tailored plan that aligns with your objectives. Whether you're looking to grow your investments, plan for retirement, or protect your assets, FinAxis is here to guide you every step of the way.</p>
+					<p class="color">Contact us today to learn more about how our Wealth Management services can help you achieve financial success and peace of mind.</p>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+		<div style="text-align: center; margin-bottom: 40px; margin-top: 50px;">
+               <a href="javascript:void(0);" class="btn btn-light btn-lg rounded-pill" id="wc-pill">Our Wealth Management Process</a>
+	    </div>
+
+
+		<div class="wc-container">
+                  <div>
+					<i class="fas fa-handshake color"></i>
+					<h4>Initial Consultation</h4>					
+					<p>During the initial consultation, we will discuss your business needs and financial goals to determine the best working capital solution for you.</p>
+				  </div>
+                  
+                  <div>
+					<i class="fas fa-user-tie color"></i>
+					<h4>Tailored Solutions</h4>
+					<p>Our team will work closely with you to develop customized wealth management strategies that align with your financial goals.</p>
+				  </div>
+                  
+				  <div>
+					<i class="fas fa-file-alt color"></i>
+					<h4>Documentation Process</h4>
+					<p>We will guide you through the necessary documentation required for your wealth management plan.</p>
+				  </div>
+                  <div>
+					<i class="fas fa-check-circle color"></i>
+					<h4>Approval & Activation</h4>
+					<p>Once your application is approved, we will activate your wealth management plan and implement the agreed-upon strategies.</p>
+				  </div>
+                  <div>
+					<i  class="fas fa-headset color"></i>
+					<h4>Ongoing Support</h4>
+					<p>Our team will provide continuous support and guidance to ensure your wealth management plan remains aligned with your goals.</p>
+				  </div>
+				  <div>
+					<i class="fas fa-sync-alt color"></i>
+					<h4>Review & Adjustments</h4>
+					<p>We will regularly review your wealth management plan and make adjustments as needed to ensure it continues to meet your goals.</p>
+				  </div>
+            </div>
+
+			<div class="divider divider-sm divider-rounded divider-center"><i class="bi-pencil"></i></div>
+
+
+			<div class=" section my-5 py-5" style="background-color: #eef2f4;">
+               <div class="container">
+                   <h2 class="color text-center" style="font-weight: bolder;">Services we provide</h2>
+				   <div class="mb-5">
+                      <h3 class="color">Portfolio Management Solutions</h3>
+				      <p>Portfolio management solutions involve the professional management of various investment assets to meet specific investment goals for the benefit of the investors. This includes the strategic allocation of assets, risk management, and ongoing monitoring of investment performance.</p>
+				   </div>
+				   <div class="mb-5">
+                      <h3 class="color">Alternate Investment Fund</h3>
+				      <p>Alternate investment funds (AIFs) are privately pooled investment vehicles that collect funds from investors to invest in accordance with a defined investment policy. AIFs can invest in a variety of assets, including real estate, commodities, and hedge funds, and are typically aimed at high-net-worth individuals and institutional investors.</p>
+				   </div>
+				   <div class="mb-5">
+					  <h3 class="color">Mutual Funds</h3>
+				      <p>Mutual funds are investment vehicles that pool money from multiple investors to invest in a diversified portfolio of stocks, bonds, or other securities. They are managed by professional fund managers and offer investors an opportunity to participate in a diversified investment strategy without having to select individual securities.</p>
+			       </div>			   
+				   <div class="mb-5">
+					  <h3 class="color">Unlisted Shares</h3>
+				      <p>Unlisted shares are shares of a company that are not traded on a stock exchange. These shares are typically issued by private companies and can be more difficult to buy and sell compared to listed shares. Investing in unlisted shares can offer opportunities for higher returns, but also comes with higher risks due to less regulatory oversight and lower liquidity.</p>
+			       </div>
+				   
+			   </div> 
+			</div>
+
+			<div class="divider divider-sm divider-rounded divider-center"><i class="bi-pencil"></i></div>
+
+           <!-- Footer
+         ============================================= -->
+             <footer id="footer" class="site-footer">
+               <div class="footer-top">
+                 <div class="container">
+                   <div class="row align-items-left justify-content-between col-mb-30">
+             
+                     <!-- Brand / About -->
+                     <div class="col-lg-6">
+                       <div class="footer-brand d-flex align-items-start">
+                         <img src="images/FinAxisImages/FinAxis Logo (1).png" alt="FinAxis" class="footer-logo">
+                         <div class="ms-3">
+                           <p class="mb-2 fw-bold" style="font-size: 1.25rem; color: #264653;">FinAxis — Wealth & Finance</p>
+                           <p class="mb-0 fw-semibold small">Tailored financial solutions for individuals & businesses. Trusted partners with banks & NBFCs.</p>
+                           <div class="mt-3 widget">
+							 
+                             
+							 <!-- <a href="#" class="social-icon si-small bg-light h-bg-facebook">
+									<i class="fa-brands fa-facebook-f"></i>
+									<i class="fa-brands fa-facebook-f"></i>
+								</a> -->
+								<a href="https://www.instagram.com/finaxis_financial/?hl=en" target="_blank" class="social-icon si-small bg-light h-bg-instagram">
+									<i class="fa-brands fa-instagram"></i>
+									<i class="fa-brands fa-instagram"></i>
+								</a>
+								<a href="https://www.linkedin.com/company/finaxis1/posts/?feedView=all" target="_blank" class="social-icon si-small bg-light h-bg-linkedin">
+									<i class="fa-brands fa-linkedin"></i>
+									<i class="fa-brands fa-linkedin"></i>
+								</a>
+								<!-- <a href="#" class="social-icon si-small bg-light h-bg-twitter">
+									<i class="fa-brands fa-twitter"></i>
+									<i class="fa-brands fa-twitter"></i>
+								</a> -->
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+             
+                     <!-- Links -->
+                     <div class="col-lg-4" id ="footer-margin">
+                       <div class="row">
+                         <div class="col-6 col-md-6">
+                           <h5 class="footer-title">Company</h5>
+                           <ul class="footer-links">
+                             <li><i class="bi-arrow-right px-2"></i><a href="Index.html">Home</a></li>
+                             <li><i class="bi-arrow-right px-2"></i><a href="About.html">About</a></li>
+							 <li><i class="bi-arrow-right px-2"></i><a href="#">FAQs</a></li>     
+                             <!-- <li><i class="bi-arrow-right px-2"></i><a href="#">Services</a></li> -->                            
+                           </ul>
+                         </div>
+                         <!-- <div class="col-6 col-md-6">
+                           <h5 class="footer-title">Support</h5>
+                           <ul class="footer-links">
+                             <li><a href="#">FAQs</a></li>                             
+                             <li><a href="#">Privacy Policy</a></li>
+                             <li><a href="#">Terms</a></li>
+                           </ul>
+                         </div> -->
+                       </div>
+                     </div>
+					 
+                   </div>
+                 </div>
+               </div>
+             
+               <div class="footer-bottom">
+                 <div class="container">
+                   <div class="row align-items-center">
+                     <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                       <span class="small text-muted">&copy; 2023 All Rights Reserved by <b style="color: #0a9646;">FinAxis</b><sup style="color: #264653;">&reg;</sup></span>
+                     </div>
+                     <div class="col-md-6 text-center text-md-end">
+                       <a class="small text-muted me-3" href="#">Terms of Use</a>
+                       <a class="small text-muted" href="#">Privacy Policy</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </footer>
+              <!-- #footer end -->
+
+
+			
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="uil uil-angle-double-up bg-color h-bg-color-2 shadow rounded-circle"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+	
+	<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+	<script>
+		jQuery(document).ready( function(){
+			var lastScrollTop = 0;
+			window.addEventListener("scroll", function(event){
+				var st = jQuery(this).scrollTop();
+				if (st > lastScrollTop){
+					jQuery('#header.sticky-on-scrollup').removeClass('show-sticky-onscroll'); // Down Scroll
+				} else {
+					jQuery('#header.sticky-on-scrollup').addClass('show-sticky-onscroll'); // Up Scroll
+				}
+				lastScrollTop = st;
+			});
+
+			jQuery('.services-grid .feature-box').hover(
+			  function () {
+			    jQuery(this).addClass("dark");
+			  },
+			  function () {
+			    jQuery(this).removeClass("dark");
+			  }
+			);
+		});
+	</script>
+
+</body>
+</html>
