@@ -388,9 +388,9 @@ html, body {
 
 :root{
   --headerH: 100px;          /* header height */
-  --logoZone: 360px;         /* width of the white area for logo */
+  --logoZone: 400px;         /* width of the white area for logo */
   --brandBand: #253b50;      /* color of the right band */
-  --bevel: 58px;             /* diagonal depth (px) */
+  --bevel: 0px;             /* diagonal depth (px) */
   --accent: #1f6f78;         /* CTA border/hover */
   --text: #e7e9eb;
 }
