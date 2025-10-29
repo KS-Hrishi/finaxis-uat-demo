@@ -27,6 +27,11 @@
 	--cnvs-fourth-color: #dae0e2;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 #header {
 	--cnvs-primary-menu-font-weight: 500;
 	--cnvs-primary-menu-font-size:	1rem;

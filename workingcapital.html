@@ -67,10 +67,7 @@
 	]
 }
 </script>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	<meta name="author" content="SemiColonWeb">
-	<meta name="description" content="Create Finance &amp; Stocks Learning Websites with Canvas Template. Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+	
 
 	<!-- Font Imports -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,6 +88,8 @@
      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/sidebar-mobile.css">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<style>
@@ -99,7 +98,12 @@
 			color: red;
 			margin-left: 2px;
 		}
-
+        
+		.iconlist li{
+		  display: flex;
+          flex-wrap: nowrap;		  
+	   }
+	   
 		.wc-container {			
      		display: flex;
             flex-wrap: wrap;
@@ -230,6 +234,7 @@
 			color: #264653;
 			border: 2px solid #264653;
 		}
+		
 	</style>
 
 	<!-- Document Title
@@ -259,12 +264,24 @@
 							</a>
 						</div><!-- #logo end -->
 
-						<div class="primary-menu-trigger order-1">
-							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
-								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
-							</button>
+						
+                        <div class="order-1" id="mobile-menu">
+							<a onclick="showsidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>		
 						</div>
 
+
+						<div class="custom-nav-div">
+                            <ul class="sidebar-custom">
+								<li onclick="hidesidebar()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+								<li><a href="Index.html">Home</a></li>																
+								<li><a href="About.html">About</a></li>		
+								<li><a href="" id="servicesBtn">Services</a></li>
+								<li><a href="Resources.html">Resources</a></li>
+								<li><a href="Gallery.html">Gallery</a></li>
+								<li><a href="FAQs.html">FAQs</a></li>
+								
+					       </ul>
+						</div>
 						
 
 						<!-- Primary Navigation
@@ -382,6 +399,8 @@
 				  </div>
             </div>
 
+			<div class="divider divider-sm divider-rounded divider-center"><i class="bi-pencil"></i></div>
+
 			<div class=" section my-5 py-5" style="background-color: #eef2f4;">
                <div class="container">
                    <h2 class="color text-center" style="font-weight: bolder;">Services we provide</h2>
@@ -478,7 +497,7 @@
                            <ul class="footer-links">
                              <li><i class="bi-arrow-right px-2"></i><a href="Index.html">Home</a></li>
                              <li><i class="bi-arrow-right px-2"></i><a href="About.html">About</a></li>
-							 <li><i class="bi-arrow-right px-2"></i><a href="#">FAQs</a></li>     
+							 <li><i class="bi-arrow-right px-2"></i><a href="FAQs.html">FAQs</a></li>     
                              <!-- <li><i class="bi-arrow-right px-2"></i><a href="#">Services</a></li> -->                            
                            </ul>
                          </div>
@@ -525,6 +544,7 @@
 	============================================= -->
 	<script src="js/plugins.min.js"></script>
 	<script src="js/functions.bundle.js"></script>
+	<script src="js/sidebar-mobile.js"></script>
 
 	
 	<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
@@ -551,6 +571,7 @@
 			  }
 			);
 		});
+		
 	</script>
 
 </body>
