@@ -48,11 +48,11 @@
 		}
 
 		.sidebar-custom li{
-			width: 75%;
+			width: 100%;
 		}
 
         .sidebar-custom a{
-			width: 75%;
+			width: 100%;
 		}
 
         @media (min-width: 768px){
