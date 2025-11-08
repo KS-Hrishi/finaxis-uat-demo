@@ -170,6 +170,7 @@ html, body {
 }
 
 .group:nth-child(2) {
+  display: none;
   position: absolute;
   left: 100%;
 
