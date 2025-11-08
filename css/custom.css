@@ -167,6 +167,11 @@ html, body {
   will-change: transform;
 }
 
+.group:nth-child(2) {
+  position: absolute;
+  left: 100%;
+}
+
 .cardin {
   flex: 0 0 5em;
   height: 5em;
