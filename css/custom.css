@@ -206,7 +206,22 @@ html, body {
 } */
 
 
+#iphonelogoticker{
+  display: none;
+}
 
+/* ---- iOS-specific: Disable animation ---- */
+@supports (-webkit-touch-callout: none) {
+
+  #iphonelogoticker{
+  display: block !important;
+  }
+
+  #desktoplogoticker{
+    display: none;
+  }
+
+}
 
 
 .color-2,
