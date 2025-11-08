@@ -99,7 +99,7 @@ html, body {
 @media (max-midth:768px) {
 .carousal {
   width: 100%;
-  overflow: hidden; /* hides overflow smoothly */
+  overflow: hidden; 
   display: flex;
   gap: 2em;
   position: relative;
@@ -120,7 +120,7 @@ html, body {
 
 
   .group:nth-child(2) {
-  animation-delay: -5s; /* half of 50s */
+  animation-delay: -5s; 
 }
 
 
@@ -136,7 +136,7 @@ html, body {
   border: none;
 }
 
-/* Corrected animation */
+
   @keyframes move {
     from {
       transform: translateX(0);
@@ -146,6 +146,25 @@ html, body {
     }
   }
 }
+
+
+
+/* ✅ WebKit-specific fallback (iPhone Chrome/Safari) */
+@supports (-webkit-touch-callout: none) {
+  .group{
+    animation: move-ios 50s linear infinite;
+  }
+
+  @keyframes move-ios {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(-50%);
+    }
+  }
+}
+
 .color-2,
 .h-color-2:hover { color: var(--cnvs-secondary-color) !important; }
 
