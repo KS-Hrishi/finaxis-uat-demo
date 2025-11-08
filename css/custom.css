@@ -91,9 +91,20 @@ html, body {
 	border: none;
 }
 
-@keyframes move {
+/* @keyframes move {
 	from{translate: 0;}
 	to{translate: -100%;}
+} */
+
+
+@keyframes move {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes move {
+  from { -webkit-transform: translateX(0); }
+  to { -webkit-transform: translateX(-100%); }
 }
 
 /* @media (max-midth:768px) {
@@ -148,7 +159,7 @@ html, body {
 } */
 
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
 .carousal {	
   width: 100%;
   display: flex;
@@ -174,7 +185,7 @@ html, body {
   position: absolute;
   left: 100%;
 
-   /* animation-delay: -25s;  */
+   animation-delay: -25s; 
 }
 
 .cardin {
@@ -197,7 +208,7 @@ html, body {
   from { -webkit-transform: translateX(0); }
   to { -webkit-transform: translateX(-100%); }
 }
-}
+} */
 
 
 
