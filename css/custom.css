@@ -59,7 +59,7 @@ html, body {
 	background-color: var(--cnvs-pill-color);
 }
 
-/*client logos animation*/
+/*client logos animation desktop*/
 .carousal{	
 	width: 100%;
 	display: flex;

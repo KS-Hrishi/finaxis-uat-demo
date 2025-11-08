@@ -915,6 +915,36 @@
 			sidebaru.style.display = 'none';
 		}
 
+
+        document.addEventListener("DOMContentLoaded", () => {
+  const groups = document.querySelectorAll(".carousal .group");
+
+  if (groups.length === 2) {
+    const [first, second] = groups;
+
+    // Wait for all images to load before measuring width
+    const ensureLoaded = Promise.all(
+      Array.from(first.querySelectorAll("img")).map(img => {
+        if (img.complete) return Promise.resolve();
+        return new Promise(res => img.addEventListener("load", res));
+      })
+    );
+
+    ensureLoaded.then(() => {
+      const firstWidth = first.scrollWidth;
+      const carousalWidth = first.parentElement.clientWidth;
+
+      // Calculate how far the second should start (in % of parent)
+      // Add 1% buffer to avoid subpixel overlap
+      const offsetPercent = ((firstWidth / carousalWidth) * 100 + 1).toFixed(2);
+      second.style.left = `${offsetPercent}%`;
+
+      console.log(`Ticker adjusted: second group starts at ${offsetPercent}%`);
+    });
+  }
+});
+
+
 	</script>
 
 </body>
