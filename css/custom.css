@@ -76,6 +76,8 @@ html, body {
 	justify-content: center;
 	align-items: center;
 	gap: 2em;
+  will-change: transform;
+  transform: translateZ(0);
 	
 }
 
@@ -91,12 +93,20 @@ html, body {
 	border: none;
 }
 
-@keyframes move {
+/* @keyframes move {
 	from{translate: 0;}
 	to{translate: -100%;}
+} */
+
+/* Corrected animation */
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
-
-
 
 .color-2,
 .h-color-2:hover { color: var(--cnvs-secondary-color) !important; }
