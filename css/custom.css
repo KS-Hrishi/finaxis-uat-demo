@@ -60,7 +60,7 @@ html, body {
 }
 
 /*client logos animation*/
-/* .carousal{	
+.carousal{	
 	width: 100%;
 	display: flex;
 	overflow-x: auto;
@@ -94,8 +94,10 @@ html, body {
 @keyframes move {
 	from{translate: 0;}
 	to{translate: -100%;}
-} */
+}
 
+
+@media (max-midth:768px) {
 .carousal {
   width: 100%;
   overflow: hidden; /* hides overflow smoothly */
@@ -111,17 +113,17 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 2em;
-  flex-shrink: 0;
-  will-change: transform;
-  transform: translateZ(0);
+  /* flex-shrink: 0; */
+  /* will-change: transform;
+  transform: translateZ(0); */
   animation: move 50s linear infinite;
 }
 
-@media (max-midth:768px) {
+
   .group:nth-child(2) {
-  animation-delay: -25s; /* half of 50s */
+  animation-delay: -5s; /* half of 50s */
 }
-}
+
 
 
 .cardin {
@@ -144,7 +146,7 @@ html, body {
     transform: translateX(-100%);
   }
 }
-
+}
 .color-2,
 .h-color-2:hover { color: var(--cnvs-secondary-color) !important; }
 
