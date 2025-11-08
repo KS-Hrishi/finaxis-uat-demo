@@ -96,7 +96,6 @@ html, body {
 	to{translate: -100%;}
 }
 
-
 @media (max-midth:768px) {
 .carousal {
   width: 100%;
@@ -121,7 +120,7 @@ html, body {
 
 
   .group:nth-child(2) {
-  animation-delay: 25s; /* half of 50s */
+  animation-delay: -25s; /* half of 50s */
 }
 
 
@@ -138,14 +137,14 @@ html, body {
 }
 
 /* Corrected animation */
-@keyframes move {
-  from {
-    transform: translateX(0);
+  @keyframes move {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
   }
-  to {
-    transform: translateX(-100%);
-  }
-}
 }
 .color-2,
 .h-color-2:hover { color: var(--cnvs-secondary-color) !important; }
