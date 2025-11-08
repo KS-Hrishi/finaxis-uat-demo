@@ -91,12 +91,6 @@ html, body {
 	border: none;
 }
 
-/* @keyframes move {
-	from{translate: 0;}
-	to{translate: -100%;}
-} */
-
-
 @keyframes move {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
@@ -107,7 +101,7 @@ html, body {
   to { -webkit-transform: translateX(-100%); }
 }
 
-/* @media (max-midth:768px) {
+@media (max-midth:768px) {
 .carousal {
   width: 100%;
   overflow: hidden; 
@@ -147,16 +141,17 @@ html, body {
   border: none;
 }
 
-
   @keyframes move {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-} */
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes move {
+  from { -webkit-transform: translateX(0); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+}
 
 
 /* @media (max-width:768px) {
