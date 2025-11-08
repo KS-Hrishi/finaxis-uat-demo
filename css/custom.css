@@ -111,10 +111,18 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 2em;
+  flex-shrink: 0;
   will-change: transform;
   transform: translateZ(0);
   animation: move 50s linear infinite;
 }
+
+@media (max-midth:768px) {
+  .group:nth-child(2) {
+  animation-delay: -25s; /* half of 50s */
+}
+}
+
 
 .cardin {
   flex: 0 0 5em;
