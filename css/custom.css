@@ -60,7 +60,7 @@ html, body {
 }
 
 /*client logos animation*/
-/* .carousal{	
+.carousal{	
 	width: 100%;
 	display: flex;
 	overflow-x: auto;
@@ -89,14 +89,14 @@ html, body {
 	align-content: center;
 	background: transparent;
 	border: none;
-} */
+}
 
-/* @keyframes move {
+@keyframes move {
 	from{translate: 0;}
 	to{translate: -100%;}
 }
 
-@media (max-midth:768px) {
+/* @media (max-midth:768px) {
 .carousal {
   width: 100%;
   overflow: hidden; 
@@ -147,6 +147,8 @@ html, body {
   }
 } */
 
+
+@media (max-midth:768px) {
 .carousal {	
   width: 100%;
   display: flex;
@@ -192,7 +194,7 @@ html, body {
   from { -webkit-transform: translateX(0); }
   to { -webkit-transform: translateX(-100%); }
 }
-
+}
 
 .color-2,
 .h-color-2:hover { color: var(--cnvs-secondary-color) !important; }
