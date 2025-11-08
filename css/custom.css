@@ -148,7 +148,7 @@ html, body {
 } */
 
 
-@media (max-midth:768px) {
+@media (max-width:768px) {
 .carousal {	
   width: 100%;
   display: flex;
