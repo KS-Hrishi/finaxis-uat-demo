@@ -170,8 +170,10 @@ html, body {
 }
 
 .group:nth-child(2) {
-  position: absolute;
-  left: 100%;
+  /* position: absolute;
+  left: 100%; */
+
+   animation-delay: -5s; 
 }
 
 .cardin {
