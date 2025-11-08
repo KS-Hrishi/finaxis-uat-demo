@@ -60,7 +60,7 @@ html, body {
 }
 
 /*client logos animation*/
-.carousal{	
+/* .carousal{	
 	width: 100%;
 	display: flex;
 	overflow-x: auto;
@@ -89,9 +89,9 @@ html, body {
 	align-content: center;
 	background: transparent;
 	border: none;
-}
+} */
 
-@keyframes move {
+/* @keyframes move {
 	from{translate: 0;}
 	to{translate: -100%;}
 }
@@ -145,25 +145,49 @@ html, body {
       transform: translateX(-100%);
     }
   }
+} */
+
+.carousal {	
+  width: 100%;
+  display: flex;
+  overflow: hidden;
 }
 
-
-
-/* ✅ WebKit-specific fallback (iPhone Chrome/Safari) */
-@supports (-webkit-touch-callout: none) {
-  .group{
-    animation: move-ios 50s linear infinite;
-  }
-
-  @keyframes move-ios {
-    from {
-      -webkit-transform: translateX(0);
-    }
-    to {
-      -webkit-transform: translateX(-50%);
-    }
-  }
+.carousal::-webkit-scrollbar {
+  display: none;
 }
+
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  animation: move 50s linear infinite;
+  -webkit-animation: move 50s linear infinite;
+  will-change: transform;
+}
+
+.cardin {
+  flex: 0 0 5em;
+  height: 5em;
+  padding: 1em;
+  font-size: 3rem;
+  border-radius: 0.2em;
+  text-align: center;
+  background: transparent;
+  border: none;
+}
+
+@keyframes move {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes move {
+  from { -webkit-transform: translateX(0); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
 
 .color-2,
 .h-color-2:hover { color: var(--cnvs-secondary-color) !important; }
