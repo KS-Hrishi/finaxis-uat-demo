@@ -699,8 +699,8 @@ body {
 
 .underline {
   display: block;
-  width: 60px;
-  height: 2px;
+  width: 100px;
+  height: 3px;
   background-color: #253b50;
   margin: 10px auto 30px;
   border-radius: 3px;
