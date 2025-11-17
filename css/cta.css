@@ -43,6 +43,71 @@
   transform: translateY(-3px);
 }
 
+.cta-form-wrapper {
+  max-width: 650px;
+  margin: auto;
+  padding: 30px 30px;
+
+  border-radius: 18px;
+
+  text-align: center;
+}
+
+.cta-form-wrapper h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1d3557;
+  margin-bottom: 10px;
+}
+
+.cta-form-wrapper p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.cta-form .form-group {
+  margin-bottom: 15px;
+}
+
+.cta-form input,
+.cta-form select,
+.cta-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.cta-form input:focus,
+.cta-form select:focus {
+  border-color: #1d3557;
+}
+
+.cta-submit-btn {
+  margin-top: 20px;
+  width: 45%;
+  padding: 14px;
+  font-size: 17px;
+  background: #253b50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.cta-submit-btn:hover {
+  border: 1px solid #253b50;
+  background: #eef2f4;
+  color: #253b50;
+  transform: translateY(-3px);
+}
+
 @media (max-width: 768px) {
   .finaxis-cta {
     max-width: 90%;
@@ -53,5 +118,15 @@
   }
   .finaxis-btn {
     width: 100%;
+  }
+
+  .cta-submit-btn {
+    width: 70%;
+  }
+
+  .cta-form input,
+  .cta-form select,
+  .cta-form textarea {
+    width: 110%;
   }
 }
