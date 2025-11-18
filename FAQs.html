@@ -61,32 +61,38 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@graph": [
+        "@type": "FAQPage",
+        "mainEntity": [
           {
-            "@type": "Organization",
-            "name": "Finaxis",
-            "url": "https://finaxis.co.in/",
-            "logo": "https://finaxis.co.in/images/finaxis-logo.png",
-            "sameAs": [
-              "https://www.linkedin.com/company/finaxis1/posts/",
-              "https://www.instagram.com/finaxis_financial/"
-            ],
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+91 9326522790",
-                "contactType": "customer service",
-                "availableLanguage": "en"
-              }
-            ]
+            "@type": "Question",
+            "name": "What is FinAxis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FinAxis is a financial services company in India offering loans, insurance, and wealth management solutions through partnerships with banks and NBFCs."
+            }
           },
           {
-            "@type": "WebSite",
-            "url": "https://finaxis.co.in/",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://finaxis.co.in/search.html?q={search_term_string}",
-              "query-input": "required name=search_term_string"
+            "@type": "Question",
+            "name": "What is Working Capital Finance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Working Capital Finance provides liquidity support for businesses to manage day-to-day operations. FinAxis offers fast-approval, flexible working capital loans for SMEs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the benefits of wealth management?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wealth management helps individuals grow and protect assets through personalized investment, tax planning, and financial advisory."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does FinAxis ensure data security?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "FinAxis uses secure, encrypted systems and follows RBI digital lending guidelines to protect customer data."
             }
           }
         ]

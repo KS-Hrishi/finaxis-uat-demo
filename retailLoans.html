@@ -59,39 +59,28 @@
 
     <!-- JSON-LD structured data -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "name": "Finaxis",
-            "url": "https://finaxis.co.in/",
-            "logo": "https://finaxis.co.in/images/finaxis-logo.png",
-            "sameAs": [
-              "https://www.linkedin.com/company/finaxis1/posts/",
-              "https://www.instagram.com/finaxis_financial/"
-            ],
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+91 9326522790",
-                "contactType": "customer service",
-                "availableLanguage": "en"
-              }
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "url": "https://finaxis.co.in/",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://finaxis.co.in/search.html?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
-          }
-        ]
-      }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialProduct",
+  "name": "Retail Loan Services",
+  "brand": "FinAxis Wealth & Finance",
+  "url": "https://finaxis.co.in/retail-loans",
+  "category": "Personal and Business Loans",
+  "description": "FinAxis provides personalized retail loans including personal, home, business, and loan-against-property services through trusted NBFC partnerships.",
+  "provider": {
+    "@type": "Organization",
+    "name": "FinAxis Wealth & Finance",
+    "url": "https://finaxis.co.in/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://finaxis.co.in/contact"
+  }
+}
+</script>
+
 
     <!-- Font Imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -669,8 +658,6 @@
         <button type="submit" class="cta-submit-btn">Get a call back</button>
     </form>
 </div>
-
-
       </section>
 
       <div class="divider divider-sm divider-rounded divider-center">

@@ -59,39 +59,32 @@
 
     <!-- JSON-LD structured data -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "name": "Finaxis",
-            "url": "https://finaxis.co.in/",
-            "logo": "https://finaxis.co.in/images/finaxis-logo.png",
-            "sameAs": [
-              "https://www.linkedin.com/company/finaxis1/posts/",
-              "https://www.instagram.com/finaxis_financial/"
-            ],
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+91 9326522790",
-                "contactType": "customer service",
-                "availableLanguage": "en"
-              }
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "url": "https://finaxis.co.in/",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://finaxis.co.in/search.html?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
-          }
-        ]
-      }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "name": "FinAxis Insurance Services",
+  "url": "https://finaxis.co.in/insurance",
+  "description": "FinAxis provides life, health, and general insurance advisory for individuals and businesses, offering comprehensive protection and tailored coverage plans.",
+  "areaServed": "India",
+  "foundingDate": "2019",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "FinAxis Wealth & Finance"
+  },
+  "availableService": [
+    "Life Insurance",
+    "Health Insurance",
+    "Travel Insurance",
+    "Business Insurance"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-9382552299",
+    "contactType": "Insurance Support"
+  }
+}
+</script>
+
 
     <!-- Font Imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -58,39 +58,28 @@
 
     <!-- JSON-LD structured data -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "name": "Finaxis",
-            "url": "https://finaxis.co.in/",
-            "logo": "https://finaxis.co.in/images/finaxis-logo.png",
-            "sameAs": [
-              "https://www.linkedin.com/company/finaxis1/posts/",
-              "https://www.instagram.com/finaxis_financial/"
-            ],
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+91 9326522790",
-                "contactType": "customer service",
-                "availableLanguage": "en"
-              }
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "url": "https://finaxis.co.in/",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://finaxis.co.in/search.html?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
-          }
-        ]
-      }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "InvestmentOrDeposit",
+  "name": "Wealth Management Solutions",
+  "url": "https://finaxis.co.in/wealth-management",
+  "description": "FinAxis provides expert wealth management services, investment planning, tax optimization, and portfolio management for individuals and businesses across India.",
+  "provider": {
+    "@type": "Organization",
+    "name": "FinAxis Wealth & Finance",
+    "url": "https://finaxis.co.in/"
+  },
+  "serviceOutput": {
+    "@type": "MonetaryAmount",
+    "currency": "INR"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": ["Individuals", "SMEs", "HNIs"]
+  }
+}
+</script>
+
 
     <!-- Font Imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -59,39 +59,31 @@
 
     <!-- JSON-LD structured data -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "name": "Finaxis",
-            "url": "https://finaxis.co.in/",
-            "logo": "https://finaxis.co.in/images/finaxis-logo.png",
-            "sameAs": [
-              "https://www.linkedin.com/company/finaxis1/posts/",
-              "https://www.instagram.com/finaxis_financial/"
-            ],
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+91 9326522790",
-                "contactType": "customer service",
-                "availableLanguage": "en"
-              }
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "url": "https://finaxis.co.in/",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://finaxis.co.in/search.html?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
-          }
-        ]
-      }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "serviceType": "Working Capital Loans",
+  "provider": {
+    "@type": "Organization",
+    "name": "FinAxis Wealth & Finance",
+    "url": "https://finaxis.co.in/",
+    "logo": "https://finaxis.co.in/images/logo.png"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "description": "FinAxis offers customized working capital finance solutions for SMEs and businesses in India, providing liquidity and growth through flexible NBFC-backed facilities.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://finaxis.co.in/working-capital"
+  },
+  "hasFAQPage": "https://finaxis.co.in/faqs"
+}
+</script>
+
 
     <!-- Font Imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
