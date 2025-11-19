@@ -51,6 +51,9 @@ body {
   --cnvs-primary-menu-submenu-bg: var(--cnvs-themecolor);
   --cnvs-primary-menu-submenu-width: 240px;
   --cnvs-primary-menu-submenu-hover-bg: transparent;
+
+  border-top: 2px solid #253b50 !important;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) !important;
 }
 
 .feature-box-custom {
@@ -417,7 +420,7 @@ body {
   }
 
   .menu-container > .menu-item:hover {
-    background-color: rgba(var(--cnvs-secondary-color-rgb), 0.1);
+    background-color: rgba(var(--cnvs-themecolor-rgb), 0.1);
   }
 
   .menu-container > .menu-item:hover::after {
@@ -428,7 +431,7 @@ body {
     top: 0;
     width: 100%;
     height: 5px;
-    background-color: var(--cnvs-tertiary-color);
+    background-color: var(--cnvs-themecolor);
   }
 
   .sub-menu-container .menu-item:not(:last-child) {
@@ -618,10 +621,10 @@ body {
 :root {
   --headerH: 100px; /* header height */
   --logoZone: 400px; /* width of the white area for logo */
-  --brandBand: #253b50; /* color of the right band #253b50*/
+  --brandBand: #ffffff; /* color of the right band #253b50*/
   --bevel: 0px; /* diagonal depth (px) */
-  --accent: #1f6f78; /* CTA border/hover */
-  --text: #e7e9eb;
+  --accent: #253b50; /* CTA border/hover #1f6f78*/
+  --text: #090f15; /*#e7e9eb*/
 }
 
 /* Base header look */
