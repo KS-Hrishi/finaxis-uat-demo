@@ -66,23 +66,70 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  #mobile-menu {
-    display: none;
-  }
-
   .custom-nav-div {
-    display: hidden;
-  }
-
-  .sidebar-custom {
-    display: none;
-  }
-
-  .custom-nav-div a {
-    display: none;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   }
 
   .custom-nav-div ul {
+    list-style: none;
     display: none;
+  }
+
+  /* .custom-nav-div li{
+			height: 50px;
+		} */
+
+  .custom-nav-div a {
+    height: 100px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+
+  .custom-nav-div li :hover {
+    background-color: #f0f0f0;
+  }
+
+  .sidebar-custom {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 75%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.155);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    /* 🔥 Add Scrollbar */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #999 transparent;
+  }
+
+  .sidebar-custom::-webkit-scrollbar {
+    width: 6px;
+  }
+  .sidebar-custom::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+  }
+  .sidebar-custom::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .sidebar-custom li {
+    width: 100%;
+  }
+
+  .sidebar-custom a {
+    width: 100%;
   }
 }

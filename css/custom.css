@@ -419,6 +419,14 @@ body {
     color: var(--cnvs-tertiary-color) !important;
   }
 
+  .primary-menu .menu-container > .menu-item > .menu-link > div {
+    font-weight: bold;
+  }
+
+  .primary-menu .menu-container > .menu-item:hover > .menu-link > div {
+    color: #0a9646 !important; /* green hover accent */
+  }
+
   .menu-container > .menu-item:hover {
     background-color: rgba(var(--cnvs-themecolor-rgb), 0.1);
   }
@@ -545,7 +553,7 @@ body {
   margin: 0;
 }
 .footer-links li {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 .footer-links a {
   color: #253b50;
@@ -985,19 +993,15 @@ body {
 
   /* Show the mobile hamburger icon */
   #mobile-menu {
-    display: none !important;
+    /* display: none !important; */
     position: absolute;
-    top: 30px;
+    top: 45px;
     right: 20px;
     z-index: 1000;
   }
 
   /* Keep your sidebar ready but hidden until toggled */
-  .sidebar-custom {
-    display: flex !important;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-  }
+
   .sidebar-custom.active {
     transform: translateX(0);
   }
@@ -1027,4 +1031,8 @@ body {
     justify-content: space-between !important;
     align-items: center !important;
   }
+}
+
+#footer-margin {
+  margin-left: 65px !important;
 }
