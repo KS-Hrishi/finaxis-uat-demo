@@ -41,6 +41,7 @@
   background: #eef2f4;
   color: #253b50;
   transform: translateY(-3px);
+  transition: 0.5s;
 }
 
 .cta-form-wrapper {
@@ -106,6 +107,7 @@
   background: #eef2f4;
   color: #253b50;
   transform: translateY(-3px);
+  transition-duration: 0.5s;
 }
 
 @media (max-width: 768px) {

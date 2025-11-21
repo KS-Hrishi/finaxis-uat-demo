@@ -33,6 +33,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  background-color: #0a2227 !important;
 }
 
 #header {
@@ -54,6 +55,10 @@ body {
 
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.3) !important;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) !important;
+}
+
+.is-expanded-menu #header.sticky-header-shrink {
+  --cnvs-sticky-header-height: 80px !important;
 }
 
 .feature-box-custom {
@@ -715,6 +720,12 @@ body {
   background-color: #253b50;
   margin: 10px auto 30px;
   border-radius: 3px;
+}
+
+.underline:hover {
+  width: 30px;
+  transition: ease-in-out;
+  transition-duration: 0.5s;
 }
 
 /* Mobile tweaks */
