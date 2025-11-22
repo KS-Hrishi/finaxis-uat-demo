@@ -315,7 +315,7 @@ body {
   font-size: 0.925rem;
 }
 
-.iconlist > li {
+/* .iconlist > li {
   line-height: 24px;
 }
 
@@ -325,6 +325,52 @@ body {
   height: 24px;
   text-align: center;
   border-radius: 50%;
+} */
+
+/* ----------------------------
+   FIXED ICONLIST LAYOUT
+----------------------------- */
+
+/* Main li container – force horizontal layout */
+.iconlist li {
+  display: flex !important;
+  align-items: flex-start !important;
+  flex-wrap: nowrap !important;
+  line-height: 1.6;
+}
+
+/* Remove the problematic rule causing text to fall below the icon */
+.iconlist li > * {
+  flex: unset !important;
+}
+
+/* Icon stays fixed width */
+.iconlist li i {
+  flex: 0 0 auto !important;
+  margin-right: 0.75rem;
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+/* Text takes remaining width */
+.iconlist li span,
+.iconlist li p {
+  flex: 1 1 auto !important;
+  display: block;
+}
+
+/* Add spacing between items */
+.iconlist li + li {
+  margin-top: 0.75rem;
+}
+
+/* Large & XL variations support */
+.iconlist.iconlist-large li i {
+  font-size: 1.25rem !important;
+}
+
+.iconlist.iconlist-xl li i {
+  font-size: 1.5rem !important;
 }
 
 .dotted-bg:before {
