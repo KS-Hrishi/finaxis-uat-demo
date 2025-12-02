@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
   <head>
-    <link rel="canonical" href="https://finaxis.co.in/gallery" />
-    <meta name="robots" content="gallery, follow" />
+    <link rel="canonical" href="https://finaxis.co.in/bridge-funding" />
+    <meta name="robots" content="bridge-funding, follow" />
     <meta
       name="description"
-      content="Finaxis provides personalized finance solutions — loans, working capital, wealth management and insurance. Book a consultation to streamline your financial goals."
+      content="Explore FinAxis Corporate Finance solutions designed for SMEs and enterprises. Get strategic funding, project
+       finance, term loans, bill discounting, equipment finance, and tailored advisory to accelerate your company’s growth. 
+       Secure, flexible, and fast approvals."
     />
     <meta
       name="keywords"
-      content="financial services, wealth management, loans, working capital, insurance, FLDG, NBFC, banking partners"
+      content=""
     />
     <meta name="theme-color" content="#264653" />
 
@@ -48,6 +50,7 @@
       content="https://finaxis.co.in/images/finaxis-og-image.jpg"
     />
     <meta name="twitter:site" content="@Finaxis" />
+    <meta charset="UTF-8" />
 
     <!-- Hreflang (adjust URLs if you add language variants) -->
     <link rel="alternate" href="https://finaxis.co.in/" hreflang="en-us" />
@@ -58,46 +61,31 @@
 
     <!-- JSON-LD structured data -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "name": "Finaxis",
-            "url": "https://finaxis.co.in/",
-            "logo": "https://finaxis.co.in/images/finaxis-logo.png",
-            "sameAs": [
-              "https://www.linkedin.com/company/finaxis1/posts/",
-              "https://www.instagram.com/finaxis_financial/"
-            ],
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+91 9326522790",
-                "contactType": "customer service",
-                "availableLanguage": "en"
-              }
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "url": "https://finaxis.co.in/",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://finaxis.co.in/search.html?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
-          }
-        ]
-      }
-    </script>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="x-ua-compatible" content="IE=edge" />
-    <meta name="author" content="SemiColonWeb" />
-    <meta
-      name="description"
-      content="Create Finance &amp; Stocks Learning Websites with Canvas Template. Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today."
-    />
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "serviceType": "Working Capital Loans",
+  "provider": {
+    "@type": "Organization",
+    "name": "FinAxis Wealth & Finance",
+    "url": "https://finaxis.co.in/",
+    "logo": "https://finaxis.co.in/images/logo.png"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "India"
+  },
+  "description": "FinAxis offers customized working capital finance solutions for SMEs and businesses in India, providing liquidity and growth through flexible NBFC-backed facilities.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://finaxis.co.in/working-capital"
+  },
+  "hasFAQPage": "https://finaxis.co.in/faqs"
+}
+</script>
+
 
     <!-- Font Imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -124,20 +112,156 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/sidebar-mobile.css" />
-    <link rel="stylesheet" href="css/Gallery.css" />
+    <link rel="stylesheet" href="css/cta.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
+
     <style>
       .asterisk:after {
         content: "*";
         color: red;
         margin-left: 2px;
       }
+
+      .iconlist li {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      .wc-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        padding: 40px 20px;
+        background: #264653;
+        border-radius: 12px;
+      }
+
+      .wc-container > div {
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        width: 300px;
+        min-height: 220px;
+        border: 1px solid #264653;
+        text-align: center;
+        flex: 0 0 25%;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        /* background: linear-gradient(to bottom right, #e9c46a, #fdfdfd);	   */
+        border-radius: 20px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        padding: 25px 20px;
+        transition: all 0.3s ease;
+      }
+
+      .wc-container h4 {
+        color: #264653;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      .wc-container p {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        .wc-container > div {
+          flex: 1 1 100%;
+          width: 100%;
+          max-width: 90%;
+        }
+      }
+
+      .wc-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        padding: 50px 20px;
+        background: #264653;
+        border-radius: 12px;
+      }
+
+      .wc-container > div {
+        background: linear-gradient(to bottom right, #fff7d6, #fcffec);
+        border-radius: 18px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+        padding: 30px 25px;
+        width: 280px;
+        text-align: center;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .wc-container > div:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(200, 200, 220, 0.55);
+      }
+
+      .wc-container i {
+        font-size: 40px;
+        color: #2a9d8f; /* FinAxis teal accent */
+        margin-bottom: 15px;
+        transition: color 0.3s ease;
+      }
+
+      .wc-container > div:hover i {
+        color: #1f776f;
+      }
+
+      .wc-container h4 {
+        color: #264653;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      .wc-container p {
+        color: #555;
+        font-size: 0.95rem;
+        line-height: 1.55;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        .wc-container {
+          gap: 20px;
+        }
+        .wc-container > div {
+          width: 100%;
+          max-width: 90%;
+        }
+      }
+
+      #wc-pill {
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #264653;
+        color: #e9c46a;
+        border: 1px solid goldenrod;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      #wc-pill:hover {
+        background-color: #ffffff;
+        color: #264653;
+        border: 2px solid #264653;
+      }
     </style>
 
     <!-- Document Title
 	============================================= -->
-    <title>Finaxis | Gallery</title>
+    <title>Corporate Finance Solutions for SMEs & Enterprises | Strategic Funding by FinAxis</title>
   </head>
 
   <body class="stretched" data-custom-cursor="true">
@@ -146,7 +270,7 @@
     <div id="wrapper">
       <!-- Header
 		============================================= -->
-      <header id="header" class="sticky-on-scrollup">
+      <header id="header" class="sticky-on-scrollup headershadow">
         <div id="header-wrap" class="fx-slashed-header">
           <div class="container">
             <div class="header-row justify-content-between">
@@ -161,26 +285,20 @@
                   <img
                     class="logo-default"
                     src="images/FinAxisImages/FinAxis Logo (1).png"
-                    alt="Finaxis Logo"
+                    alt="Canvas Logo"
                   />
                   <!-- <img class="logo-dark" srcset="images/logo-dark.png, images/logo-dark@2x.png 2x" src="images/logo-dark@2x.png" alt="Canvas Logo"> -->
                 </a>
               </div>
               <!-- #logo end -->
 
-              <!-- <div class="primary-menu-trigger order-1">
-							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
-								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
-							</button>
-						</div> -->
-
               <div class="order-1" id="mobile-menu">
                 <a onclick="showsidebar()"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
+                    height="30px"
                     viewBox="0 -960 960 960"
-                    width="24px"
+                    width="30px"
                     fill="#000000"
                   >
                     <path
@@ -192,12 +310,12 @@
               <div class="custom-nav-div">
                 <ul class="sidebar-custom">
                   <li onclick="hidesidebar()">
-                    <a href=""
+                    <a href="" class="px-3"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
-                        height="24px"
+                        height="34px"
                         viewBox="0 -960 960 960"
-                        width="24px"
+                        width="34px"
                         fill="#000000"
                       >
                         <path
@@ -218,8 +336,8 @@
                   </li>
                   <li>
                     <a href="working-capital.html"
-                      ><i class="fa-solid fa-briefcase px-3"></i>Working
-                      Capital</a
+                      ><i class="fa-solid fa-briefcase px-3"></i
+                      >Working Capital</a
                     >
                   </li>
                   <li>
@@ -230,8 +348,8 @@
                   </li>
                   <li>
                     <a href="wealth-management.html"
-                      ><i class="fa-solid fa-chart-line px-3"></i>Wealth
-                      Management</a
+                      ><i class="fa-solid fa-chart-line px-3"></i
+                      >Wealth Management</a
                     >
                   </li>
                   <li>
@@ -263,7 +381,7 @@
 						============================================= -->
               <nav
                 class="primary-menu me-lg-auto with-arrows order-12 order-lg-3"
-                style="margin-left: 180px"
+                style="margin-left: 200px"
               >
                 <ul class="menu-container">
                   <li class="menu-item current">
@@ -323,6 +441,7 @@
                       </div></a
                     >
                   </li>
+
                   <li class="menu-item">
                     <a class="menu-link" href="gallery.html"
                       ><div style="padding-bottom: 30px; padding-top: 30px">
@@ -363,7 +482,6 @@
                 </ul>
               </nav>
               <!-- #primary-menu end -->
-
               <div class="header-misc order-3">
                 <a
                   href="https://api.whatsapp.com/send?phone=919326522790&text=Hello,+I+am+interested+in+your+financial+services.+Please+call+me+back.&type=phone_number&app_absent=0"
@@ -389,94 +507,298 @@
         <!-- <div class="header-wrap-clone"></div> -->
       </header>
       <!-- #header end -->
-      <section class="py-10 text-center bg-[#f8fafc]"></section>
-      <!-- Gallery Section -->
-      <section class="photo-gallery py-5">
-        <div class="container">
-          <h1 class="text-3xl font-bold text-[#253b50] mb-4 color">
-            FinAxis Office & Team Gallery
-          </h1>
-          <p class="text-gray-600 max-w-2xl mx-auto">
-            Take a glimpse inside <strong>FinAxis Wealth & Finance</strong> -
-            where innovation meets integrity. Our office, culture, and workspace
-            reflect our commitment to building transparent and collaborative
-            financial partnerships across India.
-          </p>
 
-          <div class="gallery-grid mt-4">
-            <div class="gallery-item">
-              <img
-                src="images/FinAxisImages/kanakia1.jpg"
-                alt="Gallery Image"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="images/FinAxisImages/WhatsApp Image 2025-11-06 at 16.36.24_b3932a73.jpg"
-                alt="Gallery Image"
-              />
-            </div>
-            <div class="gallery-item tall">
-              <img src="images/FinAxisImages/teams2.jpg" alt="Gallery Image" />
-            </div>
-            <div class="gallery-item">
-              <img src="images/FinAxisImages/Diary.jpg" alt="Gallery Image" />
-            </div>
-            <div class="gallery-item wide">
-              <img
-                src="images/FinAxisImages/nishith-parikh-nsunJX3Q9lg-unsplash.jpg"
-                alt="Gallery Image"
-              />
-            </div>
-            <div class="gallery-item">
-              <img src="images/FinAxisImages/2.jpg" alt="Gallery Image" />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="images/FinAxisImages/finaxis_img2.jpg"
-                alt="Gallery Image"
-              />
-            </div>
-            <div class="gallery-item wide">
-              <img
-                src="images/FinAxisImages/WhatsApp Image 2025-11-06 at 16.36.24_b3932a73.jpg"
-                alt="Gallery Image"
-              />
-            </div>
-            <div class="gallery-item tall">
-              <img
-                src="images/FinAxisImages/finaxis_diwali2.jpg"
-                alt="Gallery Image"
-              />
-            </div>
-            <div class="gallery-item wide">
-              <img
-                src="images/FinAxisImages/Building2.jpeg"
-                alt="Gallery Image"
-              />
-            </div>
-            <div class="gallery-item">
-              <img
-                src="images/FinAxisImages/download.jpeg"
-                alt="Gallery Image"
-              />
-            </div>
-            <div class="gallery-item wide">
-              <img src="images/FinAxisImages/teams1.jpg" alt="Gallery Image" />
-            </div>
-            <div class="gallery-item wide">
-              <img
-                src="images/FinAxisImages/rishi_bharat.jpg"
-                alt="Gallery Image"
-              />
+      <div id="content" style="background-color: #eef2f4">
+        <div class="content-wrap">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <h1 class="display-2 color">Bridge Funding Solutions</h1>
+
+                <p class="lead color font-body">
+                  Fast, Flexible Capital to Power Your Business Through Critical Transitions
+                </p>
+
+                <p class="color">
+                  Every business faces moments where timing is everything—whether you’re awaiting investor funds, closing a long-term loan, or managing a strategic project. Bridge funding from FinAxis provides immediate liquidity so your operations stay uninterrupted and growth plans stay on track.
+                </p>
+
+                <p class="color">
+                  Our short-term financing solutions are designed to help companies bridge temporary gaps without compromising momentum, credibility, or opportunities.
+                </p>
+
+                <h2 class="color">Why Choose FinAxis for Bridge Funding?</h2>
+
+                <ul class="iconlist iconlist-color color">
+                  <li>
+                    <i class="bi-lightning-charge color-2"></i> Faster Approvals: Quick evaluation and disbursement to meet urgent requirements.
+                  </li>
+                  <li>
+                    <i class="bi-graph-up-arrow color-2"></i> Tailored Financing Structures: We customize loan amounts, tenure, and repayment schedules based on your cash flow.
+                  </li>
+                  <li>
+                    <i class="bi-lightbulb color-2"></i>Strong Financial Expertise: Experienced advisory team guiding you through every step.
+                  </li>
+                  <li>
+                    <i class="bi-people color-2"></i>Trusted by Businesses Across Sectors: From SMEs to large enterprises, we support growth across industries.
+                  </li>
+                </ul>
+
+                <h2 class="color">Who Can Benefit from Bridge Funding?</h2>
+
+                <h5 class="color">
+                  Bridge funding is ideal for:
+                </h5>
+                <ul class="iconlist iconlist-color color">
+                  <li><i class="bi-check-circle color-2"></i>SMEs looking to maintain cash flow</li>
+                 
+                  <li><i class="bi-check-circle color-2"></i>Businesses expanding or upgrading operations</li>
+                  <li><i class="bi-check-circle color-2"></i>Firms with delayed invoices or receivables</li>
+                  <li><i class="bi-check-circle color-2"></i>Organizations executing time-sensitive projects</li>
+                  <li><i class="bi-check-circle color-2"></i>Enterprises preparing for mergers or acquisitions</li>
+                </ul>
+
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
+<div class="divider divider-sm divider-rounded divider-center">
+        <i class="bi-pencil"></i>
+      </div>
+
+      <section id="content">
+        <div class="content-wrap" style="background-color: #eef2f4;">
+          <div class="container">
+           <h2 class="color text-center pb-4" style="font-weight: bolder">
+            Our Bridge Funding Services Include
+          </h2>
+
+            <div class="row col-mb-50 mb-0 gx-5">
+              <div class="col-sm-6 col-lg-4">
+                <div class="feature-box fbox-center fbox-light fbox-effect">
+                  <div class="fbox-icon">
+                    <a href="#"><i class="bi-cash-stack"></i></a>
+                  </div>
+                  <div class="fbox-content">
+                    <h3 class="color">Working Capital Bridge Loans</h3>
+                    <p>
+                      For managing payroll, inventory, vendor payments, and ongoing operations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="feature-box fbox-center fbox-light fbox-effect">
+                  <div class="fbox-icon">
+                    <a href="#"><i class="bi-kanban"></i></a>
+                  </div>
+                  <div class="fbox-content">
+                    <h3 class="color">Project-Based Bridge Funding</h3>
+                    <p>
+                      To execute crucial projects while long-term budgets are being finalized.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="feature-box fbox-center fbox-light fbox-effect">
+                  <div class="fbox-icon">
+                    <a href="#"><i class="bi-arrow-left-right"></i></a>
+                  </div>
+                  <div class="fbox-content">
+                    <h3 class="color">Revenue Gap Financing</h3>
+                    <p>
+                      For businesses impacted by seasonal demand or delayed receivables.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="feature-box fbox-center fbox-light fbox-effect">
+                  <div class="fbox-icon">
+                    <a href="#"><i class="bi-journal-check"></i></a>
+                  </div>
+                  <div class="fbox-content">
+                    <h3 class="color">Pre-Approval & Pre-Disbursement Loans</h3>
+                    <p>
+                      Cover expenses before formal loan disbursement or investment arrival.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="feature-box fbox-center fbox-light fbox-effect">
+                  <div class="fbox-icon">
+                    <a href="#"><i class="bi-building-up"></i></a>
+                  </div>
+                  <div class="fbox-content">
+                    <h3 class="color">Expansion & Acquisition Bridge Loans</h3>
+                    <p>
+                      Support for strategic expansion, asset purchase, or acquisition initiatives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              
+
+          </div>
+
       </section>
 
+      
+      <div style="text-align: center; margin-bottom: 40px; margin-top:40px">
+        <a
+          href="javascript:void(0);"
+          class="btn btn-light btn-lg rounded-pill"
+          id="wc-pill"
+          >Our Bridge Funding Process</a
+        >
+      </div>
+
+      <div class="wc-container">
+        <div>
+          <i class="bi-chat-dots color"></i>
+          <h4>Requirement Consultation</h4>
+          <p>
+            We understand your immediate needs, timelines, and planned funding inflow.
+          </p>
+        </div>
+        <div>
+          <i class="bi-cash-coin color"></i>
+          <h4>Financial Assessment</h4>
+          <p>
+            We evaluate business documents, projections, and cash flow status.
+          </p>
+        </div>
+        <div>
+          <i class="bi-pencil-square color"></i>
+          <h4>Tailored Offer Design</h4>
+          <p>We propose the most suitable short-term financing structure.</p>
+        </div>
+        <div>
+          <i class="bi-lightning-charge color"></i>
+          <h4>Quick Approval & Disbursement</h4>
+          <p>
+            Minimal documentation and rapid processing ensure faster access to capital.
+          </p>
+        </div>
+        <div>
+          <i class="bi-diagram-3 color"></i>
+          <h4>Smooth Transition to Long-Term Funding</h4>
+          <p>We help align your repayment with expected funding, ensuring zero disruption.</p>
+        </div>
+        <!-- <div>
+          <i class="bi bi-cash-stack color"></i>
+          <h4>Disbursement</h4>
+          <p>
+            Funds are processed securely so you can execute your business plans without delay.
+          </p>
+        </div> -->
+      </div>
+
+      <div class="divider divider-sm divider-rounded divider-center">
+        <i class="bi-pencil"></i>
+      </div>
+
+      <section class="finaxis-cta">
+        <h2 class="color">Need Bridge Funding for Your Business?</h2>
+        <p>
+          Get strategic funding solutions designed to strengthen your financial structure and drive business expansion. 
+          Talk to our corporate finance experts to find the best option for your enterprise.
+        </p>
+        <a
+          href="#"
+          class="finaxis-btn"
+          style="margin-bottom: 30px;"
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/operationsfinaxis/30min?text_color=253b50&primary_color=0a9646'});return false;"
+          >Talk to expert now</a
+        >
+
+        <br>
+        <span class="color"><u>Or</u></span>
+        
+          
+        <div class="cta-form-wrapper">
+    <h3 class="color">Send Enquiry</h3>
+    
+
+    <form id="template-contactform"
+                        name="template-contactform"
+                        action="https://api.web3forms.com/submit"
+                        method="post" class="cta-form">
+
+                        <div class="form-process">
+                          <div class="css3-spinner">
+                            <div class="css3-spinner-scaler"></div>
+                          </div>
+                        </div>
+
+                        <input
+                          type="hidden"
+                          name="access_key"
+                          value="d28881e3-446e-4685-9c23-620cb74249a5"
+                        />
+        <div class="form-group">
+            <input type="text" id="Name" name="Name" placeholder="Full Name" required>
+        </div>
+
+        <div class="form-group">
+            <input type="email" id="Email"  name="Email" placeholder="Email Address" required>
+        </div>
+
+        <div class="form-group">
+            <input type="tel"id="Mobile No" name="Mobile No" placeholder="Phone Number" required>
+        </div>
+
+        <div class="form-group">
+            <select id="finance_type" required name="finance_type">
+                <option value="">Select Bridge Funding Service</option>
+                <option value="">Term Finance</option>
+                <option value="">Project Finance</option>
+                <option value="">Equipment / Machinery Finance</option>
+                <option value="">Bill Discounting</option>
+                <option value="">Corporate Overdraft Facility</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <textarea rows="3" placeholder="Message" id="Message" required name="Message"></textarea>
+        </div>
+
+        <button type="submit" class="cta-submit-btn">Get a call back</button>
+    </form>
+</div>
+      </section>
+
+      
+      
+      <div class="section mb-0 pb-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2 class="mb-4 color" data-animate="fadeInUp">
+                Still Have Questions?
+              </h2>
+              <a href="faqs.html" class="btn btn-light btn-lg rounded-pill" style="border: 1px solid #264653;"
+                >Visit Our FAQs</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
       <!-- Footer
-             ============================================= -->
-      <footer id="footer" class="site-footer page-title-pattern">
+         ============================================= -->
+      <footer id="footer" class="site-footer">
         <div class="footer-top">
           <div class="container">
             <div class="row align-items-left justify-content-between col-mb-30">
@@ -499,11 +821,7 @@
                       Tailored financial solutions for individuals & businesses.
                       Trusted partners with banks & NBFCs.
                     </p>
-                    <div
-                      class="mt-3 widget"
-                      data-animate="bouncing"
-                      data-delay="200"
-                    >
+                    <div class="mt-3 widget">
                       <!-- <a href="#" class="social-icon si-small bg-light h-bg-facebook">
 									<i class="fa-brands fa-facebook-f"></i>
 									<i class="fa-brands fa-facebook-f"></i>
@@ -626,10 +944,10 @@
 
     <!-- JavaScripts
 	============================================= -->
-    <script src="js/jquery.js"></script>
     <script src="js/plugins.min.js"></script>
-    <script src="js/functions.js"></script>
     <script src="js/functions.bundle.js"></script>
+    <script src="js/sidebar-mobile.js"></script>
+
     <script
       type="text/javascript"
       src="https://assets.calendly.com/assets/external/widget.js"
@@ -662,37 +980,6 @@
           }
         );
       });
-
-      document
-        .getElementById("servicesBtn")
-        .addEventListener("click", function () {
-          document.getElementById("services").scrollIntoView({
-            behavior: "smooth", // smooth scroll animation
-            block: "start", // align to top of the element
-          });
-        });
-
-      function showsidebar() {
-        const sidebar = document.querySelector(".sidebar-custom");
-        sidebar.style.display = "flex";
-
-        const sidebarv = document.querySelector(".custom-nav-div ul");
-        sidebarv.style.display = "flex";
-
-        const sidebaru = document.querySelector(".custom-nav-div");
-        sidebaru.style.display = "flex";
-      }
-
-      function hidesidebar() {
-        const sidebar = document.querySelector(".sidebar-custom");
-        sidebar.style.display = "none";
-
-        const sidebarv = document.querySelector(".custom-nav-div ul");
-        sidebarv.style.display = "none";
-
-        const sidebaru = document.querySelector(".custom-nav-div");
-        sidebaru.style.display = "none";
-      }
     </script>
   </body>
 </html>

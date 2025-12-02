@@ -101,6 +101,10 @@ body {
   border: none;
 }
 
+.mbsrc {
+  margin-left: 0px;
+}
+
 @keyframes move {
   from {
     transform: translateX(0);
@@ -669,6 +673,11 @@ body {
   }
   #footer-margin {
     margin-left: 0px !important;
+  }
+
+  .mbsrc {
+    margin-left: 16px;
+    padding-bottom: 0px !important;
   }
 }
 
