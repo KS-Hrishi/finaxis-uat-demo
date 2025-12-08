@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
   <head>
-    <link rel="canonical" href="https://finaxis.co.in/gallery" />
-    <meta name="robots" content="gallery, follow" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://finaxis.co.in/gallery/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Primary Meta Description -->
     <meta
       name="description"
-      content="Finaxis provides personalized finance solutions — loans, working capital, wealth management and insurance. Book a consultation to streamline your financial goals."
+      content="Explore the FinAxis Gallery featuring our events, corporate activities, client interactions, and financial consultation moments across India. Get an inside look at our work culture and services."
     />
+
+    <!-- Optional Keywords -->
     <meta
       name="keywords"
-      content="financial services, wealth management, loans, working capital, insurance, FLDG, NBFC, banking partners"
+      content="FinAxis gallery, corporate events FinAxis, financial advisory photos, business finance events India, fintech gallery"
     />
+
     <meta name="theme-color" content="#264653" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta
       property="og:title"
-      content="Finaxis — Financial Solutions & Wealth Management"
+      content="FinAxis Gallery | Corporate Activities & Events"
     />
     <meta
       property="og:description"
-      content="Tailored finance services for individuals and businesses: loans, wealth management, insurance and funding solutions. Schedule a consultation today."
+      content="View photos from FinAxis activities, events, client interactions, and financial advisory sessions across India."
     />
-    <meta property="og:url" content="https://finaxis.co.in/" />
-    <meta property="og:site_name" content="Finaxis" />
+    <meta property="og:url" content="https://finaxis.co.in/gallery/" />
+    <meta property="og:site_name" content="FinAxis" />
     <meta
       property="og:image"
       content="https://finaxis.co.in/images/finaxis-og-image.jpg"
@@ -37,11 +48,11 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Finaxis — Financial Solutions & Wealth Management"
+      content="FinAxis Gallery | Corporate Activities & Events"
     />
     <meta
       name="twitter:description"
-      content="Tailored finance services for individuals and businesses. Book a consultation to get started."
+      content="Browse the FinAxis photo gallery showcasing events, advisory sessions, and corporate activities."
     />
     <meta
       name="twitter:image"
@@ -49,57 +60,36 @@
     />
     <meta name="twitter:site" content="@Finaxis" />
 
-    <!-- Hreflang (adjust URLs if you add language variants) -->
-    <link rel="alternate" href="https://finaxis.co.in/" hreflang="en-us" />
+    <!-- Remove incorrect hreflang -->
+    <!-- Add only when multi-language pages exist -->
 
-    <!-- Favicon / App icons -->
+    <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-    <!-- JSON-LD structured data -->
+    <!-- JSON-LD (Simplified & Corrected) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "name": "Finaxis",
-            "url": "https://finaxis.co.in/",
-            "logo": "https://finaxis.co.in/images/finaxis-logo.png",
-            "sameAs": [
-              "https://www.linkedin.com/company/finaxis1/posts/",
-              "https://www.instagram.com/finaxis_financial/"
-            ],
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+91 9326522790",
-                "contactType": "customer service",
-                "availableLanguage": "en"
-              }
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "url": "https://finaxis.co.in/",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://finaxis.co.in/search.html?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
-          }
-        ]
+        "@type": "ImageGallery",
+        "@id": "https://finaxis.co.in/gallery/#gallery",
+        "name": "FinAxis Gallery",
+        "url": "https://finaxis.co.in/gallery/",
+        "description": "A gallery showcasing FinAxis events, client engagements, company culture, and financial advisory sessions across India.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "FinAxis Wealth & Finance",
+          "url": "https://finaxis.co.in/",
+          "logo": "https://finaxis.co.in/images/FinAxisImages/FinAxis Logo (1).png"
+        }
       }
     </script>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="x-ua-compatible" content="IE=edge" />
-    <meta name="author" content="SemiColonWeb" />
-    <meta
-      name="description"
-      content="Create Finance &amp; Stocks Learning Websites with Canvas Template. Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today."
-    />
 
-    <!-- Font Imports -->
+    <!-- Remove template garbage tags -->
+    <!-- <meta name="author" content="SemiColonWeb"> -->
+    <!-- <meta name="description" content="Create Finance & Stocks Learning Websites..."> -->
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -107,37 +97,21 @@
       rel="stylesheet"
     />
 
-    <!-- Core Style -->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Font Icons -->
-    <link rel="stylesheet" href="css/font-icons.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-
-    <!-- Plugins/Components CSS -->
-    <link rel="stylesheet" href="css/swiper.css" />
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/font-icons.css" />
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/swiper.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link rel="stylesheet" href="/css/sidebar-mobile.css" />
+    <link rel="stylesheet" href="/css/Gallery.css" />
 
     <link
       href="https://assets.calendly.com/assets/external/widget.css"
       rel="stylesheet"
     />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/sidebar-mobile.css" />
-    <link rel="stylesheet" href="css/Gallery.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <style>
-      .asterisk:after {
-        content: "*";
-        color: red;
-        margin-left: 2px;
-      }
-    </style>
 
-    <!-- Document Title
-	============================================= -->
-    <title>Finaxis | Gallery</title>
+    <title>FinAxis | Gallery – Events & Corporate Moments</title>
   </head>
 
   <body class="stretched" data-custom-cursor="true">
