@@ -40,6 +40,11 @@
   transition: background-color 0.2s ease;
 }
 
+.fx-header i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
 /* Plus/Minus icon #253b50*/
 .fx-header::after {
   content: "+";
@@ -52,12 +57,12 @@
 /* Active header */
 .fx-header.active {
   background: #253b50;
-  color: #e9c46a;
+  color: #d1bf75;
 }
 
 .fx-header.active::after {
   content: "-";
-  color: #e9c46a;
+  color: #d1bf75;
 }
 
 /* Accordion content */
@@ -80,8 +85,8 @@
 }
 
 .fx-about-section {
-  padding: 80px 0;
-  background: #ffffff;
+  padding: 80px 0px;
+  background: #eef2f4;
 }
 
 .fx-about-inner {
@@ -100,8 +105,9 @@
 
 .fx-section-title {
   font-family: "DM Serif Text", serif;
-  font-size: 36px;
-  color: #fff;
+  font-size: 42px;
+  font-weight: 100;
+  color: #d1bf75;
   margin-bottom: 20px;
 }
 
@@ -109,7 +115,7 @@
   font-family: "Manrope", sans-serif;
   font-size: 18px;
   line-height: 1.65;
-  color: #444;
+  color: #253b50;
   margin-bottom: 20px;
 }
 
@@ -124,6 +130,8 @@
   border-radius: 14px;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
 }
+
+/* why choose action section */
 
 .fx-why-section {
   padding: 80px 0;
@@ -154,6 +162,7 @@
 
 .fx-why-item {
   background: #ffffff;
+  background: linear-gradient(to bottom right, #fff7d6, #fcffec);
   padding: 30px;
   text-align: center;
   border-radius: 14px;

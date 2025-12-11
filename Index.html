@@ -116,11 +116,58 @@
     <link rel="stylesheet" href="/css/swiper.css" />
     <link rel="stylesheet" href="/css/custom.css" />
     <link rel="stylesheet" href="/css/sidebar-mobile.css" />
-
+     <link rel="stylesheet" href="/css/service-accordion.css" />
+     <link rel="stylesheet" href="/css/wc-container.css" />
     <link
       href="https://assets.calendly.com/assets/external/widget.css"
       rel="stylesheet"
     />
+    
+    <style>
+      .flex__container{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+      }
+
+      .flex__container p{
+        margin-bottom: 0;
+        font-weight: 800;
+        word-spacing: 2px;
+        text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+        font-size: large;
+      }
+
+      .flex__container span{
+        margin-bottom: 0;
+        font-weight: 100;
+        font-style: italic;
+        word-spacing: 2px;
+        font-weight: 800;
+        font-size: large;
+        text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .flex__item{
+        margin-top: 5px;
+      }
+
+      .flex__img{
+        height: 95px; 
+         filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.3));
+
+      }
+
+      .quote-shadow{
+        text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .blockquote-footer{
+        text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+      }
+
+    </style>
 
     <title>
       FinAxis | Trusted Financial & Loan Services in India | Business Loans,
@@ -776,12 +823,8 @@
 							<span>20,321 Ratings</span>
 						</div> -->
             <div class="col-md-6 fadeInUp animated mbsrc">
-              <h5 class="font-body ls-2 color-2">
-                <!-- <span
-                  class="color-2"
-                  style="font-weight: 1500; font-size: 36px; font-family: serif"
-                  >FinAxis<sup style="font-weight: 1500">®</sup></span
-                > -->
+              <!-- <h5 class="font-body ls-2 color-2">
+                
                 <img
                   class="logo-default"
                   src="images/FinAxisImages/FinAxis Logo (1).png"
@@ -800,12 +843,26 @@
                 >
                   - Test Today, Trust Forever..
                 </p>
-              </h5>
+              </h5> -->
+
+              <div class="flex__container">
+                <div class="flex__item">
+                  <p class="color-2">It's more than a Name</p>
+                  <span class="color">It's a PROMISE...</span>
+                </div>
+                 <div>
+                   <img
+                  class="flex__img"
+                  src="images/FinAxisImages/FinAxis Logo (1).png"
+                  alt="Finaxis Logo"
+                  />
+                 </div>
+              </div>
               <!-- <h3 class="mb-0 fw-normal color"><span class="color-2">"FinAxis®</span> Your, Trusted Financial Partner</h3> -->
             </div>
             <div class="col-md-6 mt-4 mt-md-0">
               <blockquote class="py-0 mb-0 color">
-                <p>
+                <p class="quote-shadow">
                   “Diligence is the mother of good luck. Fortune favors those
                   who prepare, persist, and act with purpose — not those who
                   wait for opportunity to knock.”
@@ -825,7 +882,7 @@
         <div class="content-wrap" style="padding: 0">
           <div
             class="section dark bg-color"
-            style="padding: 100px 0; margin-top: 25px"
+            style="padding: 100px 0; margin-top: 25px; margin-bottom: 0px;"
           >
             <div class="container">
               <div class="heading-block mw-xs mx-auto text-center mb-6">
@@ -889,6 +946,7 @@
                         <h4
                           class="font-body fw-semibold h4 mb-4 mt-2 ls-0 text-transform-none"
                         >
+                        
                           Working Capital Solutions
                         </h4>
                         <p>
@@ -1075,9 +1133,153 @@
             </div>
           </div>
 
-          <div class="divider divider-sm divider-rounded divider-center">
+          <!-- <div class="divider divider-sm divider-rounded divider-center">
             <i class="bi-pencil"></i>
-          </div>
+          </div> -->
+
+          <section class="fx-about-section">
+  <div class="fx-about-inner">
+    <div class="fx-about-text">
+      <h2 class="color">About FinAxis</h2>
+
+      <p>
+        <span class="color-2">FinAxis®</span> is India’s trusted financial partner, delivering fast, 
+        transparent, and tailored solutions for MSMEs, enterprises, and 
+        individuals. We specialize in business loans, working capital, 
+        corporate funding, retail loans, wealth management, insurance, 
+        and FLDG structuring — helping clients achieve sustainable 
+        financial growth.
+      </p>
+
+      <p>
+        Powered by strong NBFC & banking partnerships and an 
+        advisory-first approach, <span class="color-2">FinAxis®</span> ensures smooth approvals, 
+        competitive terms, and end-to-end guidance. We focus on 
+        providing practical, reliable, and growth-oriented finance 
+        solutions across India.
+      </p>
+    </div>
+
+    <div class="fx-about-image">
+      <img src="images/FinAxisImages/finaxis_about.png" 
+           alt="About FinAxis" />
+    </div>
+  </div>
+</section>
+
+<section class="fx-why-section">
+  <div class="fx-why-inner">
+
+    <h2 class="fx-section-title center">Why Choose FinAxis®</h2>
+
+    <p class="fx-why-subtext">
+      We combine financial expertise, transparent processes, and 
+      strong institutional partnerships to deliver reliable and 
+      growth-oriented funding solutions.
+    </p>
+
+    <div class="fx-why-grid">
+
+      <div class="fx-why-item">
+        <i class="fa-solid fa-bolt"></i>
+        <h3>Fast Processing</h3>
+        <p>Quick turnaround time with simplified documentation and industry-leading approval speed.</p>
+      </div>
+
+      <div class="fx-why-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Trusted & Transparent</h3>
+        <p>100% clarity, and an advisory-first approach.</p>
+      </div>
+
+      <div class="fx-why-item">
+        <i class="fa-solid fa-handshake"></i>
+        <h3>Strong Partnerships</h3>
+        <p>Wide network of NBFCs, banks, private lenders, and fintech partners.</p>
+      </div>
+
+      <div class="fx-why-item">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Growth-Focused</h3>
+        <p>Solutions designed to scale businesses responsibly and sustainably.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="fx-accordion-container">
+            
+  <h2 class="fx-accordion-title">Detailed Services Information</h2>
+
+  <div class="fx-accordion">
+
+    <!-- Working Capital -->
+    <div class="fx-item">
+      <button class="fx-header active"><i class="fa-solid fa-briefcase"></i>Working Capital Finance</button>
+      <div class="fx-content open" style="max-height : 223px">
+        Adequate working capital is essential for keeping your business running smoothly, and <span class="color-2">FinAxis®</span> helps you bridge temporary cash flow gaps with flexible and fast financing. Our working capital solutions are designed for MSMEs, traders, manufacturers and service providers who require timely liquidity for inventory, payroll, supplier payments or operational expenses.
+        <br><br>
+       We assess your business needs and customize solutions such as OD/CC limits, invoice financing, short-term capital loans and cash-flow-based lending. With minimal documentation, faster approvals and partnerships across top banks and NBFCs, <span class="color-2">FinAxis®</span> ensures you never miss out on growth due to cash constraints. Maintain stability, increase operational efficiency and take advantage of new opportunities with <span class="color-2">FinAxis®</span> Working Capital Finance.
+      </div>
+    </div>
+
+    <!-- Corporate Finance -->
+    <div class="fx-item">
+      <button class="fx-header"><i class="fa-solid fa-building-columns"></i>Corporate Finance</button>
+      <div class="fx-content">
+        <span class="color-2">FinAxis®</span> provides strategic corporate finance solutions that help mid-sized and large enterprises optimize capital structure and fund expansion. Our expertise includes term loans, project financing, structured debt, private credit, financial restructuring and tailored funding mechanisms that support both short-term and long-term business goals.
+        <br><br>
+        We partner closely with promoters and CFOs to evaluate business performance, project viability and future cash flows to recommend the most efficient financing models. Whether you're planning a new project, diversifying operations, acquiring assets or consolidating debt, FinAxis ensures smooth execution through our strong network of financial institutions. Achieve sustainable growth with reliable, well-structured corporate finance solutions.
+      </div>
+    </div>
+
+    <!-- Bridge Funding -->
+    <div class="fx-item">
+      <button class="fx-header"><i class="fa-solid fa-link"></i>Bridge Funding</button>
+      <div class="fx-content">
+        Bridge funding helps businesses meet urgent capital needs when long-term financing is still in progress. FinAxis provides fast, short-term bridge loans designed to support project execution, working capital requirements, asset purchase, vendor payments or temporary cash deficits.
+        <br></br>
+      Our bridge funding is ideal for businesses waiting for loan disbursements, investor rounds, subsidies or receivables. With flexible tenure, minimal paperwork and rapid processing, we ensure you always stay cash-ready.
+     <span class="color-2">FinAxis®</span> works with leading NBFCs and private credit partners to secure strong approval rates and competitive terms, helping you maintain continuity during critical transitions.
+      </div>
+    </div>
+
+    <!-- Retail Loans -->
+    <div class="fx-item">
+      <button class="fx-header"><i class="fa-solid fa-hand-holding-dollar"></i>Retail Loans</button>
+      <div class="fx-content">
+        <span class="color-2">FinAxis®</span> offers a wide range of retail loan solutions designed for individuals seeking financial support for personal, professional or lifestyle needs. Our offerings include personal loans, home loans, loan against property, car loans, and medical or education financing.
+        <br><br>
+        We evaluate your profile and match you with the most suitable loan options available across our partner banks and NBFCs. With quick approval, minimal documentation and personalized advisory, <span class="color-2">FinAxis®</span> ensures a smooth borrowing experience. Whether you're buying a new home, funding education, consolidating debt or handling an emergency, we help you secure the right finance at the right time.
+      </div>
+    </div>
+
+    <!-- Wealth Management -->
+    <div class="fx-item">
+      <button class="fx-header"><i class="fa-solid fa-chart-line"></i>Wealth Management</button>
+      <div class="fx-content">
+        <span class="color-2">FinAxis®</span> provides comprehensive wealth management solutions designed to protect, grow and optimize your financial portfolio. Our financial experts tailor strategies based on risk profile, life goals and long-term expectations. From mutual funds and retirement planning to asset allocation, tax-efficient investments and financial advisory, we help you build a stable foundation for lifelong financial security.
+<br><br>
+        With detailed planning, disciplined execution and continuous monitoring, <span class="color-2">FinAxis®</span> ensures your wealth works effectively for you. Whether you're planning for retirement, children’s education, or long-term wealth creation, our customized strategies guide you toward financial freedom.
+      </div>
+    </div>
+
+    <!-- FLDG -->
+    <div class="fx-item">
+      <button class="fx-header"><i class="fa-solid fa-shield-halved"></i>FLDG (First Loss Default Guarantee)</button>
+      <div class="fx-content">
+        <span class="color-2">FinAxis®</span> partners with NBFCs and fintech companies to provide FLDG arrangements that help credit providers expand their lending operations securely. Under FLDG, FinAxis absorbs a pre-agreed portion of the credit loss, allowing lenders to scale faster while maintaining strong risk control.
+        <br><br>
+Our expertise includes portfolio structuring, risk assessment, underwriting support and compliance-ready documentation. Whether you're a lending institution or a fintech startup entering the credit space, our FLDG partnership helps you strengthen capital flow, reduce operational risk and unlock new lending opportunities.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
           <div class="section" id="desktoplogoticker">
             <h3 class="text-center color">Our Banking & NBFC Partners</h3>
@@ -1835,6 +2037,7 @@
     <script src="js/plugins.min.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/functions.bundle.js"></script>
+    <script src="js/service-acordian.js"></script>
     <script
       type="text/javascript"
       src="https://assets.calendly.com/assets/external/widget.js"

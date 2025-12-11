@@ -1103,3 +1103,19 @@ body {
 #footer-margin {
   margin-left: 65px !important;
 }
+
+.fbox-icon a,
+.fbox-icon i,
+.fbox-icon img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #e9c46a;
+}
+
+.fbox-effect .fbox-icon i:hover,
+.fbox-effect:hover .fbox-icon i {
+  background-color: var(--cnvs-featured-box-bg-dark);
+  color: #e9c46a;
+}
