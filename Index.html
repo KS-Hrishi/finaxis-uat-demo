@@ -155,8 +155,7 @@
 
       .flex__img{
         height: 95px; 
-         filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.3));
-
+        filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.3));
       }
 
       .quote-shadow{
@@ -165,6 +164,18 @@
 
       .blockquote-footer{
         text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      @media (max-width: 768px) {
+          .flex__container{
+            gap:30px;
+            margin-bottom:24px;
+          }
+
+          .flex__img{
+        height: 85px; 
+        
+      }
       }
 
     </style>
@@ -635,12 +646,12 @@
               data-from="50"
               data-to="2500"
               data-refresh-interval="50"
-              data-speed="2000"
+              data-speed="5000"
               class="color"
               >0</span
             >+
           </div>
-          <h5 style="font-size: 14px; color: #999; margin-top: 3px">
+          <h5 style="font-size: 14px; color: #5b5b5b; margin-top: 3px">
             Clients Served Across India
           </h5>
         </div>
@@ -668,12 +679,12 @@
               data-from="1"
               data-to="6"
               data-refresh-interval="50"
-              data-speed="2000"
+              data-speed="5000"
               class="color"
               >0</span
             >+
           </div>
-          <h5 style="font-size: 14px; color: #999; margin-top: 3px">
+          <h5 style="font-size: 14px; color: #5b5b5b; margin-top: 3px">
             Years of Experience in Financial Services
           </h5>
         </div>
@@ -701,12 +712,12 @@
               data-from="5"
               data-to="50"
               data-refresh-interval="50"
-              data-speed="2000"
+              data-speed="5000"
               class="color"
               >0</span
             >+
           </div>
-          <h5 style="font-size: 14px; color: #999; margin-top: 3px">
+          <h5 style="font-size: 14px; color: #5b5b5b; margin-top: 3px">
             Financial solutions offered
           </h5>
         </div>
@@ -734,12 +745,12 @@
               data-from="5"
               data-to="3750"
               data-refresh-interval="50"
-              data-speed="2000"
+              data-speed="5000"
               class="color"
               >0</span
             >cr+
           </div>
-          <h5 style="font-size: 14px; color: #999; margin-top: 3px">
+          <h5 style="font-size: 14px; color: #5b5b5b; margin-top: 3px">
             Total Disbursement
           </h5>
         </div>
@@ -1218,7 +1229,7 @@
     <!-- Working Capital -->
     <div class="fx-item">
       <button class="fx-header active"><i class="fa-solid fa-briefcase"></i>Working Capital Finance</button>
-      <div class="fx-content open" style="max-height : 223px">
+      <div class="fx-content open">
         Adequate working capital is essential for keeping your business running smoothly, and <span class="color-2">FinAxis®</span> helps you bridge temporary cash flow gaps with flexible and fast financing. Our working capital solutions are designed for MSMEs, traders, manufacturers and service providers who require timely liquidity for inventory, payroll, supplier payments or operational expenses.
         <br><br>
        We assess your business needs and customize solutions such as OD/CC limits, invoice financing, short-term capital loans and cash-flow-based lending. With minimal documentation, faster approvals and partnerships across top banks and NBFCs, <span class="color-2">FinAxis®</span> ensures you never miss out on growth due to cash constraints. Maintain stability, increase operational efficiency and take advantage of new opportunities with <span class="color-2">FinAxis®</span> Working Capital Finance.
@@ -1231,7 +1242,7 @@
       <div class="fx-content">
         <span class="color-2">FinAxis®</span> provides strategic corporate finance solutions that help mid-sized and large enterprises optimize capital structure and fund expansion. Our expertise includes term loans, project financing, structured debt, private credit, financial restructuring and tailored funding mechanisms that support both short-term and long-term business goals.
         <br><br>
-        We partner closely with promoters and CFOs to evaluate business performance, project viability and future cash flows to recommend the most efficient financing models. Whether you're planning a new project, diversifying operations, acquiring assets or consolidating debt, FinAxis ensures smooth execution through our strong network of financial institutions. Achieve sustainable growth with reliable, well-structured corporate finance solutions.
+        We partner closely with promoters and CFOs to evaluate business performance, project viability and future cash flows to recommend the most efficient financing models. Whether you're planning a new project, diversifying operations, acquiring assets or consolidating debt, <span class="color-2">FinAxis®</span> ensures smooth execution through our strong network of financial institutions. Achieve sustainable growth with reliable, well-structured corporate finance solutions.
       </div>
     </div>
 
@@ -1239,7 +1250,7 @@
     <div class="fx-item">
       <button class="fx-header"><i class="fa-solid fa-link"></i>Bridge Funding</button>
       <div class="fx-content">
-        Bridge funding helps businesses meet urgent capital needs when long-term financing is still in progress. FinAxis provides fast, short-term bridge loans designed to support project execution, working capital requirements, asset purchase, vendor payments or temporary cash deficits.
+        Bridge funding helps businesses meet urgent capital needs when long-term financing is still in progress. <span class="color-2">FinAxis®</span> provides fast, short-term bridge loans designed to support project execution, working capital requirements, asset purchase, vendor payments or temporary cash deficits.
         <br></br>
       Our bridge funding is ideal for businesses waiting for loan disbursements, investor rounds, subsidies or receivables. With flexible tenure, minimal paperwork and rapid processing, we ensure you always stay cash-ready.
      <span class="color-2">FinAxis®</span> works with leading NBFCs and private credit partners to secure strong approval rates and competitive terms, helping you maintain continuity during critical transitions.
@@ -1261,7 +1272,7 @@
       <button class="fx-header"><i class="fa-solid fa-chart-line"></i>Wealth Management</button>
       <div class="fx-content">
         <span class="color-2">FinAxis®</span> provides comprehensive wealth management solutions designed to protect, grow and optimize your financial portfolio. Our financial experts tailor strategies based on risk profile, life goals and long-term expectations. From mutual funds and retirement planning to asset allocation, tax-efficient investments and financial advisory, we help you build a stable foundation for lifelong financial security.
-<br><br>
+         <br><br>
         With detailed planning, disciplined execution and continuous monitoring, <span class="color-2">FinAxis®</span> ensures your wealth works effectively for you. Whether you're planning for retirement, children’s education, or long-term wealth creation, our customized strategies guide you toward financial freedom.
       </div>
     </div>
@@ -1279,7 +1290,8 @@ Our expertise includes portfolio structuring, risk assessment, underwriting supp
   </div>
 </section>
 
-
+  
+            
 
           <div class="section" id="desktoplogoticker">
             <h3 class="text-center color">Our Banking & NBFC Partners</h3>

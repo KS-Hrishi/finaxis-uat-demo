@@ -198,3 +198,18 @@
 .center {
   text-align: center;
 }
+
+/* our teams section */
+
+.our_teamsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.color_royalgold {
+  color: #d1bf75;
+}
