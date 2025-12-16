@@ -1119,3 +1119,17 @@ body {
   background-color: var(--cnvs-featured-box-bg-dark);
   color: #e9c46a;
 }
+
+.icon-color-1,
+.feature-iconcolor-1 {
+  color: rgb(80 102 123);
+}
+
+.icon-color-2,
+.feature-iconcolor-2 {
+  color: rgb(195 158 47);
+}
+
+article {
+  margin-bottom: 20px;
+}
