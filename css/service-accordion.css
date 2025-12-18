@@ -213,3 +213,55 @@
 .color_royalgold {
   color: #d1bf75;
 }
+
+.flex__container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.flex__container p {
+  margin-bottom: 0;
+  font-weight: 800;
+  word-spacing: 2px;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+  font-size: large;
+}
+
+.flex__container span {
+  margin-bottom: 0;
+  font-weight: 100;
+  font-style: italic;
+  word-spacing: 2px;
+  font-weight: 800;
+  font-size: large;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.flex__item {
+  margin-top: 5px;
+}
+
+.flex__img {
+  height: 95px;
+  filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.3));
+}
+
+.quote-shadow {
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.blockquote-footer {
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .flex__container {
+    gap: 30px;
+    margin-bottom: 24px;
+  }
+
+  .flex__img {
+    height: 85px;
+  }
+}
