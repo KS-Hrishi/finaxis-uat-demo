@@ -1200,8 +1200,9 @@ article {
 
 /* Active */
 .team-card.active .card-info {
-  background: #5b5cf6;
-  color: #fff;
+  background: #253b50;
+  color: #d1bf75;
+  border: 1px solid #d1bf75;
   border-radius: 0 0 16px 16px;
 }
 
