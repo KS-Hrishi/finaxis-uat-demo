@@ -243,6 +243,10 @@ body {
   }
 }
 
+.color {
+  color: #1a283c !important;
+}
+
 .color-2,
 .h-color-2:hover {
   color: var(--cnvs-secondary-color) !important;
