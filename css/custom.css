@@ -278,9 +278,18 @@ body {
 
 #header.sticky-on-scrollup,
 #header.sticky-on-scrollup #header-wrap {
-  -webkit-transition: height 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
-  -o-transition: height 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
-  transition: height 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+  -webkit-transition:
+    height 0.2s ease,
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  -o-transition:
+    height 0.2s ease,
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  transition:
+    height 0.2s ease,
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 #header.sticky-on-scrollup.sticky-header-shrink:not(.show-sticky-onscroll)
@@ -436,7 +445,9 @@ body {
 .services-grid .feature-box .fbox-icon,
 .services-grid .feature-box .fbox-content,
 .hover-button {
-  transition: all 0.4s ease, border-color 0s ease;
+  transition:
+    all 0.4s ease,
+    border-color 0s ease;
 }
 
 .heading-block h3 {
@@ -570,8 +581,14 @@ body {
 
 /* Footer: FinAxis custom styles */
 .site-footer {
-  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial;
+  font-family:
+    "Manrope",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
   /* font-family: 'Manrope', sans-serif,'DM Serif Text', serif; */
   background: linear-gradient(180deg, #ffffff 0%, #f8fbfb 100%);
   color: #243642;
@@ -652,6 +669,54 @@ body {
 }
 .site-footer .footer-bottom a:hover {
   color: #0a9646;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .footer-flexitems a {
+  display: inline-block;
+  align-items: center;
+} */
+
+.footer-flexitems {
+  display: flex;
+  align-items: center; /* vertical center */
+  gap: 8px;
+}
+
+.footer-flexitems a {
+  display: flex; /* makes text align properly */
+  align-items: center;
+  margin: 0; /* remove bootstrap margin issues */
+}
+
+/* .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.social-icon-footer {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px; /* smoother modern look */
+  padding: 0; /* remove theme padding */
+}
+
+.social-icon-footer i {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.social-icon-footer.bg-light-footer {
+  --cnvs-socialicon-color: var(--bs-gray-900);
+  background-color: #a2a7ab !important;
 }
 
 @media (max-width: 767.98px) {
@@ -753,7 +818,11 @@ body {
   border: 2px solid var(--accent) !important;
   background: #fff !important;
   color: black !important;
-  transition: transform 0.15s, background 0.15s, color 0.15s, border-color 0.15s;
+  transition:
+    transform 0.15s,
+    background 0.15s,
+    color 0.15s,
+    border-color 0.15s;
 }
 #header .header-misc .btn:hover {
   transform: translateY(-1px);
