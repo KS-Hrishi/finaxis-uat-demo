@@ -127,7 +127,9 @@
   background-color: #253b50;
   color: #e9c46a;
   border: 1px solid goldenrod;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 #wc-pill:hover {
@@ -136,9 +138,19 @@
   border: 2px solid #253b50;
 }
 
-.wc-wrapper {
-  padding: 80px 20px;
-  background: #253b50;
+#wc-pill-carreer {
+  padding-left: 16px;
+  padding-right: 16px;
+  /* background-color: #252b50; */
+  color: #252b50;
+  border: 2px solid #252b50;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.wc-carreer-text {
+  font-weight: 550;
 }
 
 .wc-wrapper h2 {
