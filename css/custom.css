@@ -748,6 +748,10 @@ body {
     margin-left: 16px;
     padding-bottom: 0px !important;
   }
+
+  .hidemb{
+    display: none !important;
+  }
 }
 
 @media (max-width: 1336px) {
