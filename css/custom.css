@@ -754,6 +754,12 @@ body {
   }
 }
 
+@media(max-width:1283px){
+ .hidemb{
+    display: none !important;
+  }
+}
+
 @media (max-width: 1336px) {
   #footer-margin {
     margin-left: 200px !important;
