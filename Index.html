@@ -551,9 +551,13 @@
                           <h3 class="card-title">
                             Need Funding for Your Business?
                           </h3>
-                          <p class="card-text fw-normal">
+                          <!-- <p class="card-text fw-normal">
                             Click here to talk to our experts and get approved faster.
-                          </p>
+                          </p> -->
+                          <a                   
+                        class="btn btn-outline-light mt-2"
+                        >Click here</a
+                      >
                         </div>
                       </div>
                     </div>
@@ -2102,9 +2106,9 @@
                   ><sup style="color: #264653">&reg;</sup></span
                 >
               </div>
-              <!-- <a class="small text-muted me-3 footer-text" href="#">Designed & Developed by</a>   -->
-              <div class="footer-flexitems">
-                   <!-- <p class="small text-muted me-3 footer-text">Designed & Developed by</p>       -->
+              
+              <!-- <div class="footer-flexitems">
+                   
                    <a class="small text-muted" href="#">Designed & Developed by</a>       
                 <a
                         href="https://www.linkedin.com/in/hrishikesh-korgaonkar-9b3088224/"
@@ -2114,6 +2118,11 @@
                         <i class="fa-brands fa-linkedin"></i>
                         
                 </a>
+              </div> -->
+
+              <div class="col-md-6 text-center text-md-end">
+                <a class="small text-muted me-3" href="#">Terms of Use</a>
+                <a class="small text-muted" href="#">Privacy Policy</a>
               </div>
             </div>
           </div>
@@ -2232,81 +2241,8 @@ $('.owl-carousel').owlCarousel({
 
 </script>
 
-
-
-
-
-<!-- <script>
-  const carousel = document.getElementById("teamCarousel");
-  const nextBtn = document.getElementById("nextBtn");
-  const prevBtn = document.getElementById("prevBtn");
-
-  const card = document.querySelector(".team-card");
-  const gap = 30;
-  const cardWidth = card.offsetWidth + gap;
-
-  let currentIndex = 0;
-  const totalCards = document.querySelectorAll(".team-card").length;
-  const visibleCards = 3;
-  const maxIndex = totalCards - visibleCards;
-
-  function updateCarousel() {
-    carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-  }
-
-  nextBtn.addEventListener("click", () => {
-    if (currentIndex < maxIndex) {
-      currentIndex++;
-      updateCarousel();
-    }
-  });
-
-  prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateCarousel();
-    }
-  });
-</script> -->
-
-<!-- <script>
-  const carousel = document.getElementById("teamCarousel");
-  const nextBtn = document.getElementById("nextBtn");
-  const prevBtn = document.getElementById("prevBtn");
-
-  const cards = document.querySelectorAll(".team-card");
-  const gap = 30;
-  const cardWidth = cards[0].offsetWidth + gap;
-
-  const visibleCards = 3;
-  const totalCards = cards.length;
-  const maxIndex = totalCards - visibleCards;
-
-  let currentIndex = 0;
-
-  function updateCarousel() {
-    carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-  }
-
-  nextBtn.addEventListener("click", () => {
-    if (currentIndex < maxIndex) {
-      currentIndex++;
-    } else {
-      currentIndex = 0; // 🔁 loop to start
-    }
-    updateCarousel();
-  });
-
-  prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-    } else {
-      currentIndex = maxIndex; // 🔁 loop to end
-    }
-    updateCarousel();
-  });
-</script> -->
-
+   <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+   <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmo9o9uym000a2mzrqvsz6r8l'></zapier-interfaces-chatbot-embed>
 
   </body>
 </html>
