@@ -1318,3 +1318,107 @@ article {
     object-fit: contain;
   }
 }
+
+/* ===== FinAxis Hero ===== */
+.finaxis-hero {
+  position: relative;
+  overflow: hidden;
+  background: #2646532b url('../images/FinAxisImages/hero-bg.png') center bottom no-repeat !important;
+  background-size: 100% !important;
+}
+.finaxis-hero .py-6 { padding-top: 5.5rem; padding-bottom: 5.5rem; }
+
+/* .hero-glow {
+  position: absolute; border-radius: 50%; filter: blur(90px);
+  opacity: .35; z-index: 1; pointer-events: none;
+}
+.hero-glow--green { width: 420px; height: 420px; background: #0a9646; top: -120px; left: -80px; }
+.hero-glow--terra { width: 360px; height: 360px; background: #c66e52; bottom: -140px; right: -60px; } */
+
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: #0a9646; background: #ffffff; border: 1px solid #d8e8de;
+  padding: .45rem 1rem; border-radius: 50px; margin-bottom: 1.5rem;
+  box-shadow: 0 6px 18px rgba(38,70,83,.06);
+}
+.hero-eyebrow i { color: #c66e52; }
+
+.finaxis-hero .hero-title {
+  color: #264653; font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.12; margin-bottom: 1.25rem;
+}
+.hero-accent {
+  background: linear-gradient(90deg, #0a9646, #264653);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-sub {
+  max-width: 640px; font-size: 1.12rem; line-height: 1.7;
+  color: #4a5a63; margin-bottom: 2.25rem;
+}
+
+.hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.hero-btn-primary {
+  background: #0a9646; color: #fff; padding: .85rem 2.2rem; border: 0;
+  box-shadow: 0 10px 24px rgba(10,150,70,.28); transition: all .25s ease;
+}
+.hero-btn-primary:hover { background: #097d3b; color: #fff; transform: translateY(-2px); }
+.hero-btn-ghost {
+  background: transparent; color: #264653; padding: .85rem 2.2rem;
+  border: 1.5px solid #cdd6da; transition: all .25s ease;
+  border-color: #264653;
+}
+.hero-btn-ghost:hover { border-color: #264653; background: #264653; color: #fff; }
+
+@media (max-width: 575px) {
+  .finaxis-hero .py-6 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+}
+
+/* ===== FinAxis Stats Band ===== */
+.finaxis-stats { padding: 60px 0; background: #ffffff; }
+
+.stats-eyebrow {
+  display: inline-block; font-size: .78rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; color: #0a9646;
+  margin-bottom: .75rem;
+}
+.stats-intro { font-size: 1.05rem; line-height: 1.7; color: #5b6a72; margin-bottom: 0; }
+
+.stat-card {
+  height: 100%; text-align: center; background: #fff;
+  border: 1px solid #e6e9ec; border-radius: 16px; padding: 2.4rem 1.25rem;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(38,70,83,.10);
+  border-color: #d8e8de;
+}
+
+.stat-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 62px; height: 62px; border-radius: 50%;
+  background: #eaf3ee; color: #0a9646; font-size: 1.6rem; margin-bottom: 1.1rem;
+  transition: background .25s ease, color .25s ease;
+}
+.stat-card:hover .stat-icon { background: #0a9646; color: #fff; }
+
+.stat-num {
+  font-family: 'Lato', sans-serif; font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1;
+  color: #264653; margin-bottom: .5rem; letter-spacing: 0;
+}
+.stat-label {
+  font-size: .8rem; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: #7a868c; margin: 0;
+}
+
+/* icon color cycle — a bit more life (green → teal → terracotta → green) */
+.stats-grid > div:nth-child(2) .stat-icon { background: #e7ecf0; color: #253b50; }
+.stats-grid > div:nth-child(2) .stat-card:hover .stat-icon { background: #253b50; color: #fff; }
+
+.stats-grid > div:nth-child(3) .stat-icon { background: #f7ece7; color: #c66e52; }
+.stats-grid > div:nth-child(3) .stat-card:hover .stat-icon { background: #c66e52; color: #fff; }
+
+
