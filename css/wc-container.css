@@ -218,3 +218,132 @@ body #side-panel.dark {
   background-color: #253b50;
   color: #eee;
 }
+
+/* ===== Working Capital — Section 1 ===== */
+.wc-hero { background: #ffffff; padding: 80px 0 60px; }
+.wc-eyebrow {
+  display: inline-block; color: #0a9646; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; font-size: .8rem; margin-bottom: 1rem;
+}
+.wc-hero-title { color: #264653; font-weight: 700; font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.15; margin-bottom: 1.25rem; }
+.wc-hero-lead { font-size: 1.15rem; color: #4a5a63; line-height: 1.7; margin-bottom: 2rem; max-width: 560px; }
+.wc-hero-btn { background: #0a9646; color: #fff; padding: .8rem 2rem; border: 0; box-shadow: 0 10px 24px rgba(10,150,70,.25); transition: all .25s ease; }
+.wc-hero-btn:hover { background: #097d3b; color: #fff; transform: translateY(-2px); }
+.wc-hero-img { width: 100%; border-radius: 18px; object-fit: cover; box-shadow: 0 20px 50px rgba(38,70,83,.15); }
+
+.wc-section { padding: 64px 0; }
+.wc-section-alt { background: #eef2f4; }
+.wc-section-accent { background: #eef2f7; }   /* soft navy-tinted band for the facilities section */
+.wc-section-title { color: #264653; font-weight: 700; }
+.wc-section-sub { color: #5b6a72; margin-bottom: 2.5rem; }
+.wc-intro-text { color: #4a5a63; font-size: 1.05rem; line-height: 1.8; }
+
+.wc-card {
+  width: 100%; background: #fff; border: 1px solid #e6e9ec; border-radius: 14px; padding: 1.75rem;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.wc-card:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(38,70,83,.10); border-color: #d8e8de; }
+.wc-card-icon { display: block; color: #0a9646; font-size: 1.7rem; margin-bottom: 1rem; }
+.wc-card h5 { color: #264653; font-weight: 600; margin-bottom: .5rem; }
+.wc-card p { color: #5b6a72; font-size: .95rem; line-height: 1.6; margin: 0; }
+
+.wc-panel { width: 100%; background: #fff; border: 1px solid #e6e9ec; border-radius: 16px; padding: 2rem; }
+.wc-panel-title { color: #264653; font-weight: 700; margin-bottom: 1.25rem; }
+
+/* WC 1b — cash-flow gap visual + callout */
+.wc-gap { display: flex; align-items: stretch; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+.wc-gap-node {
+  flex: 1 1 220px; background: #fff; border: 1px solid #e6e9ec; border-radius: 14px;
+  padding: 1.5rem; text-align: center;
+}
+.wc-gap-node i { font-size: 1.9rem; display: block; margin-bottom: .6rem; }
+.wc-gap-node h6 { color: #264653; font-weight: 700; margin-bottom: .35rem; }
+.wc-gap-node span { color: #5b6a72; font-size: .9rem; line-height: 1.5; display: block; }
+.wc-gap-out i { color: #c66e52; }
+.wc-gap-in  i { color: #0a9646; }
+.wc-gap-bridge {
+  flex: 0 1 170px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: .35rem;
+}
+.wc-gap-badge { background: #264653; color: #fff; font-weight: 700; padding: .4rem 1rem; border-radius: 50px; }
+.wc-gap-label { color: #7a868c; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; }
+
+.wc-callout {
+  text-align: left; background: #fff; border-left: 4px solid #0a9646;
+  border-radius: 0 12px 12px 0; padding: 1.5rem 1.75rem; margin: 2.5rem 0;
+  color: #4a5a63; font-size: 1.05rem; line-height: 1.75;
+}
+.wc-callout strong { color: #264653; }
+
+/* WC 1e — eligibility check bands */
+.wc-eligible-item {
+  display: flex; align-items: center; gap: .75rem; width: 100%;
+  background: #fff; border-radius: 10px; padding: 1rem 1.25rem;
+  color: #264653; font-weight: 500;
+}
+.wc-eligible-item i { color: #0a9646; font-size: 1.2rem; flex-shrink: 0; }
+
+/* WC — How it works (numbered steps) */
+.wc-step {
+  position: relative; width: 100%;
+  background: #fff; border: 1px solid #e6e9ec; border-radius: 14px;
+  padding: 2.25rem 1.5rem 1.5rem;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.wc-step:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(38,70,83,.10); border-color: #d8e8de; }
+.wc-step-num {
+  position: absolute; top: -16px; left: 1.5rem;
+  width: 42px; height: 42px; border-radius: 11px;
+  background: linear-gradient(135deg, #264653, #264653); color: #d1bf75; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 18px rgba(38,70,83,.30);
+}
+.wc-step-icon { display: block; color: #264653; font-size: 1.6rem; margin: .5rem 0 1rem; }
+.wc-step h5 { color: #264653; font-weight: 600; margin-bottom: .5rem; }
+.wc-step p { color: #5b6a72; font-size: .95rem; line-height: 1.6; margin: 0; }
+
+
+/* WC — Enquiry / CTA */
+.wc-enquiry { background: #253b50; padding: 70px 0; }
+.wc-enquiry-eyebrow {
+  display: inline-block; color: #e9c46a; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; font-size: .8rem; margin-bottom: 1rem;
+}
+.wc-enquiry-title { color: #fff; font-weight: 700; font-size: clamp(1.8rem, 3.5vw, 2.4rem); line-height: 1.2; margin-bottom: 1rem; }
+.wc-enquiry-text { color: rgba(255,255,255,.78); font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem; }
+.wc-enquiry-btn {
+  display: inline-flex; align-items: center; background: #0a9646; color: #fff;
+  padding: .85rem 2rem; border-radius: 50px; font-weight: 600; text-decoration: none;
+  box-shadow: 0 10px 24px rgba(10,150,70,.3); transition: all .25s ease;
+}
+.wc-enquiry-btn:hover { background: #097d3b; color: #fff; transform: translateY(-2px); }
+
+.wc-enquiry-card { background: #fff; border-radius: 16px; padding: 2rem; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
+.wc-enquiry-card-title { color: #264653; font-weight: 700; margin-bottom: 1.5rem; }
+.wc-field { margin-bottom: 1rem; }
+.wc-field label { display: block; font-weight: 600; font-size: .85rem; color: #264653; margin-bottom: .35rem; }
+.wc-enquiry-form input, .wc-enquiry-form select, .wc-enquiry-form textarea {
+  width: 100%; padding: .7rem .9rem; border: 1.5px solid #e1e5e9; border-radius: 10px;
+  font-size: .95rem; outline: none; transition: border-color .2s ease, box-shadow .2s ease;
+}
+.wc-enquiry-form input:focus, .wc-enquiry-form select:focus, .wc-enquiry-form textarea:focus {
+  border-color: #0a9646; box-shadow: 0 0 0 3px rgba(10,150,70,.12);
+}
+.wc-enquiry-submit {
+  width: 100%; margin-top: .5rem; padding: .85rem; background: #264653; color: #e9c46a;
+  border: 0; border-radius: 50px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all .25s ease;
+}
+.wc-enquiry-submit:hover { background: #fff; color: #264653;border: 1px solid #264653; transform: translateY(-2px); }
+
+@media (max-width: 575px) {
+  .wc-enquiry { padding: 48px 0; }
+  .wc-enquiry-card { padding: 1.5rem; }
+}
+
+/* WC hero — key points + form variant */
+.wc-hero-points { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+.wc-hero-points li { display: flex; align-items: flex-start; gap: .6rem; color: #264653; font-weight: 500; margin-bottom: .6rem; }
+.wc-hero-points i { color: #0a9646; font-size: 1.15rem; flex-shrink: 0; margin-top: 2px; }
+
+/* slim CTA band */
+.wc-enquiry-slim .wc-enquiry-text { max-width: 640px; margin-left: auto; margin-right: auto; }
