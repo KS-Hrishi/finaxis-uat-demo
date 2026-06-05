@@ -1320,23 +1320,23 @@ article {
 }
 
 /* ===== FinAxis Hero ===== */
-/* .finaxis-hero {
-  position: relative;
-  overflow: hidden;
-  background: #2646532b url('../images/FinAxisImages/hero-bg.png') center bottom no-repeat !important;
-  background-size: 100% !important;
-} */
-
 .finaxis-hero {
   position: relative;
   overflow: hidden;
-  min-height: calc(100vh - var(--cnvs-header-height)); /* fill screen below header */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;            /* vertically center the content */
-  background: #2646532b url('../images/FinAxisImages/hero-bg.png') center bottom no-repeat !important;
+  background: #2646532b url('../images/FinAxisImages/hero-b.png') center bottom no-repeat !important;
   background-size: 100% !important;
 }
+
+/* .finaxis-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - var(--cnvs-header-height)); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;            
+  background: #2646532b url('../images/FinAxisImages/hero-bg.png') center bottom no-repeat !important;
+  background-size: 100% !important;
+} */
 
 
 .finaxis-hero .py-6 { padding-top: 5.5rem; padding-bottom: 5.5rem; }
