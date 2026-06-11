@@ -29992,7 +29992,7 @@ label.error {
 	Footer
 -----------------------------------------------------------------*/
 #footer {
-  --cnvs-footer-top-border: 5px solid rgba(var(--cnvs-contrast-rgb), 0.15);
+  --cnvs-footer-top-border: 0.5px solid rgba(var(--cnvs-contrast-rgb), 0.15);
   --cnvs-copyrights-link-color: var(--cnvs-contrast-500);
   position: relative;
   background-color: var(--cnvs-footer-bg);

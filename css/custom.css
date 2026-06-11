@@ -592,7 +592,7 @@ body {
   /* font-family: 'Manrope', sans-serif,'DM Serif Text', serif; */
   background: linear-gradient(180deg, #ffffff 0%, #f8fbfb 100%);
   color: #243642;
-  border-top: 1px #e9eef0;
+  border-top: 0.5px #e9eef0;
 }
 
 .site-footer .footer-top {

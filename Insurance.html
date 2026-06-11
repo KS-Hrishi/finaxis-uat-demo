@@ -86,6 +86,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=DM+Serif+Text&display=swap" rel="stylesheet">
 
+
+
 <!-- Core CSS -->
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/font-icons.css">
@@ -95,6 +97,7 @@
 <link rel="stylesheet" href="/css/sidebar-mobile.css">
 <link rel="stylesheet" href="/css/cta.css">
 <link rel="stylesheet" href="/css/wc-container.css">
+<link rel="stylesheet" href="/css/service-accordion.css" />
 
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
@@ -376,406 +379,244 @@
       </header>
       <!-- #header end -->
 
-      <!-- Content
-        ============================================= -->
-      <div id="content" style="background-color: #eef2f4">
-        <div class="content-wrap">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <h1 class="display-2 color" style="font-size:50px;">FinAxis® Insurance Services </h1>
 
-                <p class="lead color font-body">
-                  Protect What Matters Most
-                with FinAxis®.
-                </p>
 
-                <h2 class="color">Why Insurance Planning Matters?</h2>
+<!-- 1a. Hero (split: pitch + enquiry form) -->
+<section class="wc-hero wc-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
 
-                <p class="color">
-                  Insurance is not just a regulatory requirement—it’s a vital financial tool that protects your family, assets, and business from unexpected risks. A well-structured insurance plan ensures financial stability during medical emergencies, accidents, natural disasters, or unforeseen life events.
-                </p>
+      <!-- pitch -->
+      <div class="col-lg-6">
+        <span class="wc-eyebrow">FINAXIS® INSURANCE</span>
+        <h1 class="wc-hero-title">Insurance is not an expense. It is the foundation everything else stands on.</h1>
+        <p class="wc-hero-lead">
+          At FinAxis, we provide expert insurance advisory to help you protect your family, health, and business. Our tailored solutions ensure you get the right coverage at the right price — with trusted partners across India.
+        </p>
+        <ul class="wc-hero-points">
+          <li><i class="bi-check-circle-fill"></i> Comprehensive coverage</li>
+          <li><i class="bi-check-circle-fill"></i> Affordable premiums</li>
+          <li><i class="bi-check-circle-fill"></i> Trusted partners</li>
+        </ul>
+      </div>
 
-                <p class="color">At <span class="color-2">FinAxis®</span>, we go beyond policy selling. We provide advisory-led insurance solutions that align with your financial goals, lifestyle, and long-term security needs.</p>
-
-              <div style="margin-bottom: 40px; margin-top:40px" >
-                 <a
-                  href="#scroll-cta"
-                  class="btn btn-light btn-lg rounded-pill"
-                  id="wc-pill"
-                 >Click here to get advice</a
-                >
-              </div>
-
-                <h3 class="color">Our Insurance Advisory Approach</h3>
-
-                <p>We believe the right insurance plan should be adequate, affordable, and transparent</p>
-
-                <ul class="iconlist iconlist-color color">
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Needs-Based Assessment: We evaluate your life stage, dependents, assets, and risk exposure before recommending coverage.
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Customized Coverage Solutions: Policies are tailored—not over-insured, not under-insured—just right for your requirements.
-                  <li>
-                    <i class="bi-check-circle color-2"></i>Transparent Comparison & Guidance: We help you compare policies across insurers with complete clarity on benefits, exclusions, and premiums.
-                  </li>
-                </ul>
-
-              <h3 class="color">Who Can Benefit from Our Insurance Services?</h3>
-
-              <p class="color">Our advisory services are ideal for:</p>
-
-              <ul class="iconlist iconlist-color color">
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Individuals & families
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Working professionals
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Business owners & MSMEs
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i>Senior citizens
-                  </li>  
-                   <li>
-                    <i class="bi-check-circle color-2"></i>Travelers & frequent flyers
-                  </li>   
-                  <li>
-                    <i class="bi-check-circle color-2"></i>Corporate teams
-                  </li>                  
-              </ul>
-
-              <h3 class="color">Why Clients Trust FinAxis for Insurance</h3>
-
-              <ul class="iconlist iconlist-color color">
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Customer-first advisory model
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Ethical and transparent recommendations
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Strong insurer partnerships
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i>Dedicated claims support
-                  </li>  
-                   <li>
-                    <i class="bi-check-circle color-2"></i>Trusted by clients across India and Mumbai
-                  </li>                                     
-              </ul>
-
-                <p class="color">
-                  Contact us to learn more about our Insurance
-                  and how we can help your business thrive.
-                  Whether you're a mid-sized company or a growing enterprise, <span class="color-2">FinAxis®</span> delivers solutions tailored to your industry.
-                </p>
-
-              </div>
+      <!-- enquiry form -->
+      <div class="col-lg-6">
+        <div class="wc-enquiry-card ">
+          <h4 class="wc-enquiry-card-title">Get a call back</h4>
+          <form id="template-contactform" name="template-contactform"
+                action="https://api.web3forms.com/submit" method="post" class="wc-enquiry-form">
+            <div class="form-process">
+              <div class="css3-spinner"><div class="css3-spinner-scaler"></div></div>
             </div>
-          </div>
+            <input type="hidden" name="access_key" value="d28881e3-446e-4685-9c23-620cb74249a5" />
+
+            <div class="wc-field">
+              <label for="Name">Name</label>
+              <input type="text" id="Name" name="Name" placeholder="Full name" required />
+            </div>
+            <div class="wc-field">
+              <label for="Email">Email</label>
+              <input type="email" id="Email" name="Email" placeholder="Email address" required />
+            </div>
+            <div class="wc-field">
+              <label for="Mobile No">Mobile No</label>
+              <input type="tel" id="Mobile No" name="Mobile No" placeholder="Phone number" required />
+            </div>
+
+            <div class="wc-field">
+              <label for="Interested_In">Insurance Type</label>
+              <select id="Interested_In" name="Interested_In" required>
+                <option value="">Select Insurance</option>
+                <option value="Health Insurance">Health Insurance</option>
+                <option value="Life Insurance">Life Insurance</option>
+                <option value="General Insurance">General Insurance</option>    
+              </select>
+            </div>
+            
+            <div class="wc-field">
+              <label for="Message">Message</label>
+              <textarea rows="2" id="Message" name="Message" placeholder="Tell us briefly about your requirement"></textarea>
+            </div>
+            <button type="submit" class="wc-enquiry-submit">Get a call back</button>
+          </form>
         </div>
       </div>
-      <!-- #content end -->
 
+    </div>
+  </div>
+</section>
 
       <!-- <div class="divider divider-sm divider-rounded divider-center">
         <i class="bi-pencil"></i>
       </div> -->
       
-    <section id="loan-features" class="py-5 bg-light">
-  <div class="container">
-    <div class="row align-items-start">
-      <div class="col-12 mb-4">
-        <h2 class="display-6 fw-bold color">Key Benefits of Choosing FinAxis Insurance Advisory</h2>        
+    <!-- CTA band (Calendly only) -->
+<section class="wc-enquiry wc-enquiry-slim" id="scroll-cta">
+  <div class="container text-center">
+    <span class="wc-enquiry-eyebrow">Still deciding?</span>
+    <h2 class="wc-enquiry-title">Prefer to talk it through first?</h2>
+    <p class="wc-enquiry-text">
+      Book a free 30-minute call with our experts — we'll assess your needs and map out the
+      best working capital options for your business.
+    </p>
+    <a href="#" class="wc-enquiry-btn"
+       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/operationsfinaxis/30min?text_color=253b50&primary_color=0a9646'});return false;">
+      <i class="bi-calendar-check me-2"></i>Talk to an expert
+    </a>
+  </div>
+</section>
+
+      <section class="wc-section">
+    <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-9">
+        <span class="wc-eyebrow">What we offer</span>
+        <h2 class="wc-section-title">Three pillars of protection for your life your health and everything else</h2>
+        <p class="wc-section-sub">
+          Whether you're looking to protect your family's future, safeguard your health, or secure your business, we've got you covered with expert advice and trusted plans.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4 d-flex">
+        <div class="wc-card">
+          <i class="bi-person wc-card-icon"></i>
+          <h5>Life Insurance</h5>
+          <p>The most important financial product most families do not have ,or have inadequately. Term plans, savings-linked policies, investment-linked coverage. We find the right structure for your income, your obligations, and your family's needs.</p>
+        </div>
       </div>
 
-      <!-- Feature list (2-column on md+, 1-column on sm) -->
-      <div class="col-12">
-        <div class="row g-4">
-          
-          <!-- Feature Item -->
-          <article class="col-md-6 d-flex" aria-labelledby="feature-duration">
-            <div class="me-3 flex-shrink-0">
-              <!-- Inline check SVG -->
-              <i class="bi bi-person-check fs-1 feature-iconcolor-2"></i>
-            </div>
-            <div>
-              <h3 id="feature-duration" class="h5 mb-1 color">Unbiased Expert Advice</h3>
-              <p class="mb-0 text-muted">We recommend policies based on your needs—not commissions.</p>
-            </div>
-          </article>
+      <div class="col-md-4 d-flex">
+        <div class="wc-card">
+          <i class="bi-heart wc-card-icon"></i>
+          <h5>Health Insurance</h5>
+          <p>A single hospitalisation without adequate coverage can wipe out years of savings. We help individuals, families, and corporate teams choose plans that actually cover what matters ,with clear guidance on networks, sub-limits, and claim processes.</p>
+        </div>
+      </div>
 
-          <!-- Feature Item -->
-          <article class="col-md-6 d-flex" aria-labelledby="feature-rates">
-            <div class="me-3 flex-shrink-0">
-              <i class="bi bi-diagram-3 fs-1 feature-iconcolor-2"></i>
-            </div>
-            <div>
-              <h3 id="feature-rates" class="h5 mb-1 color">Wide Network of Insurers</h3>
-              <p class="mb-0 text-muted">Access multiple leading insurance providers under one roof.</p>
-            </div>
-          </article>
+      <div class="col-md-4 d-flex">
+        <div class="wc-card">
+          <i class="bi-shield-check wc-card-icon"></i>
+          <h5>General Insurance</h5>
+          <p>Protect your assets and liabilities with comprehensive coverage tailored to your specific needs. From vehicle insurance to property protection, we've got you covered.</p>
+        </div>
+      </div>
 
-          <!-- Feature Item -->
-          <article class="col-md-6 d-flex" aria-labelledby="feature-repayment">
-            <div class="me-3 flex-shrink-0">
-              <i class="bi bi-diagram-3 fs-1 feature-iconcolor-2"></i>
-            </div>
-            <div>
-              <h3 id="feature-repayment" class="h5 mb-1 color">Right Coverage at the Right Cost</h3>
-              <p class="mb-0 text-muted">Avoid paying for unnecessary add-ons or insufficient protection.</p>
-            </div>
-          </article>
+    </div>
+  </div>
+</section>
 
-          <!-- Feature Item -->
-          <article class="col-md-6 d-flex" aria-labelledby="feature-collateral">
-            <div class="me-3 flex-shrink-0">
-              <i class="bi bi-headset fs-1 feature-iconcolor-2"></i>
-            </div>
-            <div>
-              <h3 id="feature-collateral" class="h5 mb-1 color">Claims Assistance & Support</h3>
-              <p class="mb-0 text-muted">We assist you during claim filing to ensure a smooth and hassle-free experience.</p>
-            </div>
-          </article>
 
-          <article class="col-md-6 d-flex" aria-labelledby="feature-collateral">
-            <div class="me-3 flex-shrink-0">
-              <i class="bi bi-file-earmark-text fs-1 feature-iconcolor-2"></i>
-            </div>
-            <div>
-              <h3 id="feature-collateral" class="h5 mb-1 color">Compliance & Policy Transparency</h3>
-              <p class="mb-0 text-muted">Clear documentation, policy terms, and renewal guidance.</p>
-            </div>
-          </article>
+<!-- How it works -->
+<section class="wc-section">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-9">
+        <span class="wc-eyebrow">How it works</span>
+        <h2 class="wc-section-title">How our Insurance works</h2>
+        <p class="wc-section-sub">Six steps from 'I think I need insurance' to actually being protected</p>
+      </div>
+    </div>
 
+    <div class="row g-4 mt-2">
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">01</span>
+          <i class="bi-chat-dots wc-step-icon"></i>
+          <h5>We Start With a Conversation</h5>
+          <p>Not a form. Not a product brochure. A genuine discussion about your life ,your income, your dependents, your assets, your liabilities, and what keeps you up at night.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">02</span>
+          <i class="bi-clipboard-data wc-step-icon"></i>
+          <h5>We Analyse Your Risk Profile</h5>
+          <p>We assess your actual exposure ,financial, health, business, and liability ,and identify the gaps between what you currently have and what you actually need.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">03</span>
+          <i class="bi-file-earmark-text wc-step-icon"></i>
+          <h5>We Compare Across Insurers</h5>
+          <p>Your requirements are matched against products from multiple leading insurers. Benefits, exclusions, premiums, and claim track records ,shown clearly, side by side.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">04</span>
+          <i class="bi-bar-chart-line wc-step-icon"></i>
+          <h5>You Receive a Personalised Proposal</h5>
+          <p>A tailored insurance plan ,clearly explained, no jargon. You understand exactly what you are buying, what it covers, and what it does not, before you sign anything.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">05</span>
+          <i class="bi-patch-check wc-step-icon"></i>
+          <h5>Policy Issuance</h5>
+          <p>Once you are satisfied and have reviewed everything, your policy is activated. Simple, paperwork-light, and completed efficiently</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">06</span>
+          <i class="bi-cash-coin wc-step-icon"></i>
+          <h5>We Stay By Your Side</h5>
+          <p>Premium reminders. Annual reviews. Policy updates as your life changes. And full support when you need to file a claim ,because that is when it matters most.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-      <section id="content">
-        <div class="content-wrap" style="background-color: #eef2f4;">
-          <div class="container">
-           <h2 class="color text-center pb-4" style="font-weight: bolder">
-            Insurance We Provide            
-          </h2>
-            <span class="underline"></span>
-            <div class="row col-mb-50 mb-0 gx-5">
-              <div class="col-sm-6 col-lg-4">
-                <div class="feature-box fbox-center fbox-light fbox-effect">
-                  <div class="fbox-icon">
-                    <a href="#"><i class="bi-shield-check"></i></a>
-                  </div>
-                  <div class="fbox-content">
-                    <h3 class="color">Life Insurance</h3>
-                    <p>
-                      Secure your family’s financial future with FinAxis Life Insurance. Choose from term plans, savings-linked policies, or investment-linked coverage designed for your income and goals.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-4">
-                <div class="feature-box fbox-center fbox-light fbox-effect">
-                  <div class="fbox-icon">
-                    <a href="#"><i class="bi-heart-pulse-fill"></i></a>
-                  </div>
-                  <div class="fbox-content">
-                    <h3 class="color">Health Insurance</h3>
-                    <p>
-                      Protect your enterprise from financial risks with customized business insurance plans — covering assets, employees, and liability.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-4">
-                <div class="feature-box fbox-center fbox-light fbox-effect">
-                  <div class="fbox-icon">
-                    <a href="#"><i class="bi-house-lock-fill"></i></a>
-                  </div>
-                  <div class="fbox-content">
-                    <h3 class="color">General Insurance</h3>
-                    <p>
-                      Empower your enterprise with customized business loans for expansion, working capital, or asset purchase. Designed for SMEs and entrepreneurs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-
-      </section>
-
-      <div style="text-align: center; margin-bottom: 40px; margin-top: 50px">
-        <a
-          href="javascript:void(0);"
-          class="btn btn-light btn-lg rounded-pill"
-          id="wc-pill"
-          >How Insurance Works</a
-        >
-      </div>
-
-      <div class="wc-container">
-        <div>
-          <i class="fas fa-handshake color"></i>
-          <h4>Initial Consultation</h4>
-          <p>
-            Understand your goals and risk coverage needs through a quick
-            discussion with our experts.
-          </p>
-        </div>
-
-        <div>
-          <i class="fas fa-file-alt color"></i>
-          <h4>Documentation Review</h4>
-          <p>
-            Submit minimal documentation — we’ll handle verification for you.
-          </p>
-        </div>
-
-        <div>
-          <i class="fas fa-magnifying-glass-chart color"></i>
-          <h4>Coverage Analysis</h4>
-          <p>
-            Our specialists analyze your financial situation to suggest the most
-            effective plans.
-          </p>
-        </div>
-        <div>
-          <i class="fas fa-file-invoice color"></i>
-          <h4>Policy Proposal</h4>
-          <p>
-            Receive a tailored insurance proposal outlining your coverage and
-            premium options.
-          </p>
-          <p></p>
-        </div>
-        <div>
-          <i class="fas fa-file-signature color"></i>
-          <h4>Policy Issuance</h4>
-          <p>Finalize and activate your policy after approval and consent.</p>
-        </div>
-        <div>
-          <i class="fas fa-coins color"></i>
-          <h4>Premium Payment</h4>
-          <p>
-            Make your first payment and stay protected — with reminders for
-            renewals and upgrades.
-          </p>
-        </div>
-      </div>
-
       <div class="divider divider-sm divider-rounded divider-center" id="scroll-cta">
         <i class="bi-pencil"></i>
       </div>
 
-      <section class="finaxis-cta" id="scroll-cta">
-        <h2 class="color">Secure Your Life, Health & Business</h2>
-        <p>
-          Find the right insurance coverage with clear guidance and claim
-          support. Protect what matters most with FinAxis.
-        </p>
-        <a
-          href="#"
-          class="finaxis-btn"
-          style="margin-bottom: 30px"
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/operationsfinaxis/30min?text_color=253b50&primary_color=0a9646'});return false;"
-          >Get Insurance Advice</a
-        >
+      <section class="fx-accordion-container text-center mb-5">
+            <span class="wc-eyebrow">COMMON QUESTIONS</span>
+  <h2 class="fx-accordion-title">The questions people are afraid to ask about insurance</h2>
 
-        <br />
+  <div class="fx-accordion">
 
-        <span class="color"><u>Or</u></span>
-
-        <div class="cta-form-wrapper">
-          <h3 class="color">Send Enquiry</h3>
-
-          <form
-            id="template-contactform"
-            name="template-contactform"
-            action="https://api.web3forms.com/submit"
-            method="post"
-            class="cta-form"
-          >
-            <input
-              type="hidden"
-              name="access_key"
-              value="d28881e3-446e-4685-9c23-620cb74249a5"
-            />
-            <div class="form-group">
-              <input
-                type="text"
-                id="Name"
-                name="Name"
-                placeholder="Full Name"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <input
-                type="email"
-                id="Email"
-                name="Email"
-                placeholder="Email Address"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <input
-                type="tel"
-                id="Mobile No"
-                name="Mobile No"
-                placeholder="Phone Number"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <select id="Interested_In" required name="Interested_In">
-                <option value="">Select Insurance</option>
-                <option value="Health Insurance">Health Insurance</option>
-                <option value="Life Insurance">Life Insurance</option>
-                <option value="General Insurance">General Insurance</option>                
-              </select>
-            </div>
-
-            <div class="form-group">
-              <textarea rows="3" placeholder="Message" id="Message" name="Message"></textarea>
-            </div>
-
-            <button type="submit" class="cta-submit-btn">
-              Get a call back
-            </button>
-          </form>
-        </div>
-      </section>
-
-       
-
-      <div class="divider divider-sm divider-rounded divider-center">
-        <i class="bi-pencil"></i>
+    
+    <div class="fx-item active">
+      <button class="fx-header active"><i class="bi bi-question-circle"></i>How much life insurance coverage do I actually need?</button>
+      <div class="fx-content open">
+        A common starting point is 10 to 15 times your annual income ,enough to replace your earnings for a meaningful period and cover outstanding liabilities. But the right number depends on your specific situation. We help you calculate it properly.
       </div>
-      <div class="section mb-0 pb-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-6 text-center">
-              <h2 class="mb-4 color" data-animate="fadeInUp">
-                Know more about FinAxis?
-              </h2>
-              <a href="faqs.html" class="btn btn-light btn-lg rounded-pill"
-                >Visit our FAQ Page</a
-              >
-            </div>
-          </div>
-        </div>
+    </div>
+
+    
+    <div class="fx-item">
+      <button class="fx-header"><i class="bi bi-question-circle"></i></i>What is the difference between term insurance and a traditional policy?</button>
+      <div class="fx-content">
+        A term plan is pure protection ,high cover, low premium, no maturity benefit. A traditional policy blends insurance with savings or investment, often at the cost of both. Which is right for you depends on your goals ,and that is exactly the conversation we are built for.
       </div>
+    </div>
+
+    
+    <div class="fx-item">
+      <button class="fx-header"><i class="bi bi-question-circle"></i>What is general insurance and do I really need it?</button>
+      <div class="fx-content">  
+        General insurance covers physical and operational risks ,your car, your home, your business assets, travel risks, and liability. If you own a vehicle, motor insurance is legally required. If you own a home or business, the risk of not protecting those assets is simply too high.
+      </div>
+    </div>
+
+    
+    <div class="fx-item">
+      <button class="fx-header"><i class="bi bi-question-circle"></i>Why come to FinAxis® instead of buying directly online?</button>
+      <div class="fx-content">        
+        Online aggregators show you premiums. We show you fit. A cheaper premium with hidden exclusions is not a good deal. We analyse what you need, match it to the right product, explain every clause, and stay available when you need to use it.
+      </div>
+    </div>
+
+  </div>
+  </section>
 
       <!-- Footer
          ============================================= -->
@@ -939,7 +780,7 @@
     <script src="js/plugins.min.js"></script>
     <script src="js/functions.bundle.js"></script>
     <script src="js/sidebar-mobile.js"></script>
-
+<script src="js/service-acordian.js"></script>
     <script
       type="text/javascript"
       src="https://assets.calendly.com/assets/external/widget.js"
