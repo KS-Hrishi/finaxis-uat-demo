@@ -387,104 +387,103 @@
       </header>
       <!-- #header end -->
 
-      <!-- Content
-        ============================================= -->
-      <div id="content" style="background-color: #eef2f4">
-        <div class="content-wrap">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <h1 class="display-2 color" style="font-size:50px;">FinAxis® Wealth Management</h1>
+      <!-- 1a. Hero (split: pitch + enquiry form) -->
+<section class="wc-hero wc-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
 
-                <p class="lead color font-body">
-                  Build, Protect & Grow Your Wealth with Confidence
-                </p>
+      <!-- pitch -->
+      <div class="col-lg-6">
+        <span class="wc-eyebrow">FINAXIS® WEALTH MANAGEMENT
+</span>
+        <h1 class="wc-hero-title">Your money should grow while you sleep<br>
+Is yours doing that?</h1>
+        <p class="wc-hero-lead">
+          Most people spend 30 years earning money. Very few spend even 30 minutes planning what to do with it. At FinAxis®, that’s exactly where we begin.
+        </p>
+        <ul class="wc-hero-points">
+          <li><i class="bi-check-circle-fill"></i> Personalized wealth planning</li>
+          <li><i class="bi-check-circle-fill"></i> Expert financial advice</li>
+          <li><i class="bi-check-circle-fill"></i> Comprehensive portfolio management</li>
+        </ul>
+      </div>
 
-                <h2 class="color">What Is Wealth Management & Why It Matters?</h2>
-
-                <p class="color">
-                  Wealth management is more than just investing—it’s a structured approach to building, protecting, and growing your wealth across every stage of life. It combines investment planning, tax efficiency, risk management, and long-term financial strategy under one integrated framework.
-                </p>
-
-                <p class="color">At <span class="color-2">FinAxis®</span>, we help individuals, families, professionals, and business owners make informed financial decisions that align with their personal goals, risk appetite, and future aspirations.</p>
-
-                <div style="margin-bottom: 40px; margin-top:40px" >
-                 <a
-                  href="#scroll-cta"
-                  class="btn btn-light btn-lg rounded-pill"
-                  id="wc-pill"
-                 >Click here to get advice</a
-                >
-              </div>
-
-                <h3 class="color">Who Can Benefit from Our Wealth Management Services?</h3>
-
-                <p>Our services are ideal for:</p>
-
-                <ul class="iconlist iconlist-color color">
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Salaried professionals
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Entrepreneurs & business owners
-                  <li>
-                    <i class="bi-check-circle color-2"></i>High-net-worth individuals (HNIs)
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i>Families planning generational wealth
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i>Retirees & pre-retirees
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i>Young investors starting early
-                  </li>
-                </ul>
-
-                
-
-              <h3 class="color">Why FinAxis® Is Trusted Across India?</h3>
-
-              <ul class="iconlist iconlist-color color">
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Client-first advisory model
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Compliance-driven processes
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i> Strong financial discipline
-                  </li>
-                  <li>
-                    <i class="bi-check-circle color-2"></i>Proven track record
-                  </li>  
-                   <li>
-                    <i class="bi-check-circle color-2"></i>Trusted by clients across India and Mumbai
-                  </li>                  
-              </ul>
-
-              
-
-              <p class="color">
-                  Contact us to learn more about our wealth management services
-                  and how we can help your business thrive.
-                  Whether you're a mid-sized company or a growing enterprise, <span class="color-2">FinAxis®</span> delivers solutions tailored to your industry.
-                </p>
-
-              </div>
+      <!-- enquiry form -->
+      <div class="col-lg-6">
+        <div class="wc-enquiry-card ">
+          <h4 class="wc-enquiry-card-title">Get a call back</h4>
+          <form id="template-contactform" name="template-contactform"
+                action="https://api.web3forms.com/submit" method="post" class="wc-enquiry-form">
+            <div class="form-process">
+              <div class="css3-spinner"><div class="css3-spinner-scaler"></div></div>
             </div>
-          </div>
+            <input type="hidden" name="access_key" value="d28881e3-446e-4685-9c23-620cb74249a5" />
+
+            <div class="wc-field">
+              <label for="Name">Name</label>
+              <input type="text" id="Name" name="Name" placeholder="Full name" required />
+            </div>
+            <div class="wc-field">
+              <label for="Email">Email</label>
+              <input type="email" id="Email" name="Email" placeholder="Email address" required />
+            </div>
+            <div class="wc-field">
+              <label for="Mobile No">Mobile No</label>
+              <input type="tel" id="Mobile No" name="Mobile No" placeholder="Phone number" required />
+            </div>
+            <div class="wc-field">
+              <label for="Interested_In">Interested In</label>
+              <select id="Interested_In" name="Interested_In" required>
+                <option value="">Select Service</option>
+                <option value="Portfolio Management">Portfolio Management</option>
+                <option value="Tax Planning">Tax Planning</option>
+                <option value="AIF Consultation">AIF Consultation</option>
+                <option value="Mutual Funds">Mutual Funds</option>
+                <option value="Unlisted Shares">Unlisted Shares</option>
+              </select>
+            </div>
+
+            
+            <div class="wc-field">
+              <label for="Message">Message</label>
+              <textarea rows="2" id="Message" name="Message" placeholder="Tell us briefly about your requirement"></textarea>
+            </div>
+            <button type="submit" class="wc-enquiry-submit">Get a call back</button>
+          </form>
         </div>
       </div>
-      <!-- #content end -->
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA band (Calendly only) -->
+<section class="wc-enquiry wc-enquiry-slim" id="scroll-cta">
+  <div class="container text-center">
+    <span class="wc-enquiry-eyebrow">Still deciding?</span>
+    <h2 class="wc-enquiry-title">Prefer to talk it through first?</h2>
+    <p class="wc-enquiry-text">
+      Book a free 30-minute call with our experts — Ask every question you’ve been holding back. Leave with a plan ,not just a brochure.
+      
+    </p>
+    <a href="#" class="wc-enquiry-btn"
+       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/operationsfinaxis/30min?text_color=253b50&primary_color=0a9646'});return false;">
+      <i class="bi-calendar-check me-2"></i>Talk to an expert
+    </a>
+  </div>
+</section>
+
 
 
 <section id="loan-features" class="py-5 bg-light">
   <div class="container">
     <div class="row align-items-start">
       <div class="col-12 mb-4">
-        <h2 class="display-6 fw-bold color">Our Wealth Management Approach</h2>
-        <p class="text-muted">We believe wealth should work for you—consistently and intelligently.</p>
+        <h2 class="display-7 fw-bold color">Our Approach</h2>
+        <p class="text-muted">A 28-year-old IT professional in Mumbai saving for a home has completely different needs from a 52-year-old business owner planning retirement. Yet most advisors give them the same brochure.</p>
+        <p class="text-muted">At FinAxis®, we start with a single question :<b>What does a good life look like for you?</b></p>
+        <p class="text-muted">Then we build backwards from there ,a strategy that is as unique as your fingerprint.</p>
       </div>
 
       <!-- Feature list (2-column on md+, 1-column on sm) -->
@@ -495,49 +494,46 @@
           <article class="col-md-6 d-flex" aria-labelledby="feature-duration">
             <div class="me-3 flex-shrink-0">
               <!-- Inline check SVG -->
-              <i class="bi bi-bullseye fs-1 feature-iconcolor-2"></i>
+              <i class="bi bi-bullseye fs-2 feature-iconcolor-2 color-2"></i>
             </div>
             <div>
-              <h3 id="feature-duration" class="h5 mb-1 color">Goal-Based Financial Planning</h3>
-              <p class="mb-0 text-muted">Every strategy starts with understanding your life goals—home ownership, education, retirement, legacy planning, or wealth creation.</p>
+              <h3 id="feature-duration" class="h5 mb-1 color">Goal-based planning</h3>
+              <p class="mb-0 text-muted">Every rupee invested has a purpose ,your child’s education, your retirement, your dream home.</p>
             </div>
           </article>
 
           <!-- Feature Item -->
           <article class="col-md-6 d-flex" aria-labelledby="feature-rates">
             <div class="me-3 flex-shrink-0">
-              <i class="bi bi-sliders fs-1 feature-iconcolor-2"></i>
+              <i class="bi bi-sliders fs-2 feature-iconcolor-2 color-2"></i>
             </div>
             <div>
-              <h3 id="feature-rates" class="h5 mb-1 color">Personalized Investment Strategies</h3>
-              <p class="mb-0 text-muted">No one-size-fits-all portfolios. We design customized asset allocation strategies based on your income, timeline, and risk profile.</p>
+              <h3 id="feature-rates" class="h5 mb-1 color">Personalised allocation</h3>
+              <p class="mb-0 text-muted">Your portfolio is built around your income, timeline, and how much risk actually lets you sleep at night.</p>
             </div>
           </article>
 
           <!-- Feature Item -->
           <article class="col-md-6 d-flex" aria-labelledby="feature-repayment">
             <div class="me-3 flex-shrink-0">
-              <i class="bi bi-graph-up-arrow fs-1 feature-iconcolor-2"></i>
+              <i class="bi bi-graph-up-arrow fs-2 feature-iconcolor-2 color-2"></i>
             </div>
             <div>
-              <h3 id="feature-repayment" class="h5 mb-1 color">Long-Term Wealth Growth</h3>
-              <p class="mb-0 text-muted">Our focus is on sustainable, compounding growth rather than short-term speculation.</p>
+              <h3 id="feature-repayment" class="h5 mb-1 color">Long-term thinking</h3>
+              <p class="mb-0 text-muted">We focus on compounding, not speculation. Slow and steady genuinely wins this race.</p>
             </div>
           </article>
 
           <!-- Feature Item -->
           <article class="col-md-6 d-flex" aria-labelledby="feature-collateral">
             <div class="me-3 flex-shrink-0">
-              <i class=" bi bi-shield-check fs-1 feature-iconcolor-2"></i>
+              <i class=" bi bi-shield-check fs-2 feature-iconcolor-2 color-2"></i>
             </div>
             <div>
-              <h3 id="feature-collateral" class="h5 mb-1 color">Long-Term Trust & Partnership</h3>
-              <p class="mb-0 text-muted">We grow with you, adapting strategies as your life evolves.</p>
+              <h3 id="feature-collateral" class="h5 mb-1 color">Evolving with you</h3>
+              <p class="mb-0 text-muted">As your life changes, your plan changes too. We review and adapt ,always.</p>
             </div>
           </article>
-
-          
-
         </div>
       </div>
     </div>
@@ -545,140 +541,122 @@
 </section>
 
       
-
-      <section id="content">
-        <div class="content-wrap" style="background-color: #eef2f4;">
-          <div class="container">
-           <h2 class="color text-center pb-4" style="font-weight: bolder">
-            Our Wealth Management Solutions
-            
-          </h2>
-            <span class="underline"></span>
-            <div class="row col-mb-50 mb-0 gx-5">
-
-              <div class="col-sm-6 col-lg-6">
-                <div class="feature-box fbox-center fbox-light fbox-effect">
-                  <div class="fbox-icon">
-                    <a href="#"><i class="bi bi-bar-chart-line"></i></a>
-                  </div>
-                  <div class="fbox-content">
-                    <h3 class="color">Investment Advisory</h3>
-                    <p>
-                     Strategic guidance across equity, debt, mutual funds, fixed income instruments, and alternative investments.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-sm-6 col-lg-6">
-                <div class="feature-box fbox-center fbox-light fbox-effect">
-                  <div class="fbox-icon">
-                    <a href="#"><i class="bi-graph-up-arrow"></i></a>
-                  </div>
-                  <div class="fbox-content">
-                    <h3 class="color">Portfolio Management Solutions</h3>
-                    <p>
-                      Professional management of your investment portfolio with strategic allocation of assets, continuous performance tracking, and risk mitigation — ensuring consistent long-term growth.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-6">
-                <div class="feature-box fbox-center fbox-light fbox-effect">
-                  <div class="fbox-icon">
-                    <a href="#"><i class="bi-gem"></i></a>
-                  </div>
-                  <div class="fbox-content">
-                    <h3 class="color">Alternate Investment Fund</h3>
-                    <p>
-                      Diversify beyond traditional assets. FinAxis provides access to private investment vehicles including real estate, commodities, and hedge funds for qualified investors.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-6">
-                <div class="feature-box fbox-center fbox-light fbox-effect">
-                  <div class="fbox-icon">
-                    <a href="#"><i class="bi-stack"></i></a>
-                  </div>
-                  <div class="fbox-content">
-                    <h3 class="color">Mutual Funds</h3>
-                    <p>
-                      Simplify your investments through professionally managed mutual funds — ideal for consistent, long-term wealth creation with flexibility and liquidity.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-          </div>
-
-      </section>
-
-      <div style="text-align: center; margin-bottom: 40px; margin-top: 50px">
-        <a
-          href="javascript:void(0);"
-          class="btn btn-light btn-lg rounded-pill"
-          id="wc-pill"
-          >Our Wealth Management Process</a
-        >
+<!-- 1d. four facility types -->
+  <section class="wc-section">
+    <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-9">
+        <span class="wc-eyebrow">What we offer</span>
+        <h2 class="wc-section-title">Our Wealth Management Solutions</h2>
+        <p class="wc-section-sub">
+          We don’t believe in one-size-fits-all. Because your life isn’t one-size-fits-all.
+        </p>
       </div>
+    </div>
 
-      <div class="wc-container">
-        <div>
-          <i class="fas fa-handshake color"></i>
-          <h4>Initial Consultation</h4>
-          <p>
-            Discuss your financial goals, income sources, and investment
-            preferences with our experts.
-          </p>
-        </div>
-
-        <div>
-          <i class="fas fa-user-tie color"></i>
-          <h4>Tailored Solutions</h4>
-          <p>
-            Receive a customized financial strategy designed for your risk
-            profile and objectives.
-          </p>
-        </div>
-
-        <div>
-          <i class="fas fa-file-alt color"></i>
-          <h4>Documentation Process</h4>
-          <p>We handle all compliance and documentation efficiently.</p>
-        </div>
-        <div>
-          <i class="fas fa-check-circle color"></i>
-          <h4>Approval & Activation</h4>
-          <p>
-            Your personalized wealth plan is activated after final review and
-            consent.
-          </p>
-        </div>
-        <div>
-          <i class="fas fa-headset color"></i>
-          <h4>Ongoing Support</h4>
-          <p>
-            Continuous guidance and portfolio monitoring to ensure performance
-            alignment.
-          </p>
-        </div>
-        <div>
-          <i class="fas fa-sync-alt color"></i>
-          <h4>Review & Adjustments</h4>
-          <p>
-            We periodically review your portfolio and adjust strategies based on
-            market trends.
-          </p>
+    <div class="row g-4">
+      <div class="col-md-6 d-flex">
+        <div class="wc-card">
+          <i class="bi bi-graph-up-arrow wc-card-icon"></i>
+          <h5>Investment Advisory</h5>
+          <p>Strategic guidance across equity, debt, mutual funds, fixed income instruments, and alternative investments.</p>
         </div>
       </div>
 
-      <!-- <div class="divider divider-sm divider-rounded divider-center" id="scroll-cta">
+      <div class="col-md-6 d-flex">
+        <div class="wc-card">
+          <i class="bi bi-briefcase wc-card-icon"></i>
+          <h5>Portfolio Management Solutions</h5>
+          <p>Professional management of your investment portfolio with strategic allocation of assets, continuous performance tracking, and risk mitigation — ensuring consistent long-term growth.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex">
+        <div class="wc-card">
+          <i class="bi bi-bank wc-card-icon"></i>
+          <h5>Alternate Investment Fund</h5>
+          <p>Diversify beyond traditional assets. FinAxis provides access to private investment vehicles including real estate, commodities, and hedge funds for qualified investors.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 d-flex">
+        <div class="wc-card">
+          <i class="bi bi-coin wc-card-icon"></i>
+          <h5>Mutual Funds</h5>
+          <p>Simplify your investments through professionally managed mutual funds — ideal for consistent, long-term wealth creation with flexibility and liquidity.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="wc-section">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-9">
+        <span class="wc-eyebrow">How it works</span>
+        <h2 class="wc-section-title">Six steps from “I want to grow my wealth” to actually growing it</h2>        
+      </div>
+    </div>
+
+    <div class="row g-4 mt-2">
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">01</span>
+          <i class="bi-chat-dots wc-step-icon"></i>
+          <h5>We listen first</h5>
+          <p>A conversation about your life ,your income, your goals, your worries, your dreams. No forms. No jargon. Just an honest chat.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">02</span>
+          <i class="bi-clipboard-data wc-step-icon"></i>
+          <h5>We build your blueprint</h5>
+          <p>A customised financial strategy designed specifically for your risk appetite, timeline, and objectives.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">03</span>
+          <i class="bi-file-earmark-text wc-step-icon"></i>
+          <h5>We handle the paperwork</h5>
+          <p>All compliance and documentation ,done efficiently so you can focus on living your life.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">04</span>
+          <i class="bi-bar-chart-line wc-step-icon"></i>
+          <h5>Your plan goes live</h5>
+          <p>After your final review and approval, your personalised wealth plan is activated.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">05</span>
+          <i class="bi-patch-check wc-step-icon"></i>
+          <h5>We stay by your side</h5>
+          <p>Continuous guidance and portfolio monitoring because a plan without follow-through is just a wish.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="wc-step">
+          <span class="wc-step-num">06</span>
+          <i class="bi-cash-coin wc-step-icon"></i>
+          <h5>We review and evolve</h5>
+          <p>Markets change. Life changes. Your strategy gets reviewed and adjusted to stay ahead ,always.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      
+      <div class="divider divider-sm divider-rounded divider-center" id="scroll-cta">
         <i class="bi-pencil"></i>
-      </div> -->
+      </div>
 
       <section class="fx-accordion-container">
             
@@ -688,138 +666,51 @@
 
     
     <div class="fx-item active">
-      <button class="fx-header active"><i class="bi bi-question-circle"></i>What is Wealth Management?</button>
+      <button class="fx-header active"><i class="bi bi-question-circle"></i>Do I need to be very wealthy to use wealth management?</button>
       <div class="fx-content open">
-        Wealth management is a holistic financial planning approach that integrates investments, tax planning, insurance, and estate planning to help individuals grow and preserve wealth over time.
+        Absolutely not. Wealth management is about building wealth ,not just managing what you already have. The earlier you start, the more powerful the results. Compounding rewards patience, not wealth.
       </div>
     </div>
 
     
     <div class="fx-item">
-      <button class="fx-header"><i class="bi bi-question-circle"></i></i>Who should opt for wealth management services?</button>
+      <button class="fx-header"><i class="bi bi-question-circle"></i></i>What returns can I realistically expect?</button>
       <div class="fx-content">
-        Professionals, entrepreneurs, business owners, and families looking to grow, protect, and transfer wealth over the long term can benefit from wealth management.
-      </div>
-    </div>
-
-    
-    <div class="fx-item">
-      <button class="fx-header"><i class="bi bi-question-circle"></i>Is there a minimum investment amount for wealth management?</button>
-      <div class="fx-content">     
-       Minimum investment requirements vary based on services and strategies. Wealth management solutions can be structured for different income and asset levels.
+        Anyone who promises you a specific return is either guessing or misleading you. What we promise is this: a disciplined, risk-adjusted strategy that outperforms idle savings and emotional investing over the long run.
       </div>
     </div>
 
     
     <div class="fx-item">
       <button class="fx-header"><i class="bi bi-question-circle"></i>How is my risk profile determined?</button>
-      <div class="fx-content">  
-        Risk profiling is done through detailed assessments of financial goals, investment horizon, income stability, and risk tolerance to ensure suitable investment strategies.
+      <div class="fx-content">     
+       Through a simple but thorough conversation ,your income stability, your goals, your investment horizon, and honestly, how you'd feel if your portfolio dropped 20% tomorrow. Knowing that tells us everything.
       </div>
     </div>
 
-    <div class="fx-item">
-      <button class="fx-header"><i class="bi bi-question-circle"></i>What kind of returns can I expect from wealth management?</button>
-      <div class="fx-content">        
-        Returns depend on market conditions, asset allocation, and risk profile. Wealth management focuses on long-term, risk-adjusted returns rather than short-term gains.
-      </div>
-    </div>
     
     <div class="fx-item">
-      <button class="fx-header"><i class="bi bi-question-circle"></i>How often is my portfolio reviewed?</button>
-      <div class="fx-content">        
-        Portfolios are reviewed periodically and rebalanced as needed to stay aligned with changing market conditions and personal financial goals.
+      <button class="fx-header"><i class="bi bi-question-circle"></i>Does this include tax and estate planning?</button>
+      <div class="fx-content">  
+        Yes. Tax-efficient investing, succession planning, estate structuring ,all of it is part of the integrated approach. Because paying unnecessary tax is as damaging as a bad investment.
       </div>
     </div>
 
     <div class="fx-item">
-      <button class="fx-header"><i class="bi bi-question-circle"></i>Does wealth management include tax and estate planning?</button>
+      <button class="fx-header"><i class="bi bi-question-circle"></i>How often will my portfolio be reviewed?</button>
       <div class="fx-content">        
-        Yes, wealth management includes tax-efficient investing, succession planning, and estate planning as part of a holistic financial strategy.
-      </div>
-    </div>
-
-    <div class="fx-item">
-      <button class="fx-header"><i class="bi bi-question-circle"></i>Why choose FinAxis® for wealth management advisory?</button>
-      <div class="fx-content">        
-        FinAxis® offers unbiased advice, goal-based planning, and disciplined portfolio strategies focused on long-term wealth creation and preservation.
+        Periodically ,and whenever markets or your life circumstances shift meaningfully. You’ll never feel like you’ve been handed a plan and forgotten.
       </div>
     </div>
     
   </div>
-      </section>
-
-      <section class="finaxis-cta" id="scroll-cta">
-        <h2 class="color">Start Growing Your Wealth Today</h2>
-        <p>
-          Get expert guidance for investments, tax planning, and portfolio
-          growth. Book a consultation and build a smarter financial future.
-        </p>
-        <a 
-          href="#"
-          class="finaxis-btn"
-          style="margin-bottom: 30px;"
-          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/operationsfinaxis/30min?text_color=253b50&primary_color=0a9646'});return false;"
-          >Book Wealth Consultation</a
-        >
-           <br>
-        <span class="color"><u>Or</u></span>
-        
-          
-        <div class="cta-form-wrapper">
-    <h3 class="color">Send Enquiry</h3>
-    
-
-    <form id="template-contactform"
-                        name="template-contactform"
-                        action="https://api.web3forms.com/submit"
-                        method="post" class="cta-form">
-
-                        <input
-                          type="hidden"
-                          name="access_key"
-                          value="d28881e3-446e-4685-9c23-620cb74249a5"
-                        />
-        <div class="form-group">
-            <input type="text" id="Name" name="Name" placeholder="Full Name" required>
-        </div>
-
-        <div class="form-group">
-            <input type="email" id="Email"  name="Email" placeholder="Email Address" required>
-        </div>
-
-        <div class="form-group">
-            <input type="tel"id="Mobile No" name="Mobile No" placeholder="Phone Number" required>
-        </div>
-
-        <div class="form-group">
-            <select id="Interested_In" required name="Interested_In">
-                <option value="">Select Service</option>
-                <option value="Portfolio Management">Portfolio Management</option>
-                <option value="Tax Planning">Tax Planning</option>
-                <option value="AIF Consultation">AIF Consultation</option>
-                <option value="Mutual Funds">Mutual Funds</option>
-                <option value="Unlisted Shares">Unlisted Shares</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <textarea rows="3" placeholder="Message" id="Message" name="Message"></textarea>
-        </div>
-
-        <button type="submit" class="cta-submit-btn">Get a call back</button>
-    </form>
-</div>
-
-      </section>
-
-      
+</section>
 
       <div class="divider divider-sm divider-rounded divider-center" >
         <i class="bi-pencil"></i>
       </div>
 
-      <div class="section mb-0 pb-5">
+      <!-- <div class="section mb-0 pb-5">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-6 text-center">
@@ -832,7 +723,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="clear"></div>
 
@@ -957,6 +848,7 @@
                       <!-- <li><i class="bi-arrow-right px-2"></i><a href="#">Services</a></li> -->
                     </ul>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -980,6 +872,7 @@
             </div>
           </div>
         </div>
+        
       </footer>
       <!-- #footer end -->
     </div>
