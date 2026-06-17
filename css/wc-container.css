@@ -273,6 +273,13 @@ body #side-panel.dark {
   border-radius: 0 12px 12px 0; padding: 1.5rem 1.75rem; margin: 2.5rem 0;
   color: #4a5a63; font-size: 1.05rem; line-height: 1.75;
 }
+
+.wc-callout-alt {
+  text-align: left; background: #f9f9f9; border-left: 4px solid #0a9646;
+  border-radius: 0 12px 12px 0; padding: 1.5rem 1.75rem; margin: 2.5rem 0;
+  color: #4a5a63; font-size: 1.05rem; line-height: 1.75;
+}
+
 .wc-callout strong { color: #264653; }
 
 /* WC 1e — eligibility check bands */
