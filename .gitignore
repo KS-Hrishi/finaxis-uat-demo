@@ -1,0 +1,14 @@
+# Source content & build artifacts — not part of the published site
+# (large Word docs, extracted images/XML, generator scripts)
+Content/
+
+# Node / Gulp build
+node_modules/
+dist/
+npm-debug.log*
+yarn-error.log*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
