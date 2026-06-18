@@ -1,0 +1,129 @@
+/* ============================================================
+   FinAxis — EMI Calculator
+   Brand: #264653 (dark), #0a9646 (green), Manrope + DM Serif Text
+   ============================================================ */
+.emi-wrap { font-family: "Manrope", sans-serif; color: #1a1a1a; }
+
+/* Hero */
+.emi-hero {
+  background: linear-gradient(180deg, #f5f8f9 0%, #ffffff 100%);
+  padding: 64px 0 36px;
+  text-align: center;
+  border-bottom: 1px solid #e6eaed;
+}
+.emi-eyebrow {
+  text-transform: uppercase; letter-spacing: 2.5px; font-size: 13px;
+  font-weight: 700; color: #0a9646;
+}
+.emi-hero h1 {
+  font-family: "DM Serif Text", serif; color: #264653;
+  font-size: 42px; margin: 12px 0 14px;
+}
+.emi-hero .emi-sub { color: #6b7785; max-width: 680px; margin: 0 auto; font-size: 17px; line-height: 1.6; }
+
+/* Tool layout */
+.emi-tool { padding: 46px 0 30px; }
+.emi-grid {
+  display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 34px;
+  align-items: start;
+}
+@media (max-width: 860px) { .emi-grid { grid-template-columns: 1fr; gap: 26px; } .emi-hero h1 { font-size: 32px; } }
+
+/* Inputs */
+.emi-inputs {
+  background: #fff; border: 1px solid #e6eaed; border-radius: 16px;
+  padding: 28px 26px; box-shadow: 0 8px 24px rgba(38,70,83,0.05);
+}
+.emi-field { margin-bottom: 30px; }
+.emi-field:last-child { margin-bottom: 0; }
+.emi-field-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.emi-field-head label { font-weight: 600; color: #264653; font-size: 15.5px; }
+.emi-input-wrap {
+  display: inline-flex; align-items: center; gap: 4px;
+  border: 1px solid #d8dee2; border-radius: 9px; padding: 6px 12px; background: #f9fbfc;
+}
+.emi-input-wrap span { color: #6b7785; font-weight: 600; }
+.emi-input-wrap input {
+  border: none; background: transparent; width: 110px; text-align: right;
+  font-size: 16px; font-weight: 700; color: #264653; outline: none;
+  font-family: "Manrope", sans-serif;
+}
+.emi-input-wrap.suffix span { order: 2; }
+
+/* Range slider */
+.emi-range {
+  -webkit-appearance: none; appearance: none; width: 100%; height: 6px;
+  border-radius: 999px; background: #e2e8eb; outline: none; margin: 4px 0 6px;
+}
+.emi-range::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; width: 22px; height: 22px;
+  border-radius: 50%; background: #0a9646; cursor: pointer;
+  border: 3px solid #fff; box-shadow: 0 2px 6px rgba(10,150,70,0.4);
+}
+.emi-range::-moz-range-thumb {
+  width: 22px; height: 22px; border-radius: 50%; background: #0a9646;
+  cursor: pointer; border: 3px solid #fff; box-shadow: 0 2px 6px rgba(10,150,70,0.4);
+}
+.emi-range-labels { display: flex; justify-content: space-between; font-size: 12px; color: #98a3ab; }
+
+/* Results */
+.emi-results {
+  background: #264653; color: #fff; border-radius: 16px; padding: 30px 26px;
+  text-align: center; box-shadow: 0 12px 30px rgba(38,70,83,0.18);
+}
+.emi-emi-box { margin-bottom: 22px; }
+.emi-result-label { display: block; font-size: 14px; letter-spacing: 0.5px; color: #b8c6cc; margin-bottom: 6px; }
+.emi-emi-value { font-size: 40px; font-weight: 700; color: #fff; line-height: 1.1; }
+.emi-chart-wrap { display: flex; justify-content: center; margin: 6px 0 18px; position: relative; }
+.emi-chart-center {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  text-align: center; pointer-events: none;
+}
+.emi-chart-center small { display: block; font-size: 11px; color: #b8c6cc; letter-spacing: 0.5px; }
+.emi-chart-center b { font-size: 16px; color: #fff; }
+
+.emi-breakdown { text-align: left; font-size: 15px; }
+.emi-breakdown > div {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+.emi-breakdown .dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; margin-right: 9px; }
+.emi-breakdown .dot.principal { background: #7fb2c4; }
+.emi-breakdown .dot.interest { background: #0a9646; }
+.emi-breakdown strong { color: #fff; }
+.emi-breakdown .emi-total { border-bottom: none; font-weight: 700; padding-top: 12px; }
+.emi-breakdown .emi-total strong { color: #4fd18a; font-size: 17px; }
+
+.emi-cta {
+  display: block; margin: 22px 0 12px; background: #0a9646; color: #fff;
+  text-decoration: none; font-weight: 600; padding: 14px; border-radius: 999px;
+  transition: background 0.15s ease;
+}
+.emi-cta:hover { background: #0c7e3d; color: #fff; }
+.emi-disclaimer { font-size: 12px; color: #9fb0b7; margin: 0; line-height: 1.5; }
+
+/* Amortization */
+.emi-amort { max-width: 760px; margin: 34px auto 0; text-align: center; }
+.emi-amort-btn {
+  background: #fff; border: 1px solid #d8dee2; color: #264653; font-weight: 600;
+  padding: 11px 22px; border-radius: 999px; cursor: pointer; font-size: 15px;
+}
+.emi-amort-btn:hover { border-color: #0a9646; color: #0a9646; }
+.emi-amort-table { margin-top: 20px; overflow-x: auto; }
+.emi-amort-table table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+.emi-amort-table th, .emi-amort-table td { border: 1px solid #e6eaed; padding: 10px 12px; text-align: right; }
+.emi-amort-table th { background: #264653; color: #fff; font-weight: 600; }
+.emi-amort-table td:first-child, .emi-amort-table th:first-child { text-align: left; }
+.emi-amort-table tbody tr:nth-child(even) { background: #f5f8f9; }
+
+/* Info / explainer */
+.emi-info { background: #f5f8f9; padding: 50px 0; margin-top: 40px; border-top: 1px solid #e6eaed; }
+.emi-info .container { max-width: 800px; }
+.emi-info h2 { font-family: "DM Serif Text", serif; color: #264653; font-size: 28px; margin: 0 0 14px; }
+.emi-info p { color: #3a3f44; font-size: 16.5px; line-height: 1.7; margin: 0 0 16px; }
+.emi-info .emi-formula {
+  background: #fff; border-left: 4px solid #0a9646; border-radius: 8px;
+  padding: 16px 20px; font-size: 15.5px; color: #264653; margin: 18px 0;
+}
+.emi-info a { color: #0a9646; font-weight: 600; text-decoration: none; }
+.emi-info a:hover { text-decoration: underline; }

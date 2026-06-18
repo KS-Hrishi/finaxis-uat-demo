@@ -95,6 +95,7 @@
 <link rel="stylesheet" href="/css/cta.css">
 <link rel="stylesheet" href="/css/wc-container.css">
 <link rel="stylesheet" href="/css/service-accordion.css">
+<link rel="stylesheet" href="/css/emi-calculator.css">
 
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
@@ -110,7 +111,7 @@
     <div id="wrapper">
       <!-- Header
 		============================================= -->
-      <header id="header" class="sticky-on-scrollup headershadow">
+      <header id="header" class="sticky-on-scrollup">
         <div id="header-wrap" class="fx-slashed-header">
           <div class="container">
             <div class="header-row justify-content-between">
@@ -125,20 +126,27 @@
                   <img
                     class="logo-default"
                     src="images/FinAxisImages/FinAxis Logo (1).png"
-                    alt="Canvas Logo"
+                    alt="Finaxis Logo"
+                    
                   />
                   <!-- <img class="logo-dark" srcset="images/logo-dark.png, images/logo-dark@2x.png 2x" src="images/logo-dark@2x.png" alt="Canvas Logo"> -->
                 </a>
               </div>
               <!-- #logo end -->
 
+              <!-- <div class="primary-menu-trigger order-1">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div> -->
+
               <div class="order-1" id="mobile-menu">
                 <a onclick="showsidebar()"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    height="30px"
+                    height="24px"
                     viewBox="0 -960 960 960"
-                    width="30px"
+                    width="24px"
                     fill="#000000"
                   >
                     <path
@@ -150,12 +158,12 @@
               <div class="custom-nav-div">
                 <ul class="sidebar-custom">
                   <li onclick="hidesidebar()">
-                    <a href="" class="px-3"
+                    <a href=""
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
-                        height="34px"
+                        height="24px"
                         viewBox="0 -960 960 960"
-                        width="34px"
+                        width="24px"
                         fill="#000000"
                       >
                         <path
@@ -170,21 +178,27 @@
                   </li>
                   <li>
                     <a href="about.html"
-                      ><i class="fa-solid fa-tachometer-alt-fast px-3"></i
-                      >About</a
+                      ><i class="fa-solid fa-circle-info px-3"></i>About</a
                     >
                   </li>
+
+                  <li>
+                    <a href="careers.html"
+                      ><i class="fa-solid fa-briefcase px-3"></i>Careers</a
+                    >
+                  </li>
+
                   <li>
                     <a href="working-capital.html"
-                      ><i class="fa-solid fa-briefcase px-3"></i
-                      >Working Capital</a
+                      ><i class="fa-solid fa-briefcase px-3"></i>Working
+                      Capital</a
                     >
                   </li>
 
                   <li>
                     <a href="corporate-funding.html"
-                      ><i class="fa-solid fa-briefcase px-3"></i>Corporate
-                      Funding</a
+                      ><i class="fa-solid fa-building-columns px-3"></i
+                      >Corporate Funding</a
                     >
                   </li>
 
@@ -194,7 +208,6 @@
                     >
                   </li>
 
-
                   <li>
                     <a href="retail-loans.html"
                       ><i class="fa-solid fa-hand-holding-dollar px-3"></i
@@ -203,8 +216,8 @@
                   </li>
                   <li>
                     <a href="wealth-management.html"
-                      ><i class="fa-solid fa-chart-line px-3"></i
-                      >Wealth Management</a
+                      ><i class="fa-solid fa-chart-line px-3"></i>Wealth
+                      Management</a
                     >
                   </li>
                   <li>
@@ -212,13 +225,18 @@
                       ><i class="fa-solid fa-shield-heart px-3"></i>insurance</a
                     >
                   </li>
-                  <!-- <li>
-                    <a href="fldg.html"
-                      ><i class="fa-solid fa-tachometer-alt-fast px-3"></i>First
-                      Loss Default Guarantee</a
+                  <li>
+                    <a href="become-partner.html" 
+                      ><i class="fa-solid fa-handshake px-3"></i>Become a
+                      Partner</a
                     >
-                  </li> -->
-                  <!-- <li><a href="Resources.html"><i class="bi-bookmarks-fill px-3"></i>Resources</a></li> -->
+                  </li>
+                  <li>
+                    <a href="blog.html"
+                      ><i class="fa-solid fa-newspaper px-3"></i>Blog</a
+                    >
+                  </li>
+                  <li><a href="emi-calculator.html"><i class="fa-solid fa-calculator px-3"></i>EMI Calculator</a></li>
                   <li>
                     <a href="gallery.html"
                       ><i class="bi-file-earmark-image px-3"></i>Gallery</a
@@ -228,7 +246,7 @@
                     <a href="faqs.html"
                       ><i class="fa-solid fa-question-circle px-3"></i>FAQs</a
                     >
-                  </li>
+                  </li>                  
                 </ul>
               </div>
 
@@ -236,19 +254,31 @@
 						============================================= -->
               <nav
                 class="primary-menu me-lg-auto with-arrows order-12 order-lg-3"
-                style="margin-left: 200px"
+                style="margin-left: 0px; margin-right: 0px"
               >
                 <ul class="menu-container">
                   <li class="menu-item current">
                     <a class="menu-link" href="index.html"
-                      ><div style="padding-bottom: 30px; padding-top: 30px">
+                      ><div
+                        style="
+                          padding-bottom: 30px;
+                          padding-top: 30px;
+                          font-weight: bold;
+                        "
+                      >
                         Home
                       </div></a
                     >
                   </li>
                   <li class="menu-item">
                     <a class="menu-link" href="#"
-                      ><div style="padding-bottom: 30px; padding-top: 30px">
+                      ><div
+                        style="
+                          padding-bottom: 30px;
+                          padding-top: 30px;
+                          font-weight: bold;
+                        "
+                      >
                         Services
                       </div></a
                     >
@@ -256,11 +286,10 @@
                       <li class="menu-item">
                         <a class="menu-link" href="working-capital.html"
                           ><div>
-                            <i class="bi-currency-dollar"></i>Working Capital
+                            <i class="bi-cash-stack"></i>Working Capital
                           </div></a
                         >
                       </li>
-
                       <li class="menu-item">
                         <a class="menu-link" href="corporate-funding.html"
                           ><div>
@@ -275,7 +304,6 @@
                           </div></a
                         >
                       </li>
-
                       <li class="menu-item">
                         <a class="menu-link" href="retail-loans.html"
                           ><div>
@@ -286,47 +314,90 @@
                       <li class="menu-item">
                         <a class="menu-link" href="wealth-management.html"
                           ><div>
-                            <i class="bi-people"></i>Wealth Management
+                            <i class="bi-person-lines-fill"></i>Wealth
+                            Management
                           </div></a
                         >
                       </li>
                       <li class="menu-item">
                         <a class="menu-link" href="insurance.html"
-                          ><div><i class="bi-flag"></i>Insurance</div></a
-                        >
-                      </li>
-                      <!-- <li class="menu-item">
-                        <a class="menu-link" href="fldg.html"
                           ><div>
-                            <i class="bi-globe"></i>FLDG (First Loss Default
-                            Guarantee)
+                            <i class="bi-shield-check"></i>Insurance
                           </div></a
                         >
-                      </li> -->
+                      </li>
+                      
                     </ul>
                   </li>
                   <li class="menu-item">
                     <a class="menu-link" href="about.html"
-                      ><div style="padding-bottom: 30px; padding-top: 30px">
+                      ><div
+                        style="
+                          padding-bottom: 30px;
+                          padding-top: 30px;
+                          font-weight: bold;
+                        "
+                      >
                         About
                       </div></a
                     >
                   </li>
+                  
+                  <li class="menu-item">
+                    <a class="menu-link" href="become-partner.html"
+                      ><div
+                        style="
+                          padding-bottom: 30px;
+                          padding-top: 30px;
+                          font-weight: bold;
+                        "
+                      >
+                        Become a Partner
+                      </div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="careers.html"
+                      ><div
+                        style="
+                          padding-bottom: 30px;
+                          padding-top: 30px;
+                          font-weight: bold;
+                        "
+                      >
+                        Careers
+                      </div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="emi-calculator.html"
+                      ><div
+                        style="
+                          padding-bottom: 30px;
+                          padding-top: 30px;
+                          font-weight: bold;
+                        "
+                      >
+                        EMI Calculator
+                      </div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="blog.html"
+                      ><div
+                        style="
+                          padding-bottom: 30px;
+                          padding-top: 30px;
+                          font-weight: bold;
+                        "
+                      >
+                        Blogs
+                      </div></a
+                    >
+                  </li>
 
-                  <li class="menu-item">
-                    <a class="menu-link" href="gallery.html"
-                      ><div style="padding-bottom: 30px; padding-top: 30px">
-                        Gallery
-                      </div></a
-                    >
-                  </li>
-                  <li class="menu-item">
-                    <a class="menu-link" href="faqs.html"
-                      ><div style="padding-bottom: 30px; padding-top: 30px">
-                        FAQs
-                      </div></a
-                    >
-                  </li>
+                  
+
                   <div
                     class="mt-3 widget"
                     data-animate="fadeInUp"
@@ -353,6 +424,7 @@
                 </ul>
               </nav>
               <!-- #primary-menu end -->
+
               <div class="header-misc order-3">
                 <a
                   href="https://api.whatsapp.com/send?phone=919326522790&text=Hello,+I+am+interested+in+your+financial+services.+Please+call+me+back.&type=phone_number&app_absent=0"
@@ -462,6 +534,77 @@
        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/operationsfinaxis/30min?text_color=253b50&primary_color=0a9646'});return false;">
       <i class="bi-calendar-check me-2"></i>Book your free working capital consultation
     </a>
+  </div>
+</section>
+
+
+<!-- EMI widget (embedded calculator) -->
+<section class="wc-section wc-section-alt" id="emi-widget">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-9">
+        <span class="wc-eyebrow">Plan your repayment</span>
+        <h2 class="wc-section-title">Estimate your working capital EMI</h2>
+        <p class="wc-section-sub">Move the sliders to see your indicative monthly EMI. For the full breakdown and a year-by-year amortization schedule, open the complete calculator.</p>
+      </div>
+    </div>
+
+    <div class="emi-wrap">
+      <div class="emi-grid">
+        <!-- Inputs -->
+        <div class="emi-inputs">
+          <div class="emi-field">
+            <div class="emi-field-head">
+              <label for="emi-amount">Loan Amount</label>
+              <div class="emi-input-wrap"><span>₹</span><input type="number" id="emi-amount" value="5000000" min="100000" max="1000000000" step="50000"></div>
+            </div>
+            <input type="range" id="emi-amount-range" class="emi-range" min="500000" max="100000000" step="100000" value="5000000">
+            <div class="emi-range-labels"><span>₹5 Lakh</span><span>₹10 Crore</span></div>
+          </div>
+
+          <div class="emi-field">
+            <div class="emi-field-head">
+              <label for="emi-rate">Interest Rate (per annum)</label>
+              <div class="emi-input-wrap suffix"><span>%</span><input type="number" id="emi-rate" value="12" min="1" max="40" step="0.1"></div>
+            </div>
+            <input type="range" id="emi-rate-range" class="emi-range" min="6" max="30" step="0.1" value="12">
+            <div class="emi-range-labels"><span>6%</span><span>30%</span></div>
+          </div>
+
+          <div class="emi-field">
+            <div class="emi-field-head">
+              <label for="emi-years">Loan Tenure</label>
+              <div class="emi-input-wrap suffix"><span>Yrs</span><input type="number" id="emi-years" value="3" min="1" max="15" step="1"></div>
+            </div>
+            <input type="range" id="emi-years-range" class="emi-range" min="1" max="15" step="1" value="3">
+            <div class="emi-range-labels"><span>1 Year</span><span>15 Years</span></div>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="emi-results">
+          <div class="emi-emi-box">
+            <span class="emi-result-label">Your Monthly EMI</span>
+            <span class="emi-emi-value" id="emi-monthly">₹0</span>
+          </div>
+          <div class="emi-chart-wrap">
+            <canvas id="emi-chart" width="210" height="210"></canvas>
+            <div class="emi-chart-center"><small>Interest</small><b id="emi-chart-pct">0%</b></div>
+          </div>
+          <div class="emi-breakdown">
+            <div><span><span class="dot principal"></span>Principal</span><strong id="emi-principal">₹0</strong></div>
+            <div><span><span class="dot interest"></span>Total Interest</span><strong id="emi-interest">₹0</strong></div>
+            <div class="emi-total"><span>Total Payable</span><strong id="emi-total">₹0</strong></div>
+          </div>
+          <a class="emi-cta" href="https://api.whatsapp.com/send?phone=919326522790&text=Hi+FinAxis,+I+used+the+EMI+calculator+and+would+like+to+discuss+a+working+capital+loan.&type=phone_number&app_absent=0" target="_blank">Apply for working capital</a>
+          <p class="emi-disclaimer">Estimates only. Actual rates and EMI are subject to lender approval and your business profile.</p>
+        </div>
+      </div>
+
+      <!-- <div class="text-center" style="margin-top: 26px;">
+        <a href="emi-calculator.html" class="btn btn-lg rounded-pill wc-hero-btn" id="wc-pill">Open the full EMI calculator <i class="bi-arrow-right ms-1"></i></a>
+      </div> -->
+    </div>
   </div>
 </section>
 
@@ -956,6 +1099,9 @@
                         <i class="fa-solid fa-circle-info px-2"></i
                         ><a href="about.html">About</a>
                       </li>
+                      <li><i class="fa-solid fa-handshake px-2"></i><a href="become-partner.html">Become a Partner</a></li>
+                      <li><i class="fa-solid fa-newspaper px-2"></i><a href="blog.html">Blog</a></li>
+                      <li><i class="fa-solid fa-calculator px-2"></i><a href="emi-calculator.html">EMI Calculator</a></li>
                       <li>
                         <i class="bi-file-earmark-image px-2"></i
                         ><a href="gallery.html">Gallery</a>
@@ -1009,6 +1155,7 @@
     <script src="js/functions.bundle.js"></script>
     <script src="js/sidebar-mobile.js"></script>
     <script src="js/service-acordian.js"></script>
+    <script src="js/emi-calculator.js"></script>
 
     <script
       type="text/javascript"
