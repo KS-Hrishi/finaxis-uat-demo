@@ -84,6 +84,7 @@
 <link rel="stylesheet" href="/css/cta.css">
 <link rel="stylesheet" href="/css/wc-container.css">
 <link rel="stylesheet" href="/css/service-accordion.css" />
+<link rel="stylesheet" href="/css/emi-calculator.css">
     
 
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
@@ -530,6 +531,77 @@
 
 
 <!-- 1b. What is Corporate Finance -->
+<!-- EMI widget (embedded calculator) -->
+<section class="wc-section wc-section-alt" id="emi-widget">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-9">
+        <span class="wc-eyebrow">Plan your repayment</span>
+        <h2 class="wc-section-title">Estimate your corporate finance EMI</h2>
+        <p class="wc-section-sub">Move the sliders to see your indicative monthly EMI. For the full breakdown and a year-by-year amortization schedule, open the complete calculator.</p>
+      </div>
+    </div>
+
+    <div class="emi-wrap">
+      <div class="emi-grid">
+        <!-- Inputs -->
+        <div class="emi-inputs">
+          <div class="emi-field">
+            <div class="emi-field-head">
+              <label for="emi-amount">Loan Amount</label>
+              <div class="emi-input-wrap"><span>₹</span><input type="number" id="emi-amount" value="10000000" min="100000" max="1000000000" step="50000"></div>
+            </div>
+            <input type="range" id="emi-amount-range" class="emi-range" min="500000" max="100000000" step="100000" value="10000000">
+            <div class="emi-range-labels"><span>₹5 Lakh</span><span>₹10 Crore</span></div>
+          </div>
+
+          <div class="emi-field">
+            <div class="emi-field-head">
+              <label for="emi-rate">Interest Rate (per annum)</label>
+              <div class="emi-input-wrap suffix"><span>%</span><input type="number" id="emi-rate" value="11" min="1" max="40" step="0.1"></div>
+            </div>
+            <input type="range" id="emi-rate-range" class="emi-range" min="5" max="30" step="0.1" value="11">
+            <div class="emi-range-labels"><span>5%</span><span>30%</span></div>
+          </div>
+
+          <div class="emi-field">
+            <div class="emi-field-head">
+              <label for="emi-years">Loan Tenure</label>
+              <div class="emi-input-wrap suffix"><span>Yrs</span><input type="number" id="emi-years" value="5" min="1" max="15" step="1"></div>
+            </div>
+            <input type="range" id="emi-years-range" class="emi-range" min="1" max="15" step="1" value="5">
+            <div class="emi-range-labels"><span>1 Year</span><span>15 Years</span></div>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="emi-results">
+          <div class="emi-emi-box">
+            <span class="emi-result-label">Your Monthly EMI</span>
+            <span class="emi-emi-value" id="emi-monthly">₹0</span>
+          </div>
+          <div class="emi-chart-wrap">
+            <canvas id="emi-chart" width="210" height="210"></canvas>
+            <div class="emi-chart-center"><small>Interest</small><b id="emi-chart-pct">0%</b></div>
+          </div>
+          <div class="emi-breakdown">
+            <div><span><span class="dot principal"></span>Principal</span><strong id="emi-principal">₹0</strong></div>
+            <div><span><span class="dot interest"></span>Total Interest</span><strong id="emi-interest">₹0</strong></div>
+            <div class="emi-total"><span>Total Payable</span><strong id="emi-total">₹0</strong></div>
+          </div>
+          <a class="emi-cta" href="https://api.whatsapp.com/send?phone=919326522790&text=Hi+FinAxis,+I+used+the+EMI+calculator+and+would+like+to+discuss+corporate+finance.&type=phone_number&app_absent=0" target="_blank">Apply for corporate finance</a>
+          <p class="emi-disclaimer">Estimates only. Actual rates and EMI are subject to lender approval and your business profile.</p>
+        </div>
+      </div>
+
+      <!-- <div class="text-center" style="margin-top: 26px;">
+        <a href="emi-calculator.html" class="btn btn-lg rounded-pill wc-hero-btn" id="wc-pill">Open the full EMI calculator <i class="bi-arrow-right ms-1"></i></a>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+
 <section class="wc-section wc-story">
   <div class="container">
     <div class="row justify-content-center text-center">
@@ -1055,5 +1127,6 @@
 </script>-->
    
 
+    <script src="js/emi-calculator.js"></script>
   </body>
 </html>

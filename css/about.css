@@ -1,0 +1,92 @@
+/* ============================================================
+   FinAxis — About page components (light theme, brand-matched)
+   Reuses wc-* classes from wc-container.css; this adds the
+   About-specific pieces: hero text, stats, quote, mission/vision,
+   founder spotlight, team grid, partner strip.
+   ============================================================ */
+
+.about-hero-title {
+  font-family: "DM Serif Text", serif;
+  color: #264653;
+  font-size: 44px;
+  line-height: 1.15;
+  margin: 14px 0 18px;
+}
+.about-hero-lead {
+  color: #6b7785;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto 26px;
+}
+@media (max-width: 700px) { .about-hero-title { font-size: 32px; } }
+
+/* Stats band */
+.about-stats { background: #264653; padding: 40px 0; }
+.about-stats-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center;
+}
+@media (max-width: 700px) { .about-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
+.about-stat-num {
+  display: block; font-family: "DM Serif Text", serif; color: #fff;
+  font-size: 38px; line-height: 1; margin-bottom: 8px;
+}
+.about-stat-label { color: #9fc3b4; font-size: 14.5px; font-weight: 500; letter-spacing: 0.3px; }
+
+/* Founder quote */
+.about-quote {
+  max-width: 860px; margin: 0 auto; text-align: center; position: relative; padding: 10px 20px;
+}
+.about-quote p {
+  font-family: "DM Serif Text", serif; color: #264653; font-size: 25px;
+  line-height: 1.5; margin: 0 0 18px; font-style: italic;
+}
+.about-quote footer { color: #6b7785; font-size: 16px; }
+.about-quote footer strong { color: #0a9646; }
+
+/* Mission / Vision cards */
+.about-mv-card {
+  background: #fff; border: 1px solid #e6eaed; border-radius: 16px;
+  padding: 32px 30px; width: 100%; box-shadow: 0 8px 24px rgba(38,70,83,0.05);
+}
+.about-mv-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 54px; height: 54px; border-radius: 14px; background: #eef4f2;
+  color: #0a9646; font-size: 26px; margin-bottom: 16px;
+}
+.about-mv-title {
+  font-family: "DM Serif Text", serif; color: #264653;
+  font-size: 26px; line-height: 1.3; margin: 8px 0 14px;
+}
+.about-mv-card p { color: #3a3f44; font-size: 16px; line-height: 1.7; margin: 0 0 14px; }
+.about-mv-card p:last-child { margin-bottom: 0; }
+
+/* Founder spotlight */
+.about-founder-img {
+  border-radius: 18px; overflow: hidden; box-shadow: 0 14px 34px rgba(38,70,83,0.16);
+  aspect-ratio: 4/5; background: #f5f8f9;
+}
+.about-founder-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.about-role { color: #0a9646; font-weight: 600; font-size: 16px; margin: 0 0 16px; }
+
+/* Team grid */
+.about-team-card { text-align: center; }
+.about-team-img {
+  border-radius: 16px; overflow: hidden; aspect-ratio: 1/1; background: #f5f8f9;
+  margin-bottom: 14px; box-shadow: 0 6px 18px rgba(38,70,83,0.08);
+}
+.about-team-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .25s ease; }
+.about-team-card:hover .about-team-img img { transform: scale(1.05); }
+.about-team-card h5 { color: #264653; font-weight: 700; font-size: 17px; margin: 0 0 3px; }
+.about-team-card span { color: #6b7785; font-size: 14px; }
+
+/* Partner logos strip */
+.about-partners {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 38px 50px; margin-top: 34px;
+}
+.about-partners img {
+  height: 46px; width: auto; max-width: 150px; object-fit: contain;
+  filter: grayscale(100%); opacity: 0.7; transition: filter .2s ease, opacity .2s ease;
+}
+.about-partners img:hover { filter: grayscale(0); opacity: 1; }
