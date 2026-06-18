@@ -20,7 +20,15 @@
   var panel = document.querySelector(".sidebar-custom");
   if (!panel) return; // page has no mobile drawer
 
-  // Create the backdrop once
+  // IMPORTANT: the panel lives inside the header, which has its own stacking
+  // context. Move it to <body> so it (and the backdrop) stack above the page
+  // and the backdrop never covers the panel (which would block link clicks).
+  if (panel.parentNode !== document.body) {
+    document.body.appendChild(panel);
+  }
+
+  // Create the backdrop once, AFTER the panel in the DOM (lower z-index keeps
+  // it behind the panel but above the page).
   var backdrop = document.querySelector(".mobile-backdrop");
   if (!backdrop) {
     backdrop = document.createElement("div");
