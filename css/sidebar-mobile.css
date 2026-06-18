@@ -1,56 +1,68 @@
+/* ============================================================
+   FinAxis — Mobile slide-in drawer navigation
+   Works with existing markup: .custom-nav-div > ul.sidebar-custom
+   (first <li> holds the close button)
+   ============================================================ */
+
+/* Dim backdrop (element injected by sidebar-mobile.js) */
+.mobile-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 30, 35, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 998;
+}
+.mobile-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Lock page scroll while the drawer is open */
+body.mobile-nav-open {
+  overflow: hidden;
+}
+
+/* Reset the old wrapper styling */
 .custom-nav-div {
-  background-color: white;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background: none;
+  box-shadow: none;
 }
 
-.custom-nav-div ul {
-  list-style: none;
-  display: none;
-}
-
-/* .custom-nav-div li{
-			height: 50px;
-		} */
-
-.custom-nav-div a {
-  height: 100px;
-  padding: 0 20px;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: black;
-}
-
-.custom-nav-div li :hover {
-  background-color: #f0f0f0;
-}
-
+/* The drawer panel (the UL itself) */
 .sidebar-custom {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-  width: 75%;
+  height: 100dvh;
+  width: 86%;
+  max-width: 360px;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.155);
-  backdrop-filter: blur(10px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #ffffff;
+  box-shadow: -12px 0 30px rgba(0, 0, 0, 0.18);
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-
-  /* 🔥 Add Scrollbar */
+  align-items: stretch;
+  transform: translateX(100%);
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
-  scrollbar-color: #999 transparent;
+  scrollbar-color: #b9c2c7 transparent;
 }
-
+.sidebar-custom.open {
+  transform: translateX(0);
+}
 .sidebar-custom::-webkit-scrollbar {
   width: 6px;
 }
 .sidebar-custom::-webkit-scrollbar-thumb {
-  background: #999;
+  background: #b9c2c7;
   border-radius: 10px;
 }
 .sidebar-custom::-webkit-scrollbar-track {
@@ -61,75 +73,76 @@
   width: 100%;
 }
 
+/* Nav rows */
 .sidebar-custom a {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 54px;
+  padding: 0 22px;
+  color: #264653;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 15.5px;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f3f4;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.sidebar-custom a i {
+  width: 20px;
+  text-align: center;
+  color: #0a9646;
+  font-size: 16px;
+  flex: 0 0 auto;
+}
+.sidebar-custom a:hover,
+.sidebar-custom a:focus {
+  background: #f5f8f9;
+  color: #0a9646;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .custom-nav-div {
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  }
+/* Active page (add class="active" on the <li> for the current page) */
+.sidebar-custom li.active > a {
+  background: #eef4f2;
+  color: #0a9646;
+  font-weight: 600;
+  box-shadow: inset 3px 0 0 #0a9646;
+}
 
-  .custom-nav-div ul {
-    list-style: none;
-    display: none;
-  }
+/* Header row = first <li> (holds the close button) */
+.sidebar-custom > li:first-child {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #264653;
+}
+.sidebar-custom > li:first-child a {
+  height: 64px;
+  justify-content: flex-end;
+  border-bottom: none;
+}
+.sidebar-custom > li:first-child a::before {
+  content: "Menu";
+  margin-right: auto;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+.sidebar-custom > li:first-child a svg {
+  width: 26px;
+  height: 26px;
+  fill: #ffffff;
+}
+.sidebar-custom > li:first-child a:hover,
+.sidebar-custom > li:first-child a:focus {
+  background: #1f3a45;
+}
 
-  /* .custom-nav-div li{
-			height: 50px;
-		} */
-
-  .custom-nav-div a {
-    height: 100px;
-    padding: 0 20px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: black;
-  }
-
-  .custom-nav-div li :hover {
-    background-color: #f0f0f0;
-  }
-
-  .sidebar-custom {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 75%;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.155);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-    /* 🔥 Add Scrollbar */
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: #999 transparent;
-  }
-
-  .sidebar-custom::-webkit-scrollbar {
-    width: 6px;
-  }
-  .sidebar-custom::-webkit-scrollbar-thumb {
-    background: #999;
-    border-radius: 10px;
-  }
-  .sidebar-custom::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  .sidebar-custom li {
-    width: 100%;
-  }
-
-  .sidebar-custom a {
-    width: 100%;
+/* Drawer + backdrop never show on desktop (where the full menu is visible) */
+@media (min-width: 992px) {
+  .sidebar-custom,
+  .mobile-backdrop {
+    display: none !important;
   }
 }

@@ -209,6 +209,12 @@
                     >
                   </li>
                   <li>
+                    <a href="careers.html"
+                      ><i class="fa-solid fa-briefcase px-3"></i>Careers</a
+                    >
+                  </li>
+
+                  <li>
                     <a href="working-capital.html"
                       ><i class="fa-solid fa-briefcase px-3"></i>Working
                       Capital</a
@@ -246,6 +252,17 @@
                     >
                   </li>
                   <li>
+                    <a href="become-partner.html"
+                      ><i class="fa-solid fa-handshake px-3"></i>Become a
+                      Partner</a
+                    >
+                  </li>
+                  <li>
+                    <a href="blog.html"
+                      ><i class="fa-solid fa-newspaper px-3"></i>Blog</a
+                    >
+                  </li>
+                  <li>
                     <a href="gallery.html"
                       ><i class="bi-file-earmark-image px-3"></i>Gallery</a
                     >
@@ -255,11 +272,7 @@
                       ><i class="fa-solid fa-question-circle px-3"></i>FAQs</a
                     >
                   </li>
-                  <li>
-                    <a href="careers.html"
-                      ><i class="fa-solid fa-briefcase px-3"></i>Careers</a
-                    >
-                  </li>
+                  
                 </ul>
               </div>
 
@@ -267,7 +280,7 @@
 						============================================= -->
               <nav
                 class="primary-menu me-lg-auto with-arrows order-12 order-lg-3"
-                style="margin-left: 100px"
+                style="margin-left: 0px; margin-right: 0px"
               >
                 <ul class="menu-container">
                   <li class="menu-item current">
@@ -361,33 +374,7 @@
                       </div></a
                     >
                   </li>
-                  <!-- <li class="menu-item"><a class="menu-link" href="Resources.html"><div style="padding-bottom: 30px; padding-top: 30px;">Resources</div></a></li> -->
-                  <!-- <li class="menu-item">
-                    <a class="menu-link" href="gallery.html"
-                      ><div
-                        style="
-                          padding-bottom: 30px;
-                          padding-top: 30px;
-                          font-weight: bold;
-                        "
-                      >
-                        Gallery
-                      </div></a
-                    >
-                  </li> -->
-                  <!-- <li class="menu-item">
-                    <a class="menu-link" href="faqs.html"
-                      ><div
-                        style="
-                          padding-bottom: 30px;
-                          padding-top: 30px;
-                          font-weight: bold;
-                        "
-                      >
-                        FAQs
-                      </div></a
-                    >
-                  </li> -->
+                  
                   <li class="menu-item">
                     <a class="menu-link" href="become-partner.html"
                       ><div
@@ -411,6 +398,19 @@
                         "
                       >
                         Careers
+                      </div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="blog.html"
+                      ><div
+                        style="
+                          padding-bottom: 30px;
+                          padding-top: 30px;
+                          font-weight: bold;
+                        "
+                      >
+                        Blogs
                       </div></a
                     >
                   </li>
@@ -442,6 +442,7 @@
                           </div></a
                         >
                       </li>
+
                       
                     </ul>
                   </li>
@@ -1753,38 +1754,8 @@
           }
         );
       });
-
-      document
-        .getElementById("servicesBtn")
-        .addEventListener("click", function () {
-          document.getElementById("services").scrollIntoView({
-            behavior: "smooth", // smooth scroll animation
-            block: "start", // align to top of the element
-          });
-        });
-
-      function showsidebar() {
-        const sidebar = document.querySelector(".sidebar-custom");
-        sidebar.style.display = "flex";
-
-        const sidebarv = document.querySelector(".custom-nav-div ul");
-        sidebarv.style.display = "flex";
-
-        const sidebaru = document.querySelector(".custom-nav-div");
-        sidebaru.style.display = "flex";
-      }
-
-      function hidesidebar() {
-        const sidebar = document.querySelector(".sidebar-custom");
-        sidebar.style.display = "none";
-
-        const sidebarv = document.querySelector(".custom-nav-div ul");
-        sidebarv.style.display = "none";
-
-        const sidebaru = document.querySelector(".custom-nav-div");
-        sidebaru.style.display = "none";
-      }
     </script>
+    <script src="js/sidebar-mobile.js"></script>
 
 
 <script type="text/javascript">
