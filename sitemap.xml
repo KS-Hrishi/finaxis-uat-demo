@@ -79,6 +79,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://finaxis.co.in/reviews</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://finaxis.co.in/calculators</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>

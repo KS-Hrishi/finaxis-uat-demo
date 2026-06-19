@@ -1,0 +1,63 @@
+/* ============================================================
+   FinAxis — Reviews / Trust page
+   ============================================================ */
+.rev-wrap { font-family: "Manrope", sans-serif; color: #1a1a1a; }
+
+.rev-hero-title {
+  font-family: "DM Serif Text", serif; color: #264653;
+  font-size: 42px; line-height: 1.15; margin: 14px 0 16px;
+}
+.rev-hero-lead { color: #6b7785; font-size: 18px; line-height: 1.6; max-width: 700px; margin: 0 auto 24px; }
+@media (max-width: 700px) { .rev-hero-title { font-size: 31px; } }
+
+/* Rating badge */
+.rev-badge {
+  display: inline-flex; align-items: center; gap: 14px;
+  background: #fff; border: 1px solid #e6eaed; border-radius: 999px;
+  padding: 12px 26px; box-shadow: 0 8px 22px rgba(38,70,83,0.08); margin-bottom: 26px;
+}
+.rev-badge-score { font-size: 30px; font-weight: 700; color: #264653; line-height: 1; }
+.rev-badge-meta { color: #6b7785; font-size: 14.5px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+.rev-badge-meta .bi-google { color: #4285F4; }
+
+/* Stars */
+.rev-stars { color: #f5b50a; letter-spacing: 2px; font-size: 16px; }
+.rev-stars-lg { font-size: 22px; }
+
+/* Review grid */
+.rev-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+  max-width: 1140px; margin: 0 auto;
+}
+@media (max-width: 900px) { .rev-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .rev-grid { grid-template-columns: 1fr; } }
+
+.rev-card {
+  display: flex; flex-direction: column; background: #fff; border: 1px solid #e6eaed;
+  border-radius: 16px; padding: 26px 24px; box-shadow: 0 6px 18px rgba(38,70,83,0.05);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.rev-card:hover { transform: translateY(-4px); box-shadow: 0 16px 32px rgba(38,70,83,0.1); }
+.rev-card .rev-stars { margin-bottom: 14px; }
+.rev-text { color: #3a3f44; font-size: 15.5px; line-height: 1.65; margin: 0 0 22px; flex: 1; }
+.rev-text::before { content: "\201C"; }
+.rev-text::after { content: "\201D"; }
+
+.rev-author { display: flex; align-items: center; gap: 12px; }
+.rev-avatar {
+  width: 42px; height: 42px; border-radius: 50%; flex: 0 0 auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 700; font-size: 17px; background: #264653;
+}
+.rev-author strong { display: block; color: #264653; font-size: 15px; }
+.rev-source { color: #98a3ab; font-size: 12.5px; display: inline-flex; align-items: center; gap: 5px; }
+.rev-source .bi-google { color: #4285F4; }
+
+.rev-cta-row { text-align: center; margin-top: 34px; }
+.rev-google-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #fff; border: 1px solid #d8dee2; color: #264653; font-weight: 600;
+  padding: 12px 26px; border-radius: 999px; text-decoration: none;
+}
+.rev-google-btn:hover { border-color: #4285F4; color: #4285F4; }
+.rev-google-btn .bi-google { color: #4285F4; }
