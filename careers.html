@@ -555,11 +555,15 @@
     <div class="row justify-content-center">
       <div class="col-lg-7">
         <div class="wc-enquiry-card">
-          <form id="careers-form" class="wc-enquiry-form" action="https://api.web3forms.com/submit" method="post" enctype="multipart/form-data">
-            <input type="hidden" name="access_key" value="d28881e3-446e-4685-9c23-620cb74249a5">
-            <input type="hidden" name="subject" value="New Career Application — FinAxis">
-            <input type="hidden" name="from_name" value="FinAxis Careers">
-            <input type="checkbox" name="botcheck" style="display:none;">
+          <!-- Posts to FormSubmit.co (free form service that supports file attachments).
+               Replace careers@finaxis.co.in with your real careers inbox, then submit once
+               and click the activation link FormSubmit emails you. -->
+          <form id="careers-form" class="wc-enquiry-form" action="https://formsubmit.co/it@finaxis.co.in" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_subject" value="New Career Application — FinAxis">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/careers.html">
+            <input type="text" name="_honey" style="display:none">
 
             <div class="wc-field">
               <label for="c-name">Full Name</label>
