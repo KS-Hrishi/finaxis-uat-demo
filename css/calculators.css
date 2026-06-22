@@ -15,7 +15,7 @@
 @media (max-width: 600px) { .calc-masthead h1 { font-size: 32px; } }
 
 .calc-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px;
   max-width: 1080px; margin: 46px auto 80px; padding: 0 16px;
 }
 @media (max-width: 900px) { .calc-grid { grid-template-columns: repeat(2, 1fr); } }
