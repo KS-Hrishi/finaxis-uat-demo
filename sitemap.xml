@@ -79,6 +79,24 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://finaxis.co.in/contact</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://finaxis.co.in/privacy-policy</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://finaxis.co.in/terms-of-use</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://finaxis.co.in/reviews</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
